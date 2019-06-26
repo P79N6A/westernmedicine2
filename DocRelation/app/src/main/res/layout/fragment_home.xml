@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:theme="@style/Theme.AppCompat.Light">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbarCollapse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@drawable/toolbar_bg_no_alpha_new"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@drawable/toolbar_bg_no_alpha_new">
+
+            <include layout="@layout/home_fragment_header"/>
+
+
+            <!--stone  app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp" 这两个必须要 否则标题不居中-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_titlebar_height"
+                android:fitsSystemWindows="true"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <!--标题-->
+                <TextView
+                    android:id="@+id/tv_title_center"
+                    style="@style/title_tv_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:visibility="gone"
+                    />
+
+            </android.support.v7.widget.Toolbar>
+
+            <View
+                android:id="@+id/topline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp05"
+                android:layout_marginTop="@dimen/dp48"
+                android:background="@color/color_eeeeee"
+                android:fitsSystemWindows="true"
+                android:visibility="gone"
+                app:layout_collapseMode="pin"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp9"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal"
+                app:layout_collapseMode="parallax">
+
+                <RelativeLayout
+                    android:id="@+id/rl_checkin"
+                    android:layout_width="@dimen/height_30dp"
+                    android:layout_height="@dimen/height_30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_16dp"
+                    android:background="@drawable/bg_black_transparent_50">
+                    <ImageView
+                        android:id="@+id/iv_qd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/qd_ok"
+                        android:gravity="center" />
+                </RelativeLayout>
+                <FrameLayout
+                    android:id="@+id/fl_message"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_black_transparent_50">
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/message_new"/>
+
+                    <TextView
+                        android:id="@+id/tv_notice_dot"
+                        style="@style/tv_base_style"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/read_ovla_shape"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:visibility="invisible"
+                        android:textStyle="bold"/>
+                </FrameLayout>
+            </RelativeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

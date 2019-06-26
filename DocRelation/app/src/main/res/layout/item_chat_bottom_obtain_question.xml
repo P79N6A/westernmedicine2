@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/marght_24dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_14_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请在30秒内点击抢题按钮进行" />
+
+        <TextView
+            style="@style/text_14_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抢题"
+            android:textColor="@color/color_0dc3ce"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/text_14_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吧"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp">
+
+        <ImageView
+            android:id="@+id/iv_chat_bottom_obtain_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_question_obtain" />
+
+        <ImageView
+            android:id="@+id/iv_chat_bottom_obtain_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_toRightOf="@+id/iv_chat_bottom_obtain_question"
+            android:src="@drawable/img_consult_pass"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_chat_bottom_obtain_question"
+            android:layout_alignRight="@+id/iv_chat_bottom_obtain_question"
+            android:layout_below="@+id/iv_chat_bottom_obtain_question"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="抢题" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_chat_bottom_obtain_pass"
+            android:layout_alignRight="@+id/iv_chat_bottom_obtain_pass"
+            android:layout_below="@+id/iv_chat_bottom_obtain_pass"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="跳过"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

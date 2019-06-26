@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/marght_8dp"
+    android:background="@color/white"
+    android:id="@+id/pharmacy_main_title_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/marght_16dp">
+        <ImageView
+            android:id="@+id/medicine_pic"
+            android:layout_marginTop="@dimen/marght_15dp"
+            android:layout_marginLeft="@dimen/marght_16dp"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:visibility="gone"
+            tools:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_10dp"
+            android:layout_marginTop="@dimen/marght_15dp"
+            android:paddingRight="@dimen/marght_16dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/medicine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/my_textcolor"
+                    tools:text="海力生"/>
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/text_12sp"
+                    android:textColor="@color/c666"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:text="x1"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_11sp"
+                android:textStyle="bold"
+                android:textColor="@color/c999"
+                android:layout_marginTop="@dimen/marght_10dp"
+                tools:text="2017/01/13"/>
+
+            <TextView
+                android:id="@+id/medicine_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_12sp"
+                android:textStyle="bold"
+                android:textColor="@color/c666"
+                android:layout_marginTop="@dimen/marght_10dp"
+                tools:text="步步脑心通0.4g*36粒/盒"/>
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_12sp"
+                android:textStyle="bold"
+                android:textColor="@color/c666"
+                android:layout_marginTop="@dimen/marght_10dp"
+                tools:text="每日一次，一次一粒，饭后服用，口服"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f8f8f8"/>
+    <RelativeLayout
+        android:id="@+id/rl_status"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marght_1dp"
+        android:layout_height="42dp">
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_16dp"
+            android:textSize="@dimen/text_12sp"
+            android:textStyle="bold"
+            android:textColor="#ff9600"
+            android:layout_marginTop="@dimen/marght_10dp"
+            tools:text="已购买"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:layout_marginRight="@dimen/marght_16dp"
+            android:src="@drawable/enter_right"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

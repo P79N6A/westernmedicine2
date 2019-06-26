@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_my_purse"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@color/c_00c8aa">
+
+        <ImageButton
+            android:id="@+id/ib_purse_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fanhui_white"
+            android:background="@null"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingRight="@dimen/dp20"
+            android:onClick="onPurseButtonListener"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_purse"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xywy_top_title_size" />
+
+        <TextView
+            android:id="@+id/tv_bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/yinhangka_2x"
+            android:drawablePadding="@dimen/dp4"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp16"
+            android:text="@string/bank_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+    </RelativeLayout>
+
+   <include layout="@layout/activity_my_purse_header_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/rl_price_detail"
+       android:layout_below="@+id/rl_my_purse" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/rl_price_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_price_detail"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_80dp"
+            android:background="@drawable/service_more_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marght_left"
+            android:text="@string/no_data_txt"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

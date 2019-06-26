@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/letv_skin_vnew_controller_background"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingEnd="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="5dp">
+
+    <com.letv.skin.v4.V4PlayBtn
+        android:id="@+id/vnew_play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.letv.skin.v4.V4PlayerSeekBar
+            android:id="@+id/vnew_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.letv.skin.widget.TextTimerView
+            android:id="@+id/vnew_text_duration_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.letv.skin.v4.V4ChgScreenBtn
+        android:id="@+id/vnew_chg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/sign_order_item_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"/>
+<!--  
+        <ImageView
+            android:id="@+id/sign_order_item_call"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/btn_free_call" />
+-->
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sign_order_item_photo"
+            android:layout_toRightOf="@+id/sign_order_item_photo" >
+
+            <TextView
+                android:id="@+id/sign_order_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/sign_order_item_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/sign_order_item_name"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/sign_order_item_name"
+                android:singleLine="true"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sign_order_item_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sign_order_item_photo"
+            android:layout_alignLeft="@+id/topLayout"
+            android:text="@string/home_doctor_sign_orders_txt_realpay"
+            android:textColor="@color/tab_color_nomal"
+            android:textSize="@dimen/text_12sp" />
+        
+        <TextView
+            android:id="@+id/iv_sign_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sign_order_item_photo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/tab_color_nomal"
+            android:textSize="@dimen/text_12sp" />
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_line"/>
+</RelativeLayout>

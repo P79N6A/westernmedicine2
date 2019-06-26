@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffff0000"
+           android:dividerHeight="10dp" />
+    </android.support.v4.widget.SwipeRefreshLayout> 
+<!--  
+    <RelativeLayout
+        android:id="@+id/rl_rob_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/que_phone_bg"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_rob_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rob_question" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_rob_question"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marght_8dp"
+            android:text="@string/rob_question_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+-->
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_80dp"
+            android:background="@drawable/service_more_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marght_left"
+            android:text="@string/no_data_txt"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

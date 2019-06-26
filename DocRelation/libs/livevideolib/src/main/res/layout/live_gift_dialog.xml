@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_gift_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/play_gift_bkg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_gift_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignTop="@+id/rl_bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#55ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/rlv_gift_list"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_gift_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/color_transparent"
+            android:padding="10dp"
+            android:text="充值:"
+            android:textColor="@color/color_ff9900"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_gift_recharge"
+            android:gravity="center_vertical"
+            android:text="健康币1000"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_gift_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_gift_balance"
+            android:src="@drawable/gift_left_arrow" />
+
+        <Button
+            android:id="@+id/btn_gift_send"
+            android:layout_width="57dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gift_send_bkg"
+            android:text="打赏"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

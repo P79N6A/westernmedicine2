@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingEnd="64dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="64dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.xywy.askforexpert.appcommon.base.fragment.LoadingDialogFragment">
+
+    <ProgressBar
+        style="@style/Animation.AppCompat.Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="加载中..."
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+</LinearLayout>

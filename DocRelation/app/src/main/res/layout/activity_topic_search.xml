@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.xywy.askforexpert.module.doctorcircle.topic.TopicSearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_bg_no_alpha_new"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginBottom="@dimen/dp4"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/topic_search_et"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp10"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_frame_sytle"
+                    android:drawableLeft="@drawable/topic_search_icon"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:textColor="@color/c666"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_14sp"
+                    android:text="取消" />
+            </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_topic_search" />
+
+</android.support.design.widget.CoordinatorLayout>

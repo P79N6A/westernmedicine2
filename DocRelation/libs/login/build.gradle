@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply from: "${androidCommonDir}/buildsystem/commonModuleConfig.gradle"
+apply from: "${androidCommonDir}/code_quality_tools/quality.gradle"
+android {
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile libraries.junit
+    compile libraries.supportAppCompatV4
+    compile libraries.supportAppCompatV7
+    compile project(relativePath+"datarequest")
+    compile files('libs/open_sdk_r5509_lite.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+}

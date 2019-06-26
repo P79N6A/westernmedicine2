@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp">
+
+    <!--<android.support.v7.widget.AppCompatCheckBox-->
+    <!--android:id="@+id/dialog_list_check"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="活动"-->
+    <!--android:textColor="#666666"-->
+    <!--android:textSize="14sp" />-->
+
+    <TextView
+        android:id="@+id/dialog_list_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="活动"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/dialog_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/topic_type_selected" />
+
+</LinearLayout>

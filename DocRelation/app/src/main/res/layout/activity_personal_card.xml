@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/base_back_btn_selector_new" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="二维码名片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/marght_left"
+            android:background="@drawable/site_share" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_card_top_backgroud"/>
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marght_20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_rectangle_transparent_50_layout">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="306dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_rectangle_transparent_90_layout">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_rectangle_layout"
+            android:layout_marginTop="27dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/iv_face"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="@dimen/marght_24dp"
+                    tools:src="@drawable/test_ic_img_user_default"/>
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_12dp"
+                    android:textSize="19sp"
+                    android:textColor="#2a3952"
+                    tools:text="梁泽霞"/>
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_8dp"
+                    android:textColor="@color/c999"
+                    android:textSize="@dimen/text_10sp"
+                    tools:text="主治医师"/>
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_5dp"
+                    android:textColor="@color/c999"
+                    android:textSize="@dimen/text_10sp"
+                    tools:text="廊坊市人名医院-磁共振CT室"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marght_15dp"
+                android:paddingBottom="@dimen/height_30dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:padding="0.5dp"
+                    android:background="#f0edfa">
+                    <ImageView
+                        android:id="@+id/iv_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        tools:src="@drawable/code"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_10sp"
+                    android:textColor="@color/c999"
+                    android:layout_marginTop="@dimen/marght_10dp"
+                    android:text="@string/scan_desc"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_10sp"
+                    android:textColor="@color/c999"
+                    android:layout_marginTop="@dimen/marght_10dp"
+                    android:text="@string/scan_desc_end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/marght_67dp"
+                android:background="@color/c_1e90ff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marght_20dp"
+                    android:text="@string/share"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_20dp">
+                    <!--微信好友-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:src="@drawable/back_focus_new"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marght_10dp"
+                            android:text="@string/weixin_friend"/>
+                    </LinearLayout>
+
+                    <!--朋友圈-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:src="@drawable/back_focus_new"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marght_10dp"
+                            android:text="@string/weixin_quan"/>
+                    </LinearLayout>
+
+                    <!--qq空间-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:src="@drawable/back_focus_new"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marght_10dp"
+                            android:text="@string/qq"/>
+                    </LinearLayout>
+
+                    <!--新浪微博-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:src="@drawable/back_focus_new"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marght_10dp"
+                            android:text="@string/sina_weibo"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha" >
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_selector_old"
+            android:onClick="onClick_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="简历被查看"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+
+    </RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_nodate_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_gravity="center"
+            android:background="@drawable/health_type_time" />
+
+        <TextView
+            android:id="@+id/tv_nodata_title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginRight="@dimen/marght_right"
+            android:layout_marginTop="@dimen/height_30dp"
+            android:gravity="center"
+            android:text="数据采集中。。"
+            android:textColor="@color/my_textcolor1"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+   <TextView 
+       android:id="@+id/tv_total2"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/height_40dp"
+       android:gravity="center_vertical"
+       android:layout_marginLeft="@dimen/marght_left"
+       android:text=""
+       />
+   
+        <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreListView
+            android:id="@+id/list_resume33"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:divider="#eeeeee"
+            android:dividerHeight="1dp"
+            android:text="@string/hello_world" >
+        </com.xywy.askforexpert.widget.view.MyLoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+<!--     <com.xywy.askforexpert.refresh.PullToRefreshListView
+        android:id="@+id/list_resume33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.xywy.askforexpert.refresh.PullToRefreshListView> -->
+	
+</LinearLayout>

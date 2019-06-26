@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/letv_skin_vnew_controller_background"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <com.letv.skin.v4.V4PlayBtn
+        android:id="@+id/vnew_play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp" />
+
+    <com.letv.skin.v4.V4ChgScreenBtn
+        android:id="@+id/vnew_chg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp" />
+
+    <com.letv.skin.v4.V4RateTypeBtn
+        android:id="@+id/vnew_rate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/vnew_chg_btn" />
+
+    <com.letv.skin.v4.V4ChangeModeBtn
+        android:id="@+id/vnew_change_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/vnew_rate_btn" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/vnew_change_mode"
+        android:layout_toRightOf="@id/vnew_play_btn" >
+
+        <com.letv.skin.v4.V4LiveSeekbar
+            android:id="@+id/vnew_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/vnew_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/vnew_seekbar"
+            android:layout_below="@+id/vnew_seekbar"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="1dp"
+            android:text="正在播放：12:-08 14:32:57"
+            android:textColor="@color/letv_color_ffffffff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

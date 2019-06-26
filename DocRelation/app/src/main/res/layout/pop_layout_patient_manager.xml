@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="@dimen/dp110"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请患者"
+            android:drawableLeft="@drawable/add_more_icon"
+            android:drawablePadding="@dimen/dp6"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_e8e8e8"/>
+
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="分组管理"
+            android:drawableLeft="@drawable/group_manager_icon"
+            android:drawablePadding="@dimen/dp6"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_e8e8e8"/>
+
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/bulk_notification_icon"
+            android:drawablePadding="@dimen/dp6"
+            android:text="批量通知"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_e8e8e8"/>
+
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/apply_material_icon"
+            android:drawablePadding="@dimen/dp6"
+            android:text="物料申请"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+</LinearLayout>

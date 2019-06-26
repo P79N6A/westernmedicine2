@@ -1,0 +1,38 @@
+[
+ {
+        "workyear": "",
+        "description": "不限"
+    },
+    {
+        "workyear": 1,
+        "description": "应届毕业生"
+    },
+    {
+        "workyear": 2,
+        "description": "一年以上"
+    },
+    {
+        "workyear": 3,
+        "description": "两年以上"
+    },
+    {
+        "workyear": 4,
+        "description": "三年以上"
+    },
+    {
+        "workyear": 5,
+        "description": "五年以上"
+    },
+    {
+        "workyear": 6,
+        "description": "八年以上"
+    },
+    {
+        "workyear": 7,
+        "description": "十年以上"
+    },
+    {
+        "workyear": 8,
+        "description": "十五年以上"
+    }
+]

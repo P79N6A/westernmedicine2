@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_promotion_application"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onReplyClickListener" >
+
+                <ImageView
+                    android:id="@+id/iv_promotion_application"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:background="@drawable/promotion_application" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_toRightOf="@+id/iv_promotion_application"
+                    android:text="@string/found_promotion_application"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_que_performance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onReplyClickListener" >
+
+                <ImageView
+                    android:id="@+id/iv_que_performance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:background="@drawable/que_performance" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_toRightOf="@+id/iv_que_performance"
+                    android:text="@string/found_que_performance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+           <!--   
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_right"
+                    android:background="@drawable/found_new" />
+                      -->  
+            </RelativeLayout>
+        <!--   
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_found"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onReplyClickListener" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:text="@string/found_setting_txt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_found_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_right"
+                    android:background="@drawable/radio_off" />
+            </RelativeLayout>
+            -->   
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</RelativeLayout>

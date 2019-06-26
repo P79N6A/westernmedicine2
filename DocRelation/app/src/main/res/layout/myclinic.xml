@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_que"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/item_bg_selector"
+        >
+
+        <ImageView
+            android:id="@+id/img_110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:id="@+id/tv_datil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:layout_toLeftOf="@id/img_110"
+            android:text="未认证"
+            android:textColor="@color/impor_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/problem_square"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="14dp"
+            android:text="问题广场"
+            android:textColor="@color/my_textcolor"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:id="@+id/textView" />
+    </RelativeLayout>
+    <View style="@style/common_divider_line_style" />
+    <RelativeLayout
+        android:id="@+id/re_orderaddnum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:drawableLeft="@drawable/appointment"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_namecode"
+            android:text="预约转诊"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:id="@+id/tv_yuyue_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:layout_toLeftOf="@id/img_2"
+            android:text="未认证"
+            android:textColor="@color/impor_number" />
+    </RelativeLayout>
+    <View style="@style/common_divider_line_style" />
+    <RelativeLayout
+        android:id="@+id/re_phone_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/item_bg_selector"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/service_phone_doctor"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_namecode"
+            android:text="电话医生"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:id="@+id/tv_phone_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="@dimen/marght_right"
+            android:layout_toLeftOf="@id/img_3"
+            android:text="未认证"
+            android:textColor="@color/impor_number" />
+    </RelativeLayout>
+    <View style="@style/common_divider_line_style" />
+    <RelativeLayout
+        android:id="@+id/re_fam_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/item_bg_selector"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/family_doctor"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_namecode"
+            android:text="家庭医生"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/img_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:id="@+id/tv_fam_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:layout_toLeftOf="@id/img_4"
+            android:text="未认证"
+            android:textColor="@color/impor_number" />
+    </RelativeLayout>
+
+</LinearLayout>

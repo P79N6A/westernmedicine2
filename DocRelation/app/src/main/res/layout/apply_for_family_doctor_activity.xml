@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/idcard_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f7f7f7"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <!--<com.xywy.askforexpert.widget.ReboundScrollView-->
+    <com.xywy.askforexpert.widget.view.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_price"
+                style="@style/familydoctor_layout_style">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/usercenter_tv_style"
+                    android:text="价格设置"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv4"
+                    android:layout_toRightOf="@id/tv4"
+                    tools:text="包周 50 包月 200"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                style="@style/familydoctor_layout_style"
+                android:layout_marginTop="@dimen/dp8">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    style="@style/usercenter_tv_style"
+                    android:text="服务时间"/>
+
+                <TextView
+                    android:id="@+id/tv55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv5"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_toRightOf="@+id/tv5"
+                    android:text="每周不少于4天"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/dp14"/>
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv5"
+                    android:layout_toRightOf="@id/tv5"
+                    tools:text="周一 上午9:00-11:00"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_hope"
+                style="@style/familydoctor_layout_style"
+                android:layout_marginTop="@dimen/dp8">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    style="@style/usercenter_tv_style"
+                    android:text="医生寄语"/>
+
+                <ImageView
+                    android:id="@+id/iv6"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_hope"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv6"
+                    android:layout_toRightOf="@id/tv6"
+                    tools:text="祝愿你早日康复祝愿你早日"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_goodat"
+                style="@style/familydoctor_layout_style"
+                android:layout_marginTop="@dimen/dp8">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    style="@style/usercenter_tv_style"
+                    android:text="擅长疾病"/>
+
+                <ImageView
+                    android:id="@+id/iv7"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_goodat"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv7"
+                    android:layout_toRightOf="@id/tv7"
+                    tools:text="皮肤病,皮炎,红肿,痱子"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_honor"
+                style="@style/familydoctor_layout_style"
+                android:layout_marginTop="@dimen/dp8">
+
+                <TextView
+                    android:id="@+id/tv8"
+                    style="@style/usercenter_tv_style"
+                    android:text="个人荣誉"/>
+
+                <TextView
+                    android:id="@+id/tv88"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv8"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_toRightOf="@+id/tv8"
+                    android:text="选填"
+                    android:textColor="@color/color_b7b7b7"
+                    android:textSize="@dimen/dp14"/>
+
+                <ImageView
+                    android:id="@+id/iv8"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_honor"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv8"
+                    android:layout_toRightOf="@id/tv8"
+                    tools:text="多次荣获全国优秀医师"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_left"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        style="@style/size14color333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="荣誉展示"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv11"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_toRightOf="@+id/tv11"
+                        android:text="选填"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/dp14"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/show"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_marginTop="18dp"
+                    android:scrollbars="none"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    ></android.support.v7.widget.RecyclerView>
+
+                <!--<com.xywy.askforexpert.widget.view.HorizontalListView-->
+                <!--android:id="@+id/show"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/height_70dp"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:layout_marginLeft="@dimen/marght_left"-->
+                <!--android:layout_marginTop="18dp"-->
+                <!--android:cacheColorHint="#00000000"-->
+                <!--android:fadingEdge="none"></com.xywy.askforexpert.widget.view.HorizontalListView>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_left"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv22"
+                        style="@style/size14color333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="个人风采"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv22"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_toRightOf="@+id/tv22"
+                        android:text="选填"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/dp14"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_marginTop="18dp"
+                    android:scrollbars="none"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    ></android.support.v7.widget.RecyclerView>
+
+                <!--<com.xywy.askforexpert.widget.view.HorizontalListView-->
+                    <!--android:id="@+id/style"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/height_70dp"-->
+                    <!--android:layout_marginBottom="16dp"-->
+                    <!--android:layout_marginLeft="@dimen/marght_left"-->
+                    <!--android:layout_marginTop="18dp"-->
+                    <!--android:cacheColorHint="#00000000"-->
+                    <!--android:fadingEdge="none"></com.xywy.askforexpert.widget.view.HorizontalListView>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick_back"
+                    android:paddingBottom="@dimen/dp12"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingRight="@dimen/dp6"
+                    android:paddingTop="@dimen/dp12"
+                    android:src="@drawable/selector_box"/>
+
+                <TextView
+                    android:id="@+id/tv_protocol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick_back"
+                    android:text="@string/familydoctor_protocol"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/dp11"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp18"
+                android:background="@drawable/selector_round_00c8aa_8800c8aa"
+                android:gravity="center"
+                android:onClick="onClick_back"
+                android:text="提交申请"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"/>
+
+
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.view.MyScrollView>
+
+</LinearLayout>

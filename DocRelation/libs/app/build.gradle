@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+//引入module的通用配置，如sdk版本，versioncode等
+apply from: "${androidCommonDir}/buildsystem/commonModuleConfig.gradle"
+//引入findbugs、pmd等静态代码检查任务
+apply from: "${androidCommonDir}/code_quality_tools/quality.gradle"
+android {
+    defaultConfig {
+        applicationId "com.xywy.component"
+    }
+    //签名
+    signingConfigs {
+        release {
+            storeFile file('xywy.release.keystore')
+            keyAlias 'xywyrel'
+            keyPassword 'xywyrelease'
+            storePassword 'xywyrelease'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.robolectric
+    testCompile libraries.mockito
+    compile project(':datarequest')
+    compile project(':step')
+    debugCompile project(':develop_settings')
+    compile project(':activityrouter')
+    compile project(':routerstub')
+    compile project(':modifyjson')
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main"
+                android:background="@color/color_f2f2f2">
+
+    <LinearLayout
+        android:id="@+id/fl_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/fl_top_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_fl_top_skip_ligth"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="跳过"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_f2f2f2"></View>
+
+        <LinearLayout
+            android:id="@+id/fl_top_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_fl_top_transfer_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="转诊"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_bottom"
+        android:layout_below="@+id/fl_top"
+        android:background="@color/color_f2f2f2">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/fl_bottom_adopt"
+            layout="@layout/item_chat_bottom_adopt"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/fl_bottom_obtain_question"
+            layout="@layout/item_chat_bottom_obtain_question"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/fl_bottom_chat"
+            layout="@layout/item_chat_bottom_chat"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/fl_sumup_answer"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/color_00c8aa"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_sumup_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/chatdetail_sumup_head"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/question_query_sumup"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15sp"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_sumup_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f2f2f2"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="55dp"
+            android:paddingTop="28dp"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingRight="@dimen/dp30"
+            android:text="@string/question_history_notice1"
+            android:textColor="@color/color_b6b6b6"
+            android:textSize="@dimen/text_11sp"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+{
+    "code": 10000,
+    "msg": "请求成功",
+    "data": {
+        "userid": "68118287",
+        "username": "xywy14540494655419",
+        "insert_data": "2015-10-30 17:07:27",
+        "userphone": "15901121698",
+        "useremail": "3659456676@163.com",
+        "usersource": "tttt",
+        "type": "0",
+        "devid": "867065024745122",
+        "lasttime": "1470360154",
+        "nickname": "会员68118287",
+        "realname": "",
+        "birthday": "0000-00-00",
+        "sex": 0,
+        "age": 0,
+        "idcard": "",
+        "weight": 0,
+        "height": 0,
+        "blood_type": "",
+        "blood_pressure": "",
+        "photo": "",
+        "points": 50,
+        "first_login_time": "2015-10-30 17:07:27",
+        "is_auth_qq": 0,
+        "is_auth_sina": 0,
+        "is_auth_weixin": 0,
+        "is_auth_alipay": 0
+    }
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/myresume"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marght_52dp"
+        android:layout_marginTop="@dimen/marght_left"
+        android:background="@drawable/item_bg_selector"
+        android:onClick="onClick_back" >
+
+        <ImageView
+            android:id="@+id/img_namecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_right"
+            android:background="@drawable/my_re_y" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_toRightOf="@id/img_namecode"
+            android:text="简历"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/enter_right_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_title_img_top"
+            android:layout_toLeftOf="@id/enter_right_1"
+            android:text="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marght_52dp"
+        android:background="@drawable/item_bg_selector"
+        android:onClick="onClick_back" >
+
+        <ImageView
+            android:id="@+id/img_namecode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:background="@drawable/my_re_type" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_toRightOf="@id/img_namecode1"
+            android:text="简历状态"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/enter_right_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <ImageView
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_title_img_top"
+            android:layout_toLeftOf="@id/enter_right_2"
+            android:onClick="onClick_back"
+            android:background="@drawable/radio_on" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_title_img_top"
+            android:layout_toLeftOf="@id/radio"
+            android:textColor="@color/tab_color_nomal"
+            android:text="企业不可见" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marght_52dp"
+        android:layout_marginTop="@dimen/marght_left"
+        android:background="@drawable/item_bg_selector"
+        android:onClick="onClick_back" >
+
+        <ImageView
+            android:id="@+id/img_namecode3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:background="@drawable/my_re_conll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_toRightOf="@id/img_namecode3"
+            android:text="收藏的职位"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/enter_right_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_title_img_top"
+            android:layout_toLeftOf="@id/enter_right_4"
+            android:text="" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line" />
+
+    <RelativeLayout
+        android:id="@+id/re_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marght_52dp"
+        android:background="@drawable/item_bg_selector"
+        android:onClick="onClick_back" >
+
+        <ImageView
+            android:id="@+id/img_namecode5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:background="@drawable/my_re_diver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_toRightOf="@id/img_namecode5"
+            android:text="投递的职位"
+            android:textColor="@color/my_textcolor" />
+
+        <ImageView
+            android:id="@+id/enter_right_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_title_img_top"
+            android:layout_toLeftOf="@id/enter_right_5"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

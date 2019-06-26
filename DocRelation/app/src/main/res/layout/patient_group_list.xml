@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/menu_tab_height"-->
+        <!--android:background="@drawable/toolbar_bg_no_alpha" >-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old"-->
+            <!--android:onClick="onClick_back"-->
+            <!--android:visibility="visible" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="分组管理"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/title_tv_size" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/marght_left"-->
+            <!--android:background="@drawable/edit_bg_select"-->
+            <!--android:onClick="onClick_back" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/marght_left"-->
+            <!--android:background="@drawable/sure"-->
+            <!--android:onClick="onClick_back"-->
+            <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/list_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#eeeeee"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marght_right"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:onClick="onClick_back" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加分组＋"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

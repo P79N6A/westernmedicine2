@@ -1,0 +1,7 @@
+<com.xywy.askforexpert.widget.homeWidget.InnerListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:divider="#E7E7E7"
+    android:dividerHeight="0.5dp" />

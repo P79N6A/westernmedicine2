@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/right_bg"
+    android:gravity="center_horizontal"
+     android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_mangere"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+        android:gravity="center"
+          android:background="@drawable/service_enter_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="分组管理"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+
+    <LinearLayout
+        android:id="@+id/lin_add_new_ptient"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+        android:gravity="center"
+          android:background="@drawable/service_enter_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="添加患者"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+
+</LinearLayout>

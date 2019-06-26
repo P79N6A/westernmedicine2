@@ -1,0 +1,97 @@
+apply plugin: 'com.android.library'
+apply from: "${androidCommonDir}/buildsystem/commonModuleConfig.gradle"
+apply from: "${androidCommonDir}/code_quality_tools/quality.gradle"
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/DEPENDENCIES.txt'
+        pickFirst 'META-INF/LICENSE.txt'
+        pickFirst 'META-INF/NOTICE.txt'
+        pickFirst 'META-INF/NOTICE'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/DEPENDENCIES'
+        pickFirst 'META-INF/notice.txt'
+        pickFirst 'META-INF/license.txt'
+        pickFirst 'META-INF/dependencies.txt'
+        pickFirst 'META-INF/LGPL2.1'
+        pickFirst 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile libraries.junit
+
+
+    //volley
+    //todo 看看是否有更好的方式
+    compile libraries.volley
+
+    //UIL
+    compile libraries.imageLoader
+
+    //GSON
+    compile libraries.gson
+
+    compile libraries.supportAnnotations
+}
+
+task makeJar(type: Copy) {
+    delete 'build/libs/mysdk.jar'
+    from('build/intermediates/bundles/release/')
+    into('build/libs/')
+    include('classes.jar')
+    rename ('classes.jar', 'datarequest.jar')
+}
+tasks.withType(Javadoc) { options.encoding = "UTF-8" }
+makeJar.dependsOn(build)
+apply plugin: 'maven'
+def isReleaseBuild() {
+    return VERSION_NAME.contains("SNAPSHOT") == false
+}
+def getRepositoryUsername() {
+    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : ""
+}
+def getRepositoryPassword() {
+    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : ""
+}
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                pom.groupId = GROUP
+                pom.artifactId = POM_ARTIFACT_ID
+                pom.version = VERSION_NAME
+                repository(url: RELEASE_REPOSITORY_URL) {
+                    authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+                }
+                snapshotRepository(url: SNAPSHOT_REPOSITORY_URL) {
+                    authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+                }
+            }
+        }
+    }
+    task androidJavadocs(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+        failOnError false
+    }
+    task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+        classifier = 'javadoc'
+        from androidJavadocs.destinationDir
+    }
+    task androidSourcesJar(type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.sourceFiles
+    }
+    artifacts {
+        archives androidSourcesJar
+        archives androidJavadocsJar
+    }
+}

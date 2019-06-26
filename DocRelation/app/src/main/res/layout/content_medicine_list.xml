@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_root"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_medicine_list">
+
+    <com.xywy.askforexpert.module.discovery.medicine.view.SortView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/sortview">
+
+    </com.xywy.askforexpert.module.discovery.medicine.view.SortView>
+
+
+
+    <View
+        android:id="@+id/devider_up"
+        android:layout_below="@id/sortview"
+        style="@style/split_view"
+        />
+
+    <View
+        android:id="@+id/bottom_devider"
+        android:layout_below="@id/devider_up"
+        style="@style/split_line_view_horizontal"
+        />
+
+    <RelativeLayout
+        android:id="@+id/medicine_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/medicine_bottom_devider"
+            style="@style/split_line_view_horizontal"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:src="@drawable/to_my_cart"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/cart_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cart_img"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:id="@+id/text"
+            android:text="X"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/text"
+            android:textColor="@color/my_textcolor"
+            android:textSize="12sp"
+            android:id="@+id/num_text"
+            tools:text="2000"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/medicine_price_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp"
+            android:gravity="center"
+            android:text="提交"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/submit"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp"
+            android:layout_marginRight="@dimen/marght_16dp"
+            android:id="@+id/tv_total_price"
+            tools:text="￥46,120,3.00"/>
+    </RelativeLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/swipeRefreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/bottom_devider"-->
+        <!--android:layout_above="@id/medicine_bottom"-->
+        <!--android:scrollbars="vertical">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/medicine_list">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/medicine_list"
+        android:layout_below="@id/bottom_devider"
+        android:layout_above="@id/medicine_bottom">
+    </android.support.v7.widget.RecyclerView>
+
+    <include
+        android:id="@+id/network_error"
+        android:visibility="gone"
+        layout="@layout/network_error"/>
+
+    <include android:id="@+id/common_drug_empty_layout"
+             android:visibility="gone"
+             layout="@layout/common_drug_record_list_empty" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/default_image" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/deep_gray_tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:text="名称" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_notice_number"
+                style="@style/tv_base_style"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/ll_name"
+                android:background="@drawable/read_ovla_shape"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_notice_dot"
+                style="@style/tv_base_style"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/ll_name"
+                android:background="@drawable/read_ovla_shape"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/light_gray_tv_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="描述"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_open"
+            style="@style/light_gray_tv_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="马上开通>"
+            android:textColor="@color/app_common_tv_green"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

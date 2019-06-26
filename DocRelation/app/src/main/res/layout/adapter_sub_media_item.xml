@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/submedia_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marght_left"
+        android:background="@drawable/yuanjiao_white_1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/submedia_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/my_arrow"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/my_line"></View>
+
+        <RelativeLayout
+            android:id="@+id/submedia_img_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/submedia_img_iv"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparentBlack1">
+
+                <TextView
+                    android:id="@+id/submedia_img_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <com.xywy.askforexpert.widget.view.MyListView
+            android:id="@+id/submedia_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:background="@null">
+
+        </com.xywy.askforexpert.widget.view.MyListView>
+
+        <View
+            android:id="@+id/show_Height"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/submedia_img_tv"
+            android:visibility="visible">
+
+        </View>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.xywy.askforexpert.module.main.subscribe.SubscribeListActivity">
+
+<RelativeLayout
+    android:id="@+id/rl_fragment_container"
+    android:layout_marginTop="@dimen/common_titlebar_height"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/subscribe_list_toolbar"
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/common_titlebar_height"
+            android:layout_height="@dimen/common_titlebar_height"
+            android:background="@drawable/toolbar_bg_no_alpha"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="频道订阅"
+                style="@style/size18colorffffff" />
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="完成"
+                style="@style/size15colorffffff" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

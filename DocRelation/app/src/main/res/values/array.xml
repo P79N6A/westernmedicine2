@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="medicine_day">
+        <item>空腹</item>
+        <item>睡前</item>
+        <item>饭后</item>
+        <item>饭中</item>
+        <item>饭前</item>
+        <item>必要时</item>
+        <item>紧急时</item>
+    </string-array>
+
+    <string-array name="take_rate">
+        <item>每日1次</item>
+        <item>每日2次</item>
+        <item>每日3次</item>
+        <item>每日4次</item>
+        <item>每晚1次</item>
+        <item>两天1次</item>
+        <item>每周2次</item>
+        <item>两周1次</item>
+    </string-array>
+
+    <string-array name="medicine_time">
+        <item>片</item>
+        <item>粒</item>
+        <item>包</item>
+        <item>颗</item>
+        <item>支</item>
+        <item>克</item>
+        <item>毫克</item>
+        <item>微克</item>
+        <item>毫升</item>
+    </string-array>
+
+    <string-array name="take_method">
+        <item>口服</item>
+        <item>注射</item>
+        <item>外用</item>
+        <item>静滴</item>
+        <item>吸入</item>
+    </string-array>
+
+
+    <!--stone 开处方对应关系-->
+    <!--服用方法 int对应1~15-->
+    <string-array name="take_method_new">
+        <item>口服</item>
+        <item>含服</item>
+        <item>舌下</item>
+        <item>外用</item>
+        <item>喷鼻</item>
+        <item>口腔吸入</item>
+        <item>直肠给药</item>
+        <item>滴眼</item>
+        <item>滴鼻</item>
+        <item>滴耳</item>
+        <item>阴道给药</item>
+        <item>静脉推注</item>
+        <item>静脉滴注</item>
+        <item>肌肉注射</item>
+        <item>皮下注射</item>
+    </string-array>
+
+    <!--服用单位 int对应1~21-->
+    <string-array name="take_unit_new">
+        <item>片</item>
+        <item>粒</item>
+        <item>袋</item>
+        <item>支</item>
+        <item>瓶</item>
+        <item>丸</item>
+        <item>帖</item>
+        <item>包</item>
+        <item>盒</item>
+        <item>滴</item>
+        <item>喷</item>
+        <item>颗</item>
+        <item>件</item>
+        <item>条</item>
+        <item>mg</item>
+        <item>g</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>ug</item>
+        <item>IU</item>
+        <item>U</item>
+    </string-array>
+
+    <!--开药单位 int对应1~21-->
+    <string-array name="open_unit_new">
+        <item>盒</item>
+        <item>支</item>
+        <item>瓶</item>
+        <item>片</item>
+        <item>粒</item>
+        <item>袋</item>
+        <item>丸</item>
+        <item>帖</item>
+        <item>包</item>
+        <item>滴</item>
+        <item>喷</item>
+        <item>颗</item>
+        <item>件</item>
+        <item>条</item>
+        <item>mg</item>
+        <item>g</item>
+        <item>ml</item>
+        <item>L</item>
+        <item>ug</item>
+        <item>IU</item>
+        <item>U</item>
+    </string-array>
+
+</resources>

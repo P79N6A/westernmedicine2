@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xywy.develop_settings">
+    <uses-sdk
+        tools:overrideLibrary="com.codemonkeylabs.fpslibrary" />
+    <application android:allowBackup="false" tools:replace="android:allowBackup" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".DeveloperSettingsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

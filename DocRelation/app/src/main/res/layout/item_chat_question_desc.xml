@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/marght_12dp"
+    android:paddingTop="@dimen/marght_12dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_patient_head"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="@dimen/marght_12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_chat_head_male_18_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:background="@drawable/patient_info_shape"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/tv_chat_question_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题科室：问题科室" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="在线问诊" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:textColor="#ff9900"
+                android:textSize="12sp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="25.00" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tv_chat_patient_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="徐泽帆，女，23岁" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/is_visit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="是否就诊过：就诊过" />
+
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tv_chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="标题：感冒怎么办，头疼流鼻涕" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="描述：感冒怎么办2？" />
+        <TextView
+            android:layout_marginBottom="14dp"
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/intent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="目的：怎么治疗" />
+        <LinearLayout
+            android:id="@+id/pic_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/pic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资料照片" />
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pic_ll"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="@dimen/marght_8dp"
+            android:id="@+id/tv_chat_question_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="6dp"
+            android:text="病情描述：病情描述病情描述病情描述病情描述病情描述" />
+    </LinearLayout>
+</RelativeLayout>

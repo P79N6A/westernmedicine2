@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white">
+
+        <com.xywy.askforexpert.widget.view.MyGallery
+            android:id="@+id/banner_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fadingEdge="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="#20000000"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/banner_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/ovalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="20.0dip"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E7E7E7" />
+
+
+</LinearLayout>

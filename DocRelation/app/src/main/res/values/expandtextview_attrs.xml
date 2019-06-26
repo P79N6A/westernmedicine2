@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableTextView1">
+        <attr name="maxCollapsedLines1" format="integer"/>
+        <attr name="animDuration1" format="integer"/>
+        <attr name="animAlphaStart1" format="float"/>
+        <attr name="expandDrawable1" format="reference"/>
+        <attr name="collapseDrawable1" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--<include layout="@layout/title" />-->
+
+    <!--<com.xywy.askforexpert.module.discovery.medicine.view.swipmenulistview.SwipeMenuListView-->
+    <ListView
+        android:id="@+id/slv_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/color_e8e8e8"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="@null" />
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_anonymous"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+        <!--<include layout="@layout/myhor_line" />-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/marght_right"
+                android:layout_marginTop="@dimen/marght_right"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/marght_7dp"
+                android:minLines="5"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_pics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+
+            <com.xywy.askforexpert.widget.view.MyGridView
+                android:id="@+id/gv_notname_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:columnWidth="60dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"></com.xywy.askforexpert.widget.view.MyGridView>
+        </LinearLayout>
+       <include layout="@layout/item_circle_content_bottom" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/my_line" />-->
+
+</LinearLayout>

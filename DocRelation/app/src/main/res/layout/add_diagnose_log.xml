@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/menu_tab_height"-->
+        <!--android:background="@drawable/service_top_bar_bg" >-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old"-->
+            <!--android:onClick="onClick_back"-->
+            <!--android:visibility="visible" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="诊疗纪录"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/title_tv_size" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/marght_left"-->
+            <!--android:background="@drawable/sure"-->
+            <!--android:onClick="onClick_back" />-->
+    <!--</RelativeLayout>-->
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xywy_service_doctor_title_width"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/marght_left"
+                android:text="诊断"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_12sp" />
+
+            <EditText
+                android:id="@+id/edit_check_result"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:background="@drawable/yuanjiao"
+                android:gravity="top"
+                android:hint="填写诊断结果"
+                android:maxLines="10"
+                android:padding="@dimen/marght_9dp"
+                android:textSize="@dimen/text_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xywy_service_doctor_title_width"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/marght_left"
+                android:text="基本病情"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_12sp" />
+
+            <EditText
+                android:id="@+id/edit_check_info"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/yuanjiao"
+                android:focusable="false"
+                android:gravity="top"
+                android:hint="填写基本病情"
+                android:maxLines="10"
+                android:padding="@dimen/marght_9dp"
+                android:textSize="@dimen/text_12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xywy_service_doctor_title_width"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/marght_left"
+                android:text="病程记录"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_12sp" />
+
+            <EditText
+                android:id="@+id/edit_check_list"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/yuanjiao"
+                android:gravity="top"
+                android:hint="请填写治疗情况、检查结果、症状及体征等"
+                android:maxLines="10"
+                android:padding="@dimen/marght_9dp"
+                android:textSize="@dimen/text_12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <GridView
+                    android:id="@+id/gv_add_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marght_9dp"
+                    android:layout_marginLeft="@dimen/marght_9dp"
+                    android:layout_marginRight="@dimen/marght_9dp"
+                    android:layout_marginTop="@dimen/marght_9dp"
+                    android:columnWidth="66dp"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="none"
+                    android:verticalSpacing="3dp" >
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

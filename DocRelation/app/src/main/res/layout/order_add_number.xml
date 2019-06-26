@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xywy_service_doctor_title_width"
+        android:layout_marginLeft="@dimen/marght_right"
+        android:gravity="center_vertical"
+        android:text="服务介绍" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="9dp"
+            android:gravity="top"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text=""
+            android:textColor="@color/tab_color_nomal"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_appay_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/marght_8dp"
+            android:layout_marginRight="@dimen/marght_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn_selector"
+            android:onClick="onClick_back"
+            android:text="申请开通"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+        <!--
+             <Button 
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow_normal"
+            android:text="我要开通请联系我"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/white"
+           	android:layout_gravity="center"
+            />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

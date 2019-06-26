@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="DragLayoutMenuView">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <item name="tag_first" type="id" />
+    <item name="tag_second" type="id" />
+
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcBackgroundRadius" format="dimension" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcIconSrc" format="integer" />
+        <attr name="rcIconSize" format="dimension" />
+        <attr name="rcIconPadding" format="dimension" />
+        <attr name="rcHeaderColor" format="color" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+        <attr name="rcTextProgressColor" format="color" />
+        <attr name="rcTextProgress" format="string" />
+        <attr name="rcTextProgressUnit" format="string" />
+        <attr name="rcTextProgressSize" format="dimension" />
+        <attr name="rcTextProgressWidth" format="dimension" />
+        <attr name="rcTextProgressPadding" format="dimension" />
+        <attr name="rcAutoTextChange" format="boolean" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rippleColor1" format="color" />
+        <attr name="alphaFactor" format="float" />
+        <attr name="hover" format="boolean" />
+    </declare-styleable>
+    <!--  <declare-styleable name="ActionBar">
+         <attr name="title" format="string" localization="suggested" />
+     </declare-styleable>  -->
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="collapseDrawable" format="reference" />
+        <attr name="expandIndicateText" format="reference|string" />
+        <attr name="collapseIndicateText" format="reference|string" />
+        <attr name="expandIndicateTextColor" format="color" />
+        <attr name="collapseIndicateTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension" />
+        <attr name="mlpb_background_color" format="color" />
+        <attr name="mlpb_progress_color" format="color" />
+        <attr name="mlpb_progress_stoke_width" format="dimension" />
+        <attr name="mlpb_show_arrow" format="boolean" />
+        <attr name="mlpb_enable_circle_background" format="boolean" />
+        <attr name="mlpb_arrow_width" format="dimension" />
+        <attr name="mlpb_arrow_height" format="dimension" />
+
+        <attr name="mlpb_progress" format="integer" />
+        <attr name="mlpb_max" format="integer" />
+
+
+        <attr name="mlpb_progress_text_size" format="dimension" />
+        <attr name="mlpb_progress_text_color" format="color" />
+
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+
+    <declare-styleable name="UnderlinePageIndicator">
+        <!-- Whether or not the selected indicator fades. -->
+        <attr name="fades" format="boolean" />
+        <!-- Length of the delay to fade the indicator. -->
+        <attr name="fadeDelay" format="integer" />
+        <!-- Length of the indicator fade to transparent. -->
+        <attr name="fadeLength" format="integer" />
+        <attr name="underLineHeight" format="integer"></attr>
+        <!-- Color of the selected line that represents the current page. -->
+        <attr name="selectedColor" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PinyinIndexer">
+        <attr name="widthOffset" format="dimension" />
+        <attr name="minFontSize" format="integer" />
+        <attr name="maxFontSize" format="integer" />
+        <attr name="tipFontSize" format="integer" />
+        <attr name="maxBezierHeight" format="dimension" />
+        <attr name="maxBezierWidth" format="dimension" />
+        <attr name="maxBezierLines" format="integer" />
+        <attr name="additionalTipOffset" format="dimension" />
+        <attr name="fontColor" format="color" />
+        <attr name="tipFontColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SheetTextView">
+
+        <attr name="sheetTextColor" format="color"/>
+        <attr name="sheetTextSize" format="dimension"/>
+        <attr name="sheetCicleColor" format="color"/>
+        <attr name="sheetCircleOuterColor" format="color"/>
+        <attr name="sheetCircleRingSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="UltimateRecyclerview">
+        <attr name="recyclerviewClipToPadding" format="boolean" />
+        <attr name="recyclerviewPadding" format="dimension" />
+        <attr name="recyclerviewPaddingTop" format="dimension" />
+        <attr name="recyclerviewPaddingBottom" format="dimension" />
+        <attr name="recyclerviewPaddingLeft" format="dimension" />
+        <attr name="recyclerviewPaddingRight" format="dimension" />
+        <attr name="recyclerviewEmptyView" format="reference" />
+        <attr name="recyclerviewFloatingActionView" format="reference" />
+        <attr name="recyclerviewScrollbars" format="enum">
+            <enum name="none" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="2" />
+        </attr>
+        <attr name="recyclerviewDefaultSwipeColor" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="DiscoverServiceItemView">
+        <!--标题栏背景-->
+        <!--文字内容-->
+        <attr name="name_text" format="string|reference" />
+        <attr name="number_text" format="string|reference" />
+        <attr name="desc_text" format="string|reference" />
+        <!--View背景-->
+        <attr name="icon_src" format="color|reference" />
+        <!--控件可见性-->
+        <attr name="number_text_visibility" format="boolean" />
+        <attr name="open_text_visibility" format="boolean" />
+    </declare-styleable>
+
+    <!--arch menu 扇形菜单-->
+    <attr name="fromDegrees" format="float|reference" />
+    <attr name="toDegrees" format="float|reference" />
+    <attr name="childSize" format="dimension|reference" />
+    <attr name="radius" format="dimension|reference" />
+    <declare-styleable name="ArcLayout">
+        <attr name="fromDegrees"/>
+        <attr name="toDegrees"/>
+        <attr name="childSize"/>
+        <attr name="radius"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcMenu">
+        <attr name="fromDegrees"/>
+        <attr name="toDegrees"/>
+        <attr name="childSize"/>
+    </declare-styleable>
+
+    <!--用药助手相关-->
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+</resources>

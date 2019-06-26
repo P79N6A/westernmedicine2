@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:background="#88000000">
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/replay_pause_icon" />
+
+        <TextView
+            android:id="@+id/tv_play_view_current_progress"
+            style="@style/seekbar_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/btn_play"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/sb_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_play_view_total_duration"
+            android:layout_toRightOf="@+id/tv_play_view_current_progress"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/replay_seekbar_line"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="0dp" />
+
+        <TextView
+            android:id="@+id/tv_play_view_total_duration"
+            style="@style/seekbar_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:text="00:00" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_host_leave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/host_leave_bkg"
+        android:visibility="visible" />
+
+    <com.xywy.livevideo.player.CommonLoadingView
+        android:id="@+id/clv_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </com.xywy.livevideo.player.CommonLoadingView>
+</RelativeLayout>

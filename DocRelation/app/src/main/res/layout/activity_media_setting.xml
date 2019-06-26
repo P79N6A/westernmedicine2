@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:fitsSystemWindows="true"
+    tools:context="com.xywy.askforexpert.module.main.media.MediaSettingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg_no_alpha"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="媒体号介绍"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.xywy.askforexpert.widget.CircleImageView
+            android:id="@+id/avatar_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/media_smail_icon"
+            app:civ_border_color="#A8E0E7"
+            app:civ_border_width="2dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_media_setting" />
+
+</android.support.design.widget.CoordinatorLayout>

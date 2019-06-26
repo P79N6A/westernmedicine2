@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yuanjiao_huis_2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/true_ok" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yuanjiao_huis_2"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginTop="@dimen/marght_left"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_cash_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:drawableLeft="@drawable/icon_award"
+            android:text="现金悬赏6元"
+            android:drawablePadding="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marght_left"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginTop="@dimen/marght_11dp"
+            android:textColor="@color/tab_color_nomal"
+            android:textSize="@dimen/text_12sp" >
+        </TextView>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/my_line"/>
+
+</RelativeLayout>

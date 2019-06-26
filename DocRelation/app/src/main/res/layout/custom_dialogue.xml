@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="280dp"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:background="@drawable/bg_custom_dialogue"
+         android:orientation="vertical" >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:paddingTop="30dp"
+             android:layout_marginBottom="50dp"
+             >
+             <TextView
+                 android:id="@+id/title"
+                 android:visibility="invisible"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/c999"
+                 android:text="提示"
+                 android:gravity="center"
+                 android:textSize="16sp" />
+             <TextView
+                 android:id="@+id/tv_msg"
+                 android:layout_width="200dp"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/c999"
+                 android:layout_marginTop="@dimen/marght_8dp"
+                 android:layout_gravity="center"
+                 android:text="您当前只剩下一件该药品，是否将药品移出处方?"
+                 android:gravity="center"
+                 android:textSize="15sp" />
+
+             <TextView
+                 android:id="@+id/tv_fill"
+                 android:visibility="invisible"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/marght_8dp"
+                 android:textColor="@color/c999"
+                 android:text="提示"
+                 android:gravity="center"
+                 android:textSize="16sp" />
+         </LinearLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="#d8d8d8"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingBottom="8dp"
+             android:layout_marginLeft="4dp"
+             android:layout_marginRight="4dp">
+             <TextView
+                 android:id="@+id/btn_cancel"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="40dp"
+                 android:textColor="@color/c666"
+                 android:textSize="15sp"
+                 android:gravity="center"
+                 android:text="取消"/>
+             <View
+                 android:layout_width="0.5dp"
+                 android:layout_height="match_parent"
+                 android:background="#d8d8d8"/>
+             <TextView
+                 android:id="@+id/btn_ok"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="40dp"
+                 android:textColor="@color/c666"
+                 android:textSize="15sp"
+                 android:gravity="center"
+                 android:text="确定"/>
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+ </RelativeLayout>

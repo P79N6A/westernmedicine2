@@ -1,0 +1,13 @@
+include ':app', ':playerskin', ':develop_settings', ':baseadapter-recyclerview', ':xywy-ui-library', ':base', ':xywy_im_sdk',
+        ':retrofit', ':imagepicker', ':util', ':xywy-datarequest-library', ':uimodules', ':datarequest'
+
+project(':util').projectDir = new File(settingsDir, 'libs/util')
+//project(':livevideolib').projectDir = new File(settingsDir, 'libs/livevideolib')
+project(':imagepicker').projectDir = new File(settingsDir, 'libs/imagepicker')
+project(':develop_settings').projectDir = new File(settingsDir, 'libs/develop_settings')
+project(':baseadapter-recyclerview').projectDir = new File(settingsDir, 'libs/baseadapter-recyclerview')
+project(':xywy-ui-library').projectDir = new File(settingsDir, 'libs/xywy-ui-library')
+project(':retrofit').projectDir = new File(settingsDir, 'libs/retrofit')
+project(':base').projectDir = new File(settingsDir, 'libs/base')
+project(':xywy-datarequest-library').projectDir = new File(settingsDir, 'libs/xywy-datarequest-library')
+project(':datarequest').projectDir = new File(settingsDir, 'libs/datarequest')

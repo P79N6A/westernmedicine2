@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+    <!--当前布局未被任何页面引用-->
+    <include layout="@layout/item_circle_topic"/>
+    <include layout="@layout/item_circle_recommondfriend"/>
+    <include layout="@layout/item_circle_content" />
+</RelativeLayout>

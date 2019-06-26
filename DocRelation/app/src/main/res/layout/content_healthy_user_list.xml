@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xywy.askforexpert.module.message.health.HealthyUserListActivity"
+    tools:showIn="@layout/activity_healthy_user_list">
+
+    <EditText
+        android:id="@+id/healthy_user_list_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/yuanjiao"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/search"
+        android:hint="搜索"
+        android:paddingBottom="10dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="#F1F1F1">
+
+        <ListView
+            android:id="@+id/healthy_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#EAEAEA"
+            android:dividerHeight="0.5dp" />
+
+        <com.xywy.askforexpert.widget.Sidebar2
+            android:id="@+id/sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/floating_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/no_healthy_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="22dp"
+            android:drawableTop="@drawable/no_healthy_user"
+            android:gravity="center"
+            android:text="患者健康，是咱们最大的幸福~"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--stone 去掉抽屉模式-->
+<!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/main_drawer_layout"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@android:color/transparent">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/question_ll">
+        <LinearLayout
+            android:id="@+id/scrap_ll"
+            android:background="@drawable/scrap_title_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/problem_library_ll"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/problem_library_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/scrap_layout"
+                android:background="@drawable/scrap_text_shape"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="有"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"/>
+                <TextView
+
+                    android:id="@+id/scrap_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:textColor="#fff472"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="题可抢"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/not_question_tv"
+                android:paddingRight="@dimen/dp3"
+                android:paddingLeft="@dimen/dp3"
+                android:text="暂无题目,一会再来"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:background="@drawable/scrap_text_shape"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrap_question_vf"
+            android:layout_marginLeft="10dp"></ViewFlipper>
+        <TextView
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_zero_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:maxLines="2"
+            android:textColor="#999999"
+            android:textSize="@dimen/text_12sp"
+            android:text="问题库暂无题目，您可以先处理接诊问题或者补总结，总结完成才有绩效哦~"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_consult_tip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_f2f2f2"
+        android:gravity="center"
+        android:text="@string/consult_bottom_tip"
+        android:textColor="@color/color_dbdbdb"
+        android:textSize="11sp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/guide_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/guide_page_icon1"
+        android:visibility="gone"/>
+</RelativeLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/main_right_drawer_layout"-->
+    <!--android:layout_width="@dimen/dp130"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:background="@drawable/right_bg"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/v_history"-->
+    <!--android:layout_width="@dimen/width_130dp"-->
+    <!--android:layout_height="@dimen/height_64dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/service_enter_selector"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/group_set" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/marght_7dp"-->
+    <!--android:text="历史回复"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/my_line_1" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/v_setting"-->
+    <!--android:layout_width="@dimen/width_130dp"-->
+    <!--android:layout_height="@dimen/height_64dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/service_enter_selector"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/add" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/marght_7dp"-->
+    <!--android:text="留言设置"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/my_line_1"/>-->
+
+    <!--</LinearLayout>-->
+    <!--</android.support.v4.widget.DrawerLayout>-->

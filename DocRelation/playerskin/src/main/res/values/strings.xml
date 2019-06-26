@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">playerskin</string>
+    <string name="letv_network_message">(>﹏&lt;)当前网络处于非wifi状态，请检查网络</string>
+    <string name="letv_notice_message">(>﹏&lt;)播放失败了，重新播放一下试试？</string>
+</resources>

@@ -1,0 +1,74 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+project.ext {
+    androidCommonDir = "${project.rootDir}/libs";
+    applicationId = "com.xywy.askforexpert"
+//改动开始stone 编译版本修改
+    buildToolsVersion = "25.0.0"
+    compileSdkVersion = 24
+//    buildToolsVersion = "25.0.0"
+//    compileSdkVersion = 25
+//改动结束stone
+    minSdkVersion = 16
+    targetSdkVersion = 27
+    //TODO 测试stone 医脉6.2.3 --- 59  上个版本 医脉6.2.2.1 --- 58
+    appVersionCode = 59
+    appVersionName = "6.2.3"
+    abortOnLintError = false
+    checkLintRelease = false
+    useJack = false
+    abortOnLintError = false
+}
+apply from: 'libs/buildsystem/dependencies.gradle'
+apply from: 'libs/buildsystem/rootProjectConfig.gradle'
+
+buildscript {
+    apply from: 'libs/buildsystem/dependencies.gradle'
+    repositories {
+        jcenter()
+//        mavenCentral()
+//        maven { url 'https://plugins.gradle.org/m2/' }
+
+//        Then you can just add the latest version to your build.
+
+    }
+    dependencies {
+        //改动开始stone 添加
+//        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.4'
+        //改动结束stone
+        //改动开始stone 注释掉了
+//        classpath gradlePlugins.android//不使用公有lib中的 gradle 配置
+        //不使用公有lib中的 gradle 配置 设置医脉自己的 gradle 配置
+        //改动结束stone 注释掉了
+        //改动开始stone gradle版本修改
+//        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        //改动开始stone
+        classpath gradlePlugins.small
+        classpath gradlePlugins.dexcount
+        classpath gradlePlugins.jacoco
+
+        classpath "io.realm:realm-gradle-plugin:1.0.0"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+//allprojects {
+//    repositories {
+//        jcenter()
+////        maven { url 'http://dev.open-rnd.net:30844/content/groups/public/' }
+////        maven { url 'https://jitpack.io' }
+//        flatDir {
+//            dirs 'aars' //aar文件目录 为与libs 同级的 aars aar包需为release包 否则主工程无法打release包
+//        }
+//    }
+//}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+
+

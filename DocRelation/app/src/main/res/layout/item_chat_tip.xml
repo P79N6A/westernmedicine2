@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/marght_12dp"
+    android:paddingTop="@dimen/marght_12dp">
+
+    <TextView
+        android:id="@+id/tv_chat_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bkg_chat_tip"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="鼓励评价鼓励评价鼓励评价鼓励评价鼓"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_10sp" />
+</LinearLayout>

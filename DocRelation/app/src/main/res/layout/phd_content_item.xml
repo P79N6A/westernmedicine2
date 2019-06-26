@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp16"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/reward_question" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/marght_12dp"
+        android:layout_toRightOf="@id/iv"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marght_left"
+            android:textColor="@color/gray_text"
+            tools:text="11月的患者管理绩效11月的患者管理绩效11月的患者管理绩效11月的患者管理绩效11月的患者管理绩效11月的患者管理绩效"
+            android:textSize="@dimen/text_12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marght_left"
+            android:layout_marginTop="@dimen/marght_8dp"
+            android:textColor="@color/tab_color_nomal"
+            tools:text="2015-12-23"
+            android:textSize="@dimen/text_12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/marght_right"
+        tools:text="2015"
+        android:textColor="@color/golden" >
+    </TextView>
+
+
+</LinearLayout>

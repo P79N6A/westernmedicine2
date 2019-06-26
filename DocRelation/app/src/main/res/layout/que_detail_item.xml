@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_left_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marght_left"
+        android:orientation="vertical">
+        <!--时间显示-->
+        <TextView
+            android:id="@+id/tv_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:text="12:59"
+            android:textColor="@color/tab_color_nomal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marght_left">
+
+            <ImageView
+                android:id="@+id/iv_detail_icon"
+                android:layout_width="@dimen/height_40dp"
+                android:layout_height="@dimen/height_40dp"
+                tools:src="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/ll_user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/marght_52dp"
+                android:layout_toRightOf="@+id/iv_detail_icon"
+                android:background="@drawable/chat_bg_left"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_detail_ucontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="打算放暑假的设计费"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/marght_52dp"
+                android:layout_toRightOf="@+id/iv_detail_icon"
+                android:background="@drawable/chat_bg_left"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_detail_zimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_type1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/marght_52dp"
+                android:layout_toRightOf="@+id/iv_detail_icon"
+                android:background="@drawable/chat_bg_left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_detail_dpatr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/marght_12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/que_dpart"
+                        android:textColor="@color/color_00c8aa"
+                        tools:text="问题科室："
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_dpart"
+                        tools:text="第三方的丰富的"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/marght_7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/des_pers"
+                        android:textColor="@color/color_00c8aa"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_info"
+                        tools:text="男"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/marght_7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="病情标题："
+                        android:textColor="@color/color_00c8aa"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_title_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:lineSpacingExtra="3dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="标题内容"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/marght_7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/des_sick"
+                        android:textColor="@color/color_00c8aa"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        tools:text="感冒了"
+                        android:layout_marginTop="@dimen/marght_7dp"
+                        android:lineSpacingExtra="3dp"
+                        android:lineSpacingMultiplier="1.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_detail_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marght_8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state_now_txt"
+                        android:textColor="@color/color_00c8aa"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marght_7dp"
+                        android:lineSpacingExtra="3dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:singleLine="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_detail_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marght_8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help_what_txt"
+                        android:textColor="@color/color_00c8aa"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marght_7dp"
+                        android:lineSpacingExtra="3dp"
+                        android:lineSpacingMultiplier="1.5" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_cash_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    tools:drawableLeft="@drawable/icon_award"
+                    android:drawablePadding="4dp"
+                    tools:text="现金悬赏:0元"
+                    android:textColor="@color/color_00c8aa"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marght_left"
+        android:layout_marginLeft="@dimen/marght_left"
+        android:layout_marginRight="@dimen/marght_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_detail_dtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            tools:text="18:50"
+            android:textColor="@color/tab_color_nomal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="@dimen/marght_left">
+
+            <RelativeLayout
+                android:id="@+id/rl_detail_dcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_detail_dicon"
+                android:background="@drawable/chat_bg_right">
+
+                <TextView
+                    android:id="@+id/tv_detail_dcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp"
+                    android:lineSpacingMultiplier="1.5"
+                    tools:text="指导意见：东吴塔几哈瓣膜我以为我哦哦哦中央音乐学院我摸摸哦我现在在"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_detail_dicon"
+                android:layout_width="@dimen/height_40dp"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                tools:src="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/rl_medicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="@dimen/marght_left"
+                android:background="@drawable/chat_bg_right"
+                android:minWidth="1800dp"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    style="@style/tv_black_14_333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="针对您的病症，推荐以下药品"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/ll_medicine_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_desc"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_medicine"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_margin="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_medicine_name"
+                        style="@style/tv_black_12_333"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:lineSpacingExtra="3dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="药品名称" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

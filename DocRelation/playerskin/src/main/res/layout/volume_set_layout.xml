@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/volume_set"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.letv.skin.widget.VerticalSeekBar
+        android:id="@+id/vertical_seek_bar"
+        android:layout_width="4dp"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        android:max="100"
+        android:maxHeight="120dp"
+        android:minHeight="120dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/letv_skin_v4_small_seek_bar_2_style" />
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <!--<include-->
+        <!--android:id="@+id/title"-->
+        <!--layout="@layout/title" />-->
+
+    <TextView
+        android:id="@+id/id_allcommnum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xywy_service_doctor_title_width"
+        android:layout_below="@id/title"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marght_left"
+        android:text=""
+        android:textColor="@color/color_00c8aa"
+        android:textSize="@dimen/text_12sp" />
+
+    <!--
+         <com.xywy.askforexpert.refresh.PullToRefreshListView
+        android:id="@+id/list_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/id_allcommnum"
+        android:smoothScrollbar="@null" >
+    </com.xywy.askforexpert.refresh.PullToRefreshListView>
+    -->
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/edittext_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="@dimen/marght_8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_frame_sytle"
+                android:gravity="bottom" >
+
+                <com.xywy.askforexpert.widget.PasteEditText
+                    android:id="@+id/et_sendmmot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="请输入您的评论"
+                    android:maxLines="3"
+                    android:minHeight="40dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="3dp"
+                    android:textSize="18sp" >
+                </com.xywy.askforexpert.widget.PasteEditText>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/chat_send_btn_selector"
+                android:onClick="onClick_back"
+                android:text="发送"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F6F6F6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp" >
+
+            <Button
+                android:id="@+id/tv_com_menu"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_frame_sytle"
+                android:gravity="center_vertical"
+                android:onClick="onClick_back"
+                android:paddingLeft="8dp"
+                android:text="我的滔滔感受"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/btn_backs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/back_consultinfo"
+                android:onClick="onClick_back"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/share_com"
+                android:onClick="onClick_back"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_bottom_tiez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ebeced"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/edittext_layout_tiez"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_frame_sytle"
+                android:gravity="bottom" >
+
+                <com.xywy.askforexpert.widget.PasteEditText
+                    android:id="@+id/et_sendmmot_tiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="请输入您的评论"
+                    android:maxLength="150"
+                    android:maxLines="3"
+                    android:minHeight="40dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="3dp"
+                    android:textSize="18sp" >
+                </com.xywy.askforexpert.widget.PasteEditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/btn_send_real"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/chat_send_btn_anony_selector"
+                    android:onClick="onClick_back"
+                    android:text="实名发表"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_send_anony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@id/btn_send_real"
+                    android:background="@drawable/chat_send_btn_selector"
+                    android:onClick="onClick_back"
+                    android:text="匿名发表"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/btn_send_anony"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/gray_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="/"
+                        android:textColor="@color/tab_color_nomal" />
+
+                    <TextView
+                        android:id="@+id/tv_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150"
+                        android:textColor="@color/gray_normal" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu"
+        android:layout_below="@id/id_allcommnum" >
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreListView
+            android:id="@+id/list_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:divider="#eeeeee"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:text="@string/hello_world" >
+        </com.xywy.askforexpert.widget.view.MyLoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

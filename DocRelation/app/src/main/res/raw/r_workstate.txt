@@ -1,0 +1,38 @@
+[
+{
+        "workstate": "",
+        "description": "不限"
+    },
+    {
+        "workstate": 11,
+        "description": "外商独资"
+    },
+    {
+        "workstate": 13,
+        "description": "中外合资/合作"
+    },
+    {
+        "workstate": 15,
+        "description": "私营/民营企业"
+    },
+    {
+        "workstate": 17,
+        "description": "国有企业"
+    },
+    {
+        "workstate": 18,
+        "description": "外企代表处"
+    },
+    {
+        "workstate": 20,
+        "description": "政府机关/非盈利机构"
+    },
+    {
+        "workstate": 21,
+        "description": "事业单位"
+    },
+    {
+        "workstate": 22,
+        "description": "其他"
+    }
+]

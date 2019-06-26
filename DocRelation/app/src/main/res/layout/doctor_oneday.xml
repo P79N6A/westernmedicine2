@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/right_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+       
+        android:paddingLeft="@dimen/marght_24dp"
+        android:background="@drawable/service_enter_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="首页 "
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+
+    <LinearLayout
+        android:id="@+id/ll_submit"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+         android:paddingLeft="@dimen/marght_24dp"
+        android:background="@drawable/service_enter_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_tou" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="我要投稿"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+
+    <LinearLayout
+        android:id="@+id/ll_activty"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+        android:paddingLeft="@dimen/marght_24dp"
+        android:background="@drawable/service_enter_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_activty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="活动介绍"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+
+    <LinearLayout
+        android:id="@+id/ll_lookour"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+         android:paddingLeft="@dimen/marght_24dp"
+        android:background="@drawable/service_enter_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_see_our" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="关注我们"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+ 
+</LinearLayout>

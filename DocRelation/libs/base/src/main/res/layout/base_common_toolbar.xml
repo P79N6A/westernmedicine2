@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:actionBarSize="48dp"
+    android:background="?attr/colorPrimary"
+    android:layout_gravity="center"
+    android:gravity="center"
+    toolbar:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    toolbar:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:layout_alignParentTop="true"
+    tools:showIn="@layout/base_activity_base">
+
+    <TextView
+        android:id="@+id/tv_title_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_tv_size"
+        android:text="标题" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_gravity="right|center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="明细"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>

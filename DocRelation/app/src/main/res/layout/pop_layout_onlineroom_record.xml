@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/color_eeeeee"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_sort1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp26"
+            android:background="@drawable/selector_choose_record_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/onlineroom_record_notice1"
+            android:textColor="@color/selector_333333_white"
+            android:textSize="@dimen/dp12"/>
+
+        <TextView
+            android:id="@+id/tv_sort2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp26"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@drawable/selector_choose_record_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/onlineroom_record_notice2"
+            android:textColor="@color/selector_333333_white"
+            android:textSize="@dimen/dp12"/>
+
+        <TextView
+            android:id="@+id/tv_sort3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp26"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@drawable/selector_choose_record_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/onlineroom_record_notice3"
+            android:textColor="@color/selector_333333_white"
+            android:textSize="@dimen/dp12"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_sort4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp26"
+            android:background="@drawable/selector_choose_record_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/onlineroom_record_notice4"
+            android:textColor="@color/selector_333333_white"
+            android:textSize="@dimen/dp12"/>
+
+        <TextView
+            android:id="@+id/tv_sort5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp26"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@drawable/selector_choose_record_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/onlineroom_record_notice5"
+            android:textColor="@color/selector_333333_white"
+            android:textSize="@dimen/dp12"/>
+
+        <TextView
+            android:id="@+id/tv_sort6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp26"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@drawable/selector_choose_record_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="@string/onlineroom_record_notice6"
+            android:textColor="@color/selector_333333_white"
+            android:textSize="@dimen/dp12"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/color_eeeeee"/>
+
+
+</LinearLayout>

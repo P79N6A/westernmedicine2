@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="360dp" android:bottomLeftRadius="360dp"
+        android:topRightRadius="360dp"
+        android:bottomRightRadius="360dp"/>
+    <solid android:color="@color/c_00c8aa" />
+    <!-- 填充的颜色 -->
+</shape>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/ym_setting_about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="15dp"
+        android:drawableTop="@drawable/dp_icon_big"
+        android:gravity="center_horizontal"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        tools:text="版本 4.3.6" />
+
+    <TextView
+        android:id="@+id/ym_setting_about_ym"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/ym_setting_about_version"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/item_bg_selector"
+        android:drawableRight="@drawable/enter_right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/ym_setting_about_ym"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ym_setting_about_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/ym_setting_about_copyright"
+        android:textColor="#787878"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/ym_setting_about_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ym_setting_about_copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:text="@string/ym_setting_about_protocol"
+        android:textColor="#0dc3ce"
+        android:textSize="12sp" />
+
+</RelativeLayout>

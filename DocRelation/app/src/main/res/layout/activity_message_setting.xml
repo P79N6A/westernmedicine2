@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--为弹性的ReboundScrollView准备的背景颜色 stone-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tool="http://schemas.android.com/tools"-->
+<!--android:id="@+id/main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/white"-->
+<!--android:clipToPadding="true"-->
+<!--android:fitsSystemWindows="true"-->
+<!--android:orientation="vertical">-->
+
+<!--<com.xywy.askforexpert.widget.ReboundScrollView-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tool="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp15"
+                android:background="@drawable/messagesetting_lxly_bg"
+                android:paddingBottom="@dimen/dp20"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/size14color333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:drawableLeft="@drawable/messagesetting_lxly"
+                    android:drawablePadding="@dimen/dp8"
+                    android:text="离线留言"/>
+
+                <TextView
+                    android:id="@+id/tv_offline_edit"
+                    style="@style/size12color333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:drawableLeft="@drawable/messagesetting_xiugai"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="修改"/>
+
+                <ScrollView
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="@dimen/dp0">
+                </ScrollView>
+
+                <EditText
+                    android:id="@+id/et_offline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@drawable/selector_in00000000_ffffff_out00000000_ffffff"
+                    android:gravity="top|left"
+                    android:hint="您好，现在比较忙，请您留言具体问题，稍后会及时回复您的问题，请见谅。"
+                    android:lineSpacingExtra="@dimen/dp5"
+                    android:maxLength="200"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_333333"
+                    android:textSize="@dimen/dp13"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_offline_time"
+                    style="@style/size11color999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_offline"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/dp5"
+                    tool:text="05:50:34后\n系统将自动关闭离线留言功能"
+                    />
+
+                <TextView
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp28"
+                    android:layout_below="@+id/tv_offline_time"
+                    android:layout_marginTop="@dimen/dp12"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_offline_button"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp28"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/dp35"
+                android:background="@drawable/selector_round_ff9459_88ff9459"
+                android:gravity="center"
+                android:textColor="@color/white_selector"
+                android:textSize="@dimen/dp12"
+                tool:text="关闭离线留言"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:background="@drawable/messagesetting_yjly_bg"
+                android:paddingBottom="@dimen/dp20"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                >
+
+                <TextView
+                    android:id="@+id/tv11"
+                    style="@style/size14color333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:drawableLeft="@drawable/messagesetting_yjly"
+                    android:drawablePadding="@dimen/dp8"
+                    android:text="夜间留言"/>
+
+                <TextView
+                    android:id="@+id/tv_night_edit"
+                    style="@style/size12color333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv11"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:drawableLeft="@drawable/messagesetting_xiugai"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="修改"/>
+
+                <ScrollView
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="@dimen/dp0">
+                </ScrollView>
+
+                <EditText
+                    android:id="@+id/et_night"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv11"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@drawable/selector_in00000000_ffffff_out00000000_ffffff"
+                    android:gravity="top|left"
+                    android:hint="您好，由于时间比较晚了，我已经休息了，请您留言具体问题，我会尽快回复您的问题，请见谅。"
+                    android:lineSpacingExtra="@dimen/dp5"
+                    android:maxLength="200"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_333333"
+                    android:textSize="@dimen/dp13"
+                    />
+
+                <View
+                    android:id="@+id/v22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp28"
+                    android:layout_below="@+id/et_night"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp15"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_night_button"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp28"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/dp20"
+                android:background="@drawable/selector_round_a9bacd_88a9bacd"
+                android:gravity="center"
+                android:textColor="@color/white_selector"
+                android:textSize="@dimen/dp12"
+                tool:text="关闭夜间留言"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/size14color999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp25"
+            android:text="说明："/>
+
+        <TextView
+            style="@style/size12color999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:paddingBottom="@dimen/dp30"
+            android:text="@string/message_setting_notice"/>
+
+        <!--展开全部 收起 stone-->
+        <!--<com.xywy.askforexpert.widget.ExpandableTextView-->
+        <!--android:id="@+id/topic_detail_intro"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dp15"-->
+        <!--android:layout_marginRight="@dimen/dp15"-->
+        <!--android:layout_marginTop="@dimen/dp10"-->
+        <!--app:animDuration="200"-->
+        <!--app:expandDrawable="@drawable/messagesetting_qbzk"-->
+        <!--app:expandIndicateText="全部展开"-->
+        <!--app:expandIndicateTextColor="@color/color_333333"-->
+        <!--app:maxCollapsedLines="7">-->
+
+        <!--&lt;!&ndash;app:collapseIndicateTextColor="@color/color_333333"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:collapseDrawable="@drawable/collapse_show"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:collapseIndicateText="收起"&ndash;&gt;-->
+
+        <!--<TextView-->
+        <!--android:id="@id/expandable_text"-->
+        <!--style="@style/size12color999999"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:lineSpacingExtra="@dimen/dp3"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/expand_collapse_view_group"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center|bottom"-->
+        <!--android:background="?attr/selectableItemBackground"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/expand_collapse_indicate_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="14sp"/>-->
+
+        <!--<ImageButton-->
+        <!--android:id="@id/expand_collapse"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="6dp"-->
+        <!--android:layout_marginStart="6dp"-->
+        <!--android:background="@android:color/transparent"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</com.xywy.askforexpert.widget.ExpandableTextView>-->
+
+
+    </LinearLayout>
+    <!--</com.xywy.askforexpert.widget.ReboundScrollView>-->
+</ScrollView>
+    <!--</LinearLayout>-->

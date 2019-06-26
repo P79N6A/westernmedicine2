@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar"/>
+
+    <EditText
+        android:id="@+id/et_phoneNo"
+        style="@style/edit_text"
+        android:hint="@string/input_phoneno"
+        android:paddingLeft="@dimen/margin_16dp"
+        android:drawableLeft="@drawable/login_phone"
+        android:drawablePadding="@dimen/margin_10dp"
+        android:inputType="phone" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background"
+        />
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/edit_text"
+        android:hint="@string/input_pwd"
+        android:drawableLeft="@drawable/login_pwd"
+        android:paddingLeft="@dimen/margin_16dp"
+        android:drawablePadding="@dimen/margin_10dp"
+        android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/me_button"
+            android:textSize="@dimen/font_14sp"
+            android:textColor="@color/white"
+            android:text="登录" />
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/font_14sp"
+        android:textColor="@color/themeColor"
+        android:text="@string/login_forgot_pwd" />
+
+    <fragment
+        android:id="@+id/fl_login"
+        android:name="com.xywy.oauth.ui.ThirdLoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_100dp"
+        tools:layout="@layout/third_party_login" />
+</LinearLayout>

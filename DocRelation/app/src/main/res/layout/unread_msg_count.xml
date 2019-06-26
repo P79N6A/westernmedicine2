@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_unreadMesaages"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_40dp"
+    android:background="#fff5ea"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/my_line" />
+
+    <TextView
+        android:id="@+id/tv_unread_message_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#fa8700"
+        android:textSize="@dimen/text_12sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/my_line" />
+
+</RelativeLayout>

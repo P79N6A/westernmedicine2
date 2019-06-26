@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pharmacy_main_title_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/medicine_pic"
+        android:layout_width="68dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/blood_sugar_bg"/>
+
+    <TextView
+        android:id="@+id/medicine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_toRightOf="@+id/medicine_pic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_12sp"
+        tools:text="海力生后服用，口服每日一次，一次一粒，饭后服用，口服每日一次，一次一粒，饭后服用，口服每日一次，一次一粒，饭"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medicine_name"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_cccccc"
+        android:textSize="@dimen/text_11sp"
+        tools:text="2017/01/13"/>
+
+
+    <TextView
+        android:id="@+id/medicine_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/medicine_pic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/c666"
+        android:textSize="@dimen/text_12sp"
+        tools:text="步步脑心通0.4g*36粒/盒"/>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/medicine_pic"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/medicine_pic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_11sp"
+        tools:text="每日一次，一次一粒，饭后服用，口服每日一次，一次一粒，饭后服用，口服"/>
+
+</RelativeLayout>
+
+
+

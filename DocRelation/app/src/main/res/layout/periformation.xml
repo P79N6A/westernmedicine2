@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                style="@style/usercenter_layout_style"
+                android:layout_height="@dimen/dp70"
+                android:layout_marginTop="@dimen/dp16"
+                >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/usercenter_tv_style"
+                    android:text="头像"
+                    />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv1"-->
+                <!--style="@style/usercenter_arrow_style"/>-->
+
+
+                <com.xywy.askforexpert.widget.view.RoundAngleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/headicon_default"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                style="@style/usercenter_layout_style"
+                android:layout_marginTop="@dimen/marght_left">
+
+                <TextView
+                    android:id="@+id/v0"
+                    style="@style/usercenter_tv_style"
+                    android:text="姓名"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_toRightOf="@+id/v0"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                style="@style/usercenter_layout_style"
+                >
+
+                <TextView
+                    style="@style/usercenter_tv_style"
+                    android:text="性别"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/usercenter_tv_style3"
+                    android:text="男"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_code"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    style="@style/usercenter_tv_style"
+                    android:text="二维码"/>
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    style="@style/usercenter_arrow_style"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/my_title_img_top"
+                    android:layout_toLeftOf="@+id/iv2"
+                    android:background="@drawable/code"/>
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_area"
+                style="@style/usercenter_layout_style"
+                android:layout_marginTop="@dimen/dp16">
+
+                <TextView
+                    android:id="@+id/v1"
+                    style="@style/usercenter_tv_style"
+                    android:text="医院地点"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_toRightOf="@+id/v1"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_hospital"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/v2"
+                    style="@style/usercenter_tv_style"
+                    android:text="在职医院"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_hospital"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_toRightOf="@+id/v2"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_department"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/v3"
+                    style="@style/usercenter_tv_style"
+                    android:text="所属科室"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_toRightOf="@+id/v3"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_jobtitle"
+                style="@style/usercenter_layout_style"
+                >
+
+                <TextView
+                    android:id="@+id/job"
+                    style="@style/usercenter_tv_style"
+                    android:text="临床职称"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_jobtitle"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_toRightOf="@+id/job"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_goodat"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/usercenter_tv_style"
+                    android:text="擅长疾病"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_goodat"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_toLeftOf="@id/iv3"
+                    android:layout_toRightOf="@id/tv3"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_desc"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/usercenter_tv_style"
+                    android:text="个人简介"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    style="@style/usercenter_tv_style3"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_toLeftOf="@+id/iv4"
+                    android:layout_toRightOf="@+id/tv4"
+                    tool:text="寻医问药网欢迎你闻康集团欢迎你加入你的健康"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

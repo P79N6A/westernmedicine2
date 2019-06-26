@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+            >
+
+    <TextView android:id="@+id/time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="12dp"
+              android:text="21日18：24"
+    />
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="18dp"
+                  android:layout_weight="1">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="早餐前  血压"
+                  android:textSize="12sp"
+                  android:textColor="@color/c666"
+                  android:id="@+id/time_description"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:textColor="@color/c333"
+                  android:layout_marginLeft="5dp"
+                  android:text="77次/54"
+                  android:id="@+id/tv_value"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="mmol/L"
+                  android:textSize="12sp"
+                  android:textColor="@color/c666"
+        />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:paddingTop="2dp"
+              android:paddingBottom="2dp"
+              android:textColor="@color/color_ffa147"
+              android:text="血压偏高"
+              android:drawableRight="@drawable/blood_sugar_down"
+              android:background="@drawable/health_up_bg"
+              android:id="@+id/indicator_view"
+    />
+
+</LinearLayout>

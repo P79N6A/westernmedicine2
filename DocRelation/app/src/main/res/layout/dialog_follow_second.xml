@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="440dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/title_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="医脉学院"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/tv_base_style"
+        android:layout_width="250dp"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" 非常高兴向大家宣布，医脉学院正式成立啦！\n医脉学院本着免费、公开、以医为本的原则，帮助广大医务工作者获取专业知识。\n医脉学院“课程”包含：考试视频、真题练习、学员讨论、经验分享、文献最新最全的医学知识库。"
+        android:textColor="@color/gray_pressed" />
+
+    <Button
+        android:id="@+id/btn_join"
+        style="@style/btn_base_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:text="加入学院" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_deleted"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:drawablePadding="16dp"
+    android:drawableTop="@drawable/topic_deleted"
+    android:gravity="center"
+    android:text="这个话题被删除了"
+    android:textColor="#666666"
+    android:textSize="16sp"
+    android:visibility="gone"
+    tools:showIn="@layout/content_topic_detail" />

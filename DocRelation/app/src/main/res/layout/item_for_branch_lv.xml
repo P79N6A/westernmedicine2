@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:focusable="false"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/answer_select_circle_selector"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="A"
+        android:enabled="false"
+        android:textColor="@drawable/text_color_selector_white_gray" />
+
+    <TextView
+        android:id="@+id/tv_branch_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_index"
+        android:text="这是一个选项"
+        android:textSize="12sp" />
+</RelativeLayout>

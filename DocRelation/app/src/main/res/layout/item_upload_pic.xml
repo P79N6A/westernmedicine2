@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="110dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="@dimen/marght_10dp"
+    android:paddingRight="@dimen/marght_10dp"
+    android:paddingTop="6dp">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="@dimen/width_120dp"
+        android:layout_height="@dimen/height_70dp">
+
+        <RelativeLayout
+            android:layout_marginTop="6dp"
+            android:id="@+id/rl_init"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bkg_upload_pic">
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_upload_pic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_upload_delete" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marght_10dp"
+        android:text="正面"
+        android:textColor="@color/c666"
+        android:textSize="@dimen/text_12sp" />
+</LinearLayout>

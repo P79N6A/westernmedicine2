@@ -1,0 +1,4 @@
+<resources>
+    <!-- 标题栏文字大小 -->
+    <dimen name="title_tv_size">18dp</dimen>
+</resources>

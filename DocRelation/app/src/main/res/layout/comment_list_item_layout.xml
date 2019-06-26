@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/comment_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_photo_def" />
+
+    <TextView
+        android:id="@+id/comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/comment_avatar"
+        android:layout_toRightOf="@id/comment_avatar"
+        android:text="病例研讨班"
+        android:textColor="@color/c_00c8aa"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/comment_list_portrait_divider"
+        android:layout_width="0.5dp"
+        android:layout_height="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/comment_name"
+        android:layout_toRightOf="@id/comment_name"
+        android:background="#E7E7E7" />
+
+    <TextView
+        android:id="@+id/comment_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/comment_name"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginStart="16.5dp"
+        android:layout_toEndOf="@id/comment_name"
+        android:layout_toRightOf="@id/comment_name"
+        android:text="副主任医师"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/comment_praise_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/btn_praise_selector"
+        android:drawablePadding="6dp"
+        android:visibility="gone"
+        android:drawableStart="@drawable/btn_praise_selector"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/comment_list_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/comment_name"
+        android:layout_alignStart="@id/comment_name"
+        android:layout_below="@id/comment_name"
+        android:layout_marginTop="2dp"
+        android:text="消化内科"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/comment_name"
+        android:layout_alignStart="@id/comment_name"
+        android:layout_below="@id/comment_avatar"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/reply_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/reply_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回复"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/reply_to_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="林殊"
+                android:textColor="#0DC3CE"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_list_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/gray_normal"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/comment_content"
+        android:layout_marginTop="8dp"
+        android:background="#E7E7E7" />
+
+</RelativeLayout>

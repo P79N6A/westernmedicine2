@@ -1,0 +1,38 @@
+[
+ {
+        "study": "",
+        "description": "不限"
+    },
+    {
+        "study": 11,
+        "description": "初中"
+    },
+    {
+        "study": 12,
+        "description": "高中"
+    },
+    {
+        "study": 13,
+        "description": "中技"
+    },
+    {
+        "study": 14,
+        "description": "中专"
+    },
+    {
+        "study": 15,
+        "description": "大专"
+    },
+    {
+        "study": 16,
+        "description": "本科"
+    },
+    {
+        "study": 17,
+        "description": "硕士"
+    },
+    {
+        "study": 21,
+        "description": "其他"
+    }
+]

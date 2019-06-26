@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:expandableTextView1="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_patient_name"
+        style="@style/size12color333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marght_left"
+        android:layout_marginTop="@dimen/marght_left"
+        tools:text="一只飞鱼">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_patient_sex"
+        style="@style/size12color999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_patient_name"
+        android:layout_marginLeft="@dimen/marght_12dp"
+        android:layout_toRightOf="@id/tv_patient_name"
+        tools:text="女"/>
+
+    <TextView
+        android:id="@+id/tv_patient_age"
+        style="@style/size12color999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_patient_name"
+        android:layout_marginLeft="@dimen/marght_12dp"
+        android:layout_toRightOf="@id/tv_patient_sex"
+        tools:text="28岁"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/size11color999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_patient_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/marght_left"
+        tools:text="09:20"/>
+<LinearLayout
+    android:id="@+id/ll_patient_desc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/tv_patient_name"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <TextView
+        android:id="@+id/tv_patient_desc"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style="@style/size14color333333"
+        android:ellipsize="end"
+        android:lineSpacingExtra="6dp"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:paddingBottom="@dimen/dp12"
+        tools:text="感冒了应该吃什么药？能快点好吗？能吃橘子吗？感冒了应该吃什么药？能快点好吗？能吃橘子吗？感冒了应该吃什么药？能快点好吗？能吃橘子吗？"/>
+    <TextView
+        android:id="@+id/tv_notice_dot"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+       android:layout_gravity="center_vertical"
+        android:background="@drawable/read_ovla_shape"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+
+    <!--<View-->
+        <!--android:id="@+id/lin"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_below="@id/tv_patient_desc"-->
+        <!--android:background="@color/c_eee"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_subject"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/lin"-->
+        <!--android:layout_marginBottom="@dimen/marght_16dp"-->
+        <!--android:layout_marginLeft="@dimen/marght_left"-->
+        <!--android:layout_marginTop="@dimen/marght_16dp"-->
+        <!--android:textColor="@color/c999"-->
+        <!--tools:text="心血管内科"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_award_money"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/lin"-->
+        <!--android:layout_marginBottom="@dimen/marght_16dp"-->
+        <!--android:layout_marginRight="@dimen/marght_left"-->
+        <!--android:layout_marginTop="@dimen/marght_16dp"-->
+        <!--android:textColor="@color/c_f1c270"-->
+        <!--tools:text="指定 25.00元"/>-->
+
+    <!--stone 新添加的评价 星级-->
+    <RelativeLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_patient_desc"
+        android:layout_marginBottom="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/messagesetting_comment_bg"
+        android:paddingBottom="@dimen/dp16"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:paddingTop="@dimen/dp16"
+       >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户评价"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:src="@drawable/xing1"/>
+
+        <com.xywy.askforexpert.widget.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="@dimen/dp8"
+            expandableTextView1:animAlphaStart1="1"
+            expandableTextView1:maxCollapsedLines1="2">
+
+            <TextView
+                android:id="@id/expandable_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp6"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                tools:text="发的范德萨范德萨"/>
+
+            <FrameLayout
+                android:id="@id/expand_bottom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@id/expand_collapse1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10"
+                    />
+            </FrameLayout>
+        </com.xywy.askforexpert.widget.expandabletextview.ExpandableTextView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha">
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_selector_old"
+            android:onClick="onClick_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收藏的职位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_left"
+            android:background="@drawable/add"
+            android:onClick="onClick_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="抱歉,没有搜索到相关内容"
+        android:textColor="@color/gray_normal"
+        android:textSize="@dimen/text_14sp"
+        android:visibility="gone" />
+
+    <include layout="@layout/no_data" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginLeft="@dimen/marght_left"
+        android:gravity="center_vertical"
+        android:text="" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreListView
+            android:id="@+id/list_resume"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#eeeeee"
+            android:dividerHeight="1dp"
+            android:text="@string/hello_world"></com.xywy.askforexpert.widget.view.MyLoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--
+         <com.xywy.askforexpert.refresh.PullToRefreshListView
+        android:id="@+id/list_resume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.xywy.askforexpert.refresh.PullToRefreshListView>
+    -->
+
+</LinearLayout>

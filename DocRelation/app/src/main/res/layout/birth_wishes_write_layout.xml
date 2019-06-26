@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wishes_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已领取300积分，来许个愿"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/birth_wishes_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="3"
+        android:minLines="3"
+        android:padding="10dp"
+        android:text="@string/birthday_wishes"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/generate_birth_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/happy_birth_button_yellow"
+        android:gravity="center"
+        android:text="生成愿望卡片"
+        android:textColor="#7C450F"
+        android:textSize="18sp" />
+
+</LinearLayout>

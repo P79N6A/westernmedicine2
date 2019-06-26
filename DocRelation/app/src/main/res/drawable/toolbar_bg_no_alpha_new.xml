@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+    <!--新版本的使用白色标题栏背景 5.4.0-->
+    <solid android:color="@color/white"/>
+
+</shape>

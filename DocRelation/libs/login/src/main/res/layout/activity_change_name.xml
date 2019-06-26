@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/et_change_name"
+            style="@style/edit_text"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_person"
+            android:drawablePadding="@dimen/margin_16dp"
+            android:maxLength="20"
+            android:hint="@string/user_info_name"
+            android:paddingLeft="@dimen/margin_16dp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_x"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_change_name"
+        style="@style/button_me"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/confirm_change" />
+</LinearLayout>

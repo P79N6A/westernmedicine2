@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_usrer_pic"
+            android:layout_width="@dimen/height_40dp"
+            android:layout_height="@dimen/height_40dp"
+            tools:src="@drawable/reward_head_default_icon"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_usrer_pic"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_titlename_margin_left"
+                android:textColor="@color/c_00c8aa"
+                tools:text="朱贵峰"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sidebar_text_size"
+                android:textColor="@color/tab_color_nomal"
+                tools:text="副主任医师"
+                android:textSize="@dimen/text_14sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_addfrends"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="27dp"
+                android:drawableLeft="@drawable/selector_addfrends"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="13sp"
+                android:text="好友"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:layout_toLeftOf="@+id/iv_add"
+            android:layout_toRightOf="@+id/iv_usrer_pic"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/bing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_titlename_margin_left"
+                android:singleLine="true"
+                android:textColor="@color/tab_color_nomal"
+                tools:text="外科"
+                android:textSize="@dimen/text_14sp"/>
+
+            <TextView
+                android:id="@+id/hostpitall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_titlename_margin_left"
+                android:singleLine="true"
+                tools:text="宣武医院"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"></View>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffff0000"
+            android:dividerHeight="10dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_doctor_bottom"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_80dp"
+            android:background="@drawable/service_more_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marght_left"
+            android:text="@string/no_data_txt"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home_doctor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_line" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_homedoctor_inservice"
+                style="@style/radiobutton_normal_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/homedoctor_btn_inservice"
+                android:text="@string/home_doctor_txt_in_service"
+                android:textColor="@color/my_textcolor"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_homedoctor_servicedone"
+                style="@style/radiobutton_normal_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/homedoctor_btn_inservice"
+                android:text="@string/home_doctor_txt_service_done"
+                android:textColor="@color/my_textcolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

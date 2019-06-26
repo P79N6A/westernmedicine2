@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/idcard_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f2f2f2"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:layout_marginTop="16dp"
+                android:text="证件信息"
+                android:drawableLeft="@drawable/certify_edit_icon"
+                android:drawablePadding="@dimen/dp5"
+                android:gravity="center"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:layout_marginTop="6dp"
+                android:text="所有的证件需要上传有头像的一面，个人信息和照片必须清晰可见"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/text_10sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_e6e6e6"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_left"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="身份证"
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/text_13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv11"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/tv11"
+                        android:text="（必填，请上传身份证的正反两面照）"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/text_10sp"/>
+                </RelativeLayout>
+
+                <com.xywy.askforexpert.widget.view.HorizontalListView
+                    android:id="@+id/idcard"
+                    android:fadingEdge="none"
+                    android:cacheColorHint="#00000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_70dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_marginTop="18dp"></com.xywy.askforexpert.widget.view.HorizontalListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_left"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="执业证"
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/text_13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv22"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/tv22"
+                        android:text="（必填，最多上传5张图片）"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/text_10sp"/>
+                </RelativeLayout>
+
+                <com.xywy.askforexpert.widget.view.HorizontalListView
+                    android:id="@+id/jobcard"
+                    android:fadingEdge="none"
+                    android:cacheColorHint="#00000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_70dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_marginTop="18dp"></com.xywy.askforexpert.widget.view.HorizontalListView>
+
+                <!-- <GridView -->
+                <!-- android:id="@+id/jobcard" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="@dimen/height_70dp" -->
+                <!-- android:layout_marginBottom="@dimen/marght_9dp" -->
+                <!-- android:layout_marginLeft="@dimen/marght_right" -->
+                <!-- android:layout_marginRight="@dimen/marght_right" -->
+                <!-- android:layout_marginTop="@dimen/marght_left" -->
+                <!-- android:horizontalSpacing="3dp" -->
+                <!-- android:numColumns="4" -->
+                <!-- android:scrollbars="none" -->
+                <!-- android:verticalSpacing="5dp" > -->
+                <!-- </GridView> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_left"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="职称证"
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/text_13sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_jobtitle_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv33"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/tv33"
+                        android:text="（可申请更多服务，最多可上传5张图片）"
+                        android:textColor="@color/color_b7b7b7"
+                        android:textSize="@dimen/text_10sp"/>
+                </RelativeLayout>
+
+                <com.xywy.askforexpert.widget.view.HorizontalListView
+                    android:id="@+id/jobTitle"
+                    android:fadingEdge="none"
+                    android:cacheColorHint="#00000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_70dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_marginTop="18dp"></com.xywy.askforexpert.widget.view.HorizontalListView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_120dp"
+                android:layout_marginTop="@dimen/marght_right"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marght_left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="示例："
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/text_14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:text="资料仅审核人员可见"
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/text_12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_idcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:layout_marginTop="@dimen/marght_left"
+                        android:background="@drawable/idcard_small"
+                        android:onClick="onClick_back"/>
+
+                    <ImageView
+                        android:id="@+id/img_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="@dimen/marght_left"
+                        android:layout_marginTop="@dimen/marght_left"
+                        android:background="@drawable/job_small"
+                        android:onClick="onClick_back"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/blue_btn_selector"
+                android:gravity="center"
+                android:onClick="onClick_back"
+                android:text="申请认证"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"/>
+
+
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

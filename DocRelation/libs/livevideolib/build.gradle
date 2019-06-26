@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+apply from: "${androidCommonDir}/buildsystem/commonModuleConfig.gradle"
+apply from: "${androidCommonDir}/code_quality_tools/quality.gradle"
+
+android {
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            shrinkResources false
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile libraries.supportAppCompatV7
+//    compile project(':datarequest')
+    compile project(':xywy-ui-library')
+    compile project(':base')
+    testCompile libraries.junit
+    compile files('libs/hyphenatechat_3.1.4.jar')
+    //导入腾讯云直播SDK jar
+    compile fileTree(dir: 'src/main/jniLibs', include: ['*.jar'])
+
+    compile project(':imagepicker')
+}

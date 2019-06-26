@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="me">我</string>
+    <string name="invite_and_share">邀请好友给他分享邀请链接</string>
+    <string name="money_15_yuan">奖励15元</string>
+    <string name="invite_succeed">下载、并认\n证通过</string>
+    <string name="friend">好友</string>
+    <string name="helped">已帮助</string>
+    <string name="patient">名患者</string>
+    <string name="doc_search">文献检索</string>
+</resources>

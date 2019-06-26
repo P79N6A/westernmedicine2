@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/lay_fee"
+        style="@style/usercenter_layout_style">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/usercenter_tv_style"
+            android:text="医事服务费"
+            />
+
+        <ImageView
+            android:id="@+id/iv1"
+            style="@style/usercenter_arrow_style"/>
+
+        <TextView
+            android:id="@+id/tv_fee"
+            style="@style/usercenter_tv_style2"
+            android:layout_toLeftOf="@id/iv1"
+            android:layout_toRightOf="@id/tv1"
+            />
+    </RelativeLayout>
+
+
+    <View
+        style="@style/line_e8e8e8"/>
+
+    <RelativeLayout
+        android:id="@+id/lay_common"
+        style="@style/usercenter_layout_style">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/usercenter_tv_style"
+            android:text="常用药管理"
+            />
+
+        <ImageView
+            android:id="@+id/iv9"
+            style="@style/usercenter_arrow_style"/>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_e8e8e8"/>
+
+
+</LinearLayout>

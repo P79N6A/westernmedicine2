@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/imagView_checkpending_item_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/top_trangle" />
+
+        <LinearLayout
+            android:id="@+id/orderInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/imagView_checkpending_item_top"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_checkpending_item_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp" 
+                android:text="@string/make_app_txt_order_num"/>
+
+            <TextView
+                android:id="@+id/textView_checkpending_item_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="12sp" 
+                android:text="@string/make_app_txt_order_time"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderInfoLayout"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginRight="@dimen/marght_right"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_checkpending_left"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginRight="@dimen/marght_8dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_selector"
+                android:text="@string/make_app_txt_btn_refuse"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_checkpending_right"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/marght_8dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_btn_selector"
+                android:text="@string/make_app_txt_btn_agree"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

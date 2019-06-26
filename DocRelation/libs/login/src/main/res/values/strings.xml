@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">login</string>
+    <string name="common_ok">确认</string>
+    <string name="common_cancel">取消</string>
+    <string name="no_network">网络暂时无法连接，请稍后再试</string>
+    <!--我的页面String-->
+    <string name="me_massage">我的消息</string>
+    <string name="me_massage_notify">新消息通知</string>
+    <string name="me_no_message">暂时没有数据</string>
+    <string name="me_about">关于我们</string>
+    <string name="common_phoneno">手机号</string>
+    <string name="common_pwd">密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="user_changepwd">密码修改</string>
+    <string name="changepwd">修改密码</string>
+    <string name="input_new_pwd">请输入6位以上新密码</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_6_15_pwd">6~15位数字或字母</string>
+    <string name="input_phoneno">请输入手机号</string>
+    <string name="input_phoneno_get_code">请输入手机号获取验证码</string>
+    <string name="input_right_phoneno">请输入正确的手机号</string>
+    <string name="input_right_phoneno_get_code">请输入正确的手机号获取验证码</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="login_forgot_pwd">忘记密码?</string>
+    <string name="code">验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="send_code">短信验证码已下发到你的手机，请在十五分钟内验证</string>
+    <string name="confirm_change">确认修改</string>
+    <string name="login_third_party">或用以下方式登录</string>
+    <string name="user_head">头像</string>
+    <string name="user_name">昵称</string>
+    <string name="logout">退出登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="confirm_regist">确认注册</string>
+    <string name="auth_error">授权失败</string>
+    <string name="confirm_put">确认提交</string>
+    <string name="find_password">找回密码</string>
+    <string name="find_password_success">修改密码成功</string>
+    <string name="find_password_fail">修改密码失败</string>
+    <string name="input_phone_binded">请输入已绑定手机号</string>
+    <string name="user_info">个人资料</string>
+    <string name="user_info_name">当前昵称</string>
+    <string name="confirm_pwd">两次密码输入不同，请重新输入</string>
+    <string name="compare_pwd">新密码和旧密码不能相同</string>
+    <string name="confirm_delete">确认删除？</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="bind_phone_success">绑定手机成功</string>
+    <string name="change_name">不能和当前昵称相同</string>
+    <string name="change_name_rex">请输入昵称</string>
+    <string name="change_name_success">修改成功</string>
+    <string name="change_name_fail">修改失败</string>
+
+    <string name="password_new_length">请输入6~15个数字或字母</string>
+    <string name="password_length">密码不得小于6位</string>
+    <string name="please_bind_phone">请先绑定手机号</string>
+    <string name="about_us_text1">公司理念：为全民健康导航</string>
+    <string name="about_us_text2">公司愿景：公众最认可的健康管理品牌；
+        最能提升医生品牌的创收渠道；最具客户价值的品牌合作伙伴。</string>
+    <string name="about_us_text3">经营理念：以诚为本，服务无限，创意无终，精进无止。</string>
+    <string name="about_us_text4">服务客户：以客户为中心，与客户利益共存。</string>
+    <string name="about_us_text5">人才观念：以人为本，视人才为核心生产力。</string>
+    <string name="about_us_text6">洽谈合作：13269407890</string>
+    <string name="about_us_text7">客服电话：010-59129911</string>
+
+    <string name="third_login_success">授权成功</string>
+    <string name="third_login_cancle">授权取消</string>
+    <string name="third_login_denied">授权拒绝</string>
+    <string name="third_login_fail">授权失败</string>
+
+    <string name="share_success">分享成功啦</string>
+    <string name="share_fail">分享失败啦</string>
+    <string name="share_cancle">分享取消啦</string>
+    //注册返回信息
+    <string name="repetition_code">31012</string>
+    <string name="fail_code">31008</string>
+    <string name="fail_code_text">验证码不正确</string>
+    <string name="repetition_code_text">该账号已经注册过</string>
+    <string name="regist_success">注册成功,已登录</string>
+    <string name="login_net_work_error_msg">登录失败，请您检查网络设置，再次登录</string>
+
+</resources>

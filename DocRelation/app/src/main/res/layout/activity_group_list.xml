@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:poplar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/search_view"
+        layout="@layout/common_search_view" />
+
+    <ExpandableListView
+        android:id="@+id/elv_groups"
+        android:layout_width="match_parent"
+        android:divider="#F0F0F0"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_view"
+        android:groupIndicator="@null"/>
+
+    <com.xywy.askforexpert.widget.module.im.imgroup.PinyinIndexer
+        android:id="@+id/pinyin_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@id/search_view"
+        poplar:additionalTipOffset="40dip"
+        poplar:fontColor="#ff333333"
+        poplar:maxBezierHeight="150dip"
+        poplar:maxBezierWidth="180dip"
+        poplar:maxFontSize="60"
+        poplar:minFontSize="32"
+        poplar:tipFontSize="72"
+        poplar:widthOffset="15dip" />
+
+</RelativeLayout>

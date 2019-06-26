@@ -1,0 +1,30 @@
+//在根项目gradle文件中引入全局变量，定义jar包版本等，子module的gradle文件也可直接使用
+ext {
+    //定义android_common项目的路径
+    androidCommonDir = "${project.rootDir}";
+    relativePath=":";
+    //配置静态代码检查时检查debug包或者release包,"assemble"+productFlavor+buildtype
+    checkApk="assembleRelease"
+}
+//引入根项目通用的配置文件，任务耗时检测，子module仓库地址等
+apply from: 'buildsystem/rootProjectConfig.gradle'
+buildscript {
+    apply from: 'buildsystem/dependencies.gradle'
+    repositories {
+        jcenter()
+//        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        //定义gradle编译过程中用到的插件，参与build过程，生成的apk中不包含这些插件
+        classpath gradlePlugins.android
+        classpath gradlePlugins.jacoco
+        classpath gradlePlugins.dexcount
+        classpath gradlePlugins.apt
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

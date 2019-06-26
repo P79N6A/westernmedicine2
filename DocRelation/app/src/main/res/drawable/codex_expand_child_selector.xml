@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 焦点状态为绿色。 -->
+    <item android:drawable="@color/my_line" android:state_focused="true"></item>
+    <item android:drawable="@color/my_line" android:state_selected="true"></item>
+    <!-- 点击时为红色 -->
+    <item android:drawable="@color/my_line" android:state_pressed="true"></item>
+    <!-- 默认下为white -->
+    <item android:drawable="@color/huise"></item>
+
+</selector>

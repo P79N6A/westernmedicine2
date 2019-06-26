@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <!--<include-->
+        <!--android:id="@+id/title"-->
+        <!--layout="@layout/title" />-->
+
+    <TextView
+        android:id="@+id/id_allcommnum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xywy_service_doctor_title_width"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marght_left"
+        android:text=""
+        android:textColor="@color/color_00c8aa"
+        android:textSize="@dimen/text_12sp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/id_allcommnum" >
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreListView
+            android:id="@+id/list_comment"
+            android:layout_width="match_parent"
+             android:divider="#eeeeee"
+            android:dividerHeight="1dp"
+            android:layout_height="match_parent"
+            android:smoothScrollbar="@null" >
+        </com.xywy.askforexpert.widget.view.MyLoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <RelativeLayout
+            android:id="@+id/edittext_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/marght_8dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_frame_sytle"
+            android:gravity="bottom" >
+
+            <com.xywy.askforexpert.widget.PasteEditText
+                android:id="@+id/et_sendmmot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入您的评论"
+                android:maxLines="3"
+                android:minHeight="40dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="3dp"
+                android:textSize="18sp" >
+            </com.xywy.askforexpert.widget.PasteEditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/chat_send_btn_selector"
+            android:onClick="onClick_back"
+            android:text="发送"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

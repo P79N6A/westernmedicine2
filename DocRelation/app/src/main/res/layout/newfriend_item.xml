@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_avatar" />
+
+      
+        <TextView
+            android:id="@+id/btn_add"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/yellow_btn_selector"
+            android:gravity="center"
+            android:text="接受"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+             android:id="@+id/btn_cancle"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/btn_add"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_9dp"
+            android:background="@drawable/yuanjiao_yellew"
+            android:gravity="center"
+            android:text="拒绝"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+        
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/avatar"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/btn_add"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:text=""
+                android:gravity="center_vertical"
+                 android:singleLine="true"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

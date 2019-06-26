@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xywy.askforexpert.newdrelation.activity.MainActivity"
+    tools:showIn="@layout/activity_main_new">
+
+    <FrameLayout
+        android:id="@+id/main_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E7E7E7" />
+
+    <RadioGroup
+        android:id="@+id/main_tabs_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_button"
+            style="@style/main_tab_style"
+            android:checked="true"
+            android:drawableTop="@drawable/main_tab_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/message_button"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/main_tab_message"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/doc_circle_button"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/main_tab_doc_circle"
+            android:text="医圈" />
+
+        <RadioButton
+            android:id="@+id/discover_button"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/main_tab_discover"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/profile_button"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/main_tab_profile"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

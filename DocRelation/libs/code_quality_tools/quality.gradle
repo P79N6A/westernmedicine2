@@ -1,0 +1,154 @@
+
+def codeAnalysisSwitch = true;//本行可以开启或关闭静态代码检测
+def stopWhenFail = false;//检测到错误时停止编译
+def javaSource = 'src/main/java/com/xywy';//检测到错误时停止编译
+
+if (rootProject.hasProperty('onJenkins')) {
+    stopWhenFail = true;
+}
+
+plugins.apply('pmd')
+pmd {
+    toolVersion = '5.4.1'
+}
+
+task pmd(type: Pmd) {
+    ignoreFailures = !stopWhenFail // Fail early.
+    reports.xml.enabled=false
+    rulePriority=2
+    ruleSetFiles = files("${androidCommonDir}/code_quality_tools/pmd.xml")
+    ruleSets = []
+
+    source = fileTree(javaSource)
+}
+
+plugins.apply('findbugs')
+
+task findbugs(type: FindBugs) {
+    ignoreFailures = !stopWhenFail // Fail early.
+    effort = 'max'
+    reportLevel = 'high' // Report even low priority problems.
+
+    reports {
+        html.enabled = true
+        xml.enabled = false
+    }
+
+    classes = files("${project.projectDir}/build/intermediates/classes")
+    source = fileTree(javaSource)
+
+    // If somebody has an idea how to make this work with support libraries -> open a PR please.
+    classpath = files()
+
+    excludeFilter = new File("${androidCommonDir}/code_quality_tools/findbugs-filter.xml")
+}
+
+plugins.apply('checkstyle')
+
+checkstyle {
+    toolVersion = '6.16.1'
+}
+
+task checkstyle(type: Checkstyle) {
+//    configFile rootProject.file('checkstyle.xml')
+    configFile file("${androidCommonDir}/code_quality_tools/checkstyle.xml")
+
+    ignoreFailures = !stopWhenFail // Fail early.
+    showViolations true
+
+    source javaSource
+    include '**/*.java'
+
+    classpath = files()
+}
+
+if (isAppOrLib(project)) {
+    //代码覆盖率插件
+    if (codeAnalysisSwitch){
+        apply from: "${androidCommonDir}/code_quality_tools/jacoco.gradle"
+    }
+    //配置lint
+    android {
+        lintOptions {
+            abortOnError stopWhenFail
+            xmlReport  false
+            htmlReport true
+        }
+
+        testOptions {
+            unitTests{
+                returnDefaultValues = !stopWhenFail
+                all{
+                    returnDefaultValues = !stopWhenFail
+                    ignoreFailures = !stopWhenFail
+
+                }
+
+            }
+        }
+    }
+}
+
+
+project.afterEvaluate {
+    if (codeAnalysisSwitch) {
+        //只对application启用方法数量统计插件
+        if (project.plugins.hasPlugin('com.android.application')) {
+            plugins.apply('com.getkeepsafe.dexcount')
+
+            dexcount {
+                format = 'list'
+                includeFieldCount = true
+                includeTotalMethodCount = true
+                orderByMethodCount = true
+                verbose = false
+                maxTreeDepth = Integer.MAX_VALUE
+                enableForInstantRun = false
+            }
+        }
+        //为静态代码检查task配置依赖
+        println("module:" + project.name);
+        def assemble = tasks.findByName(checkApk)
+        tasks.findByName('pmd').dependsOn(assemble)
+
+        tasks.findByName('findbugs').dependsOn(assemble)
+
+        def checkTask = tasks.findByName('check')
+        checkTask.dependsOn('pmd')
+        checkTask.dependsOn('findbugs')
+        //设置test任务在findbugs之前执行，否则测试类不会生成新的class文件
+        tasks.findByName('findbugs').shouldRunAfter('test')
+        //关闭checkstyle，不再对变量命名规范做检查
+        //checkTask.dependsOn('checkstyle')
+        // printTaskGraph()
+    }
+}
+
+//Task执行时是否跳过AndroidTest任务
+tasks.whenTaskAdded { task ->
+    if (task.name.contains('test')
+    //||task.name.contains('Test')
+    ) {
+        task.enabled = codeAnalysisSwitch
+    }
+}
+
+def isAppOrLib(Project pro) {
+    return pro.plugins.hasPlugin('com.android.application') || pro.plugins.hasPlugin('com.android.library')
+}
+
+def printTaskGraph() {
+    project.gradle.taskGraph.whenReady {
+        String msg=""
+        def list= project.gradle.taskGraph.allTasks
+                .last().getTaskDependencies().getDependencies(project.gradle.taskGraph.allTasks
+                .last())
+        for(Task task:list){
+            msg+=task.project.name+":"+task.name+","
+        }
+
+        println("=================================")
+        println(msg)
+        println("=================================")
+    }
+}

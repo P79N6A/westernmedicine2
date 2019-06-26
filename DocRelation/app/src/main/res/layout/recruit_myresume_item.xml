@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/field_margin_right"
+        android:layout_marginTop="@dimen/marght_left" >
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/marght_left"
+           />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_titlename_margin_left"
+                android:layout_marginTop="@dimen/marght_7dp"
+                android:text=""
+                android:maxLines="5"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:id="@+id/tv_news_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_titlename_margin_left"
+                android:layout_marginTop="@dimen/marght_7dp"
+                android:text=""
+                android:textColor="@color/gray_text"
+                android:layout_below="@id/tv_news_title"
+                android:textSize="@dimen/text_14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_news_title_2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_data_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/my_titlename_margin_left"
+                    android:text="发布日期："
+                    android:textSize="@dimen/text_12sp"
+                    android:textColor="@color/tab_color_nomal" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_data_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/field_margin_right"
+                    android:text=""
+                    android:textSize="@dimen/text_12sp"
+                    android:textColor="@color/tab_color_nomal" />
+                
+                 <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_date"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/field_margin_right"
+                    android:text=""
+                    android:textSize="@dimen/text_12sp"
+                    android:textColor="@color/tab_color_nomal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+  <!-- <RelativeLayout
+        android:id="@+id/rel_right_delete"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="-80dip" >
+
+        <TextView
+            android:id="@+id/item_right_txt111"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/yuanjiao_red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+ --></LinearLayout>

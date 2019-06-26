@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/marght_10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_16dp"
+                android:text="姓名:"
+                android:id="@+id/textView4"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:focusableInTouchMode="false"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_5dp"
+                android:background="@null"
+                tools:text="胡大胡大胡大"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_16dp"
+                android:text="时间:"/>
+
+            <TextView
+                android:id="@+id/recipe_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_5dp"
+                android:text="2017/05/02"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/marght_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_16dp"
+                android:text="年龄:"/>
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_5dp"
+                android:background="@null"
+                tools:text="190"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_16dp"
+                android:text="性别:"/>
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/recipe_user_info_style"
+                android:layout_marginLeft="@dimen/marght_5dp"
+                tools:text="男"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+        android:id="@+id/recipe_sick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/recipe_user_info_style"
+        android:textColor="@color/medicine_price_text"
+        android:layout_marginLeft="@dimen/marght_16dp"
+        android:text="诊断:"/>
+
+        <EditText
+        android:id="@+id/recipe_sick"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_11sp"
+        android:textColor="@color/medicine_price_text"
+        android:textColorHint="@color/medicine_price_text"
+        android:textColorLink="@color/medicine_price_text"
+        android:lines="1"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:hint="          "
+        android:theme="@style/MyEditText"
+
+        android:layout_marginBottom="@dimen/marght_16dp"/>
+
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/recipe_name"-->
+        <!--android:layout_width="180dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/recipe_user_info_style"-->
+        <!--android:layout_marginLeft="@dimen/marght_16dp"-->
+        <!--android:layout_marginTop="@dimen/marght_10dp"-->
+        <!--android:text="姓名：胡大海"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/recipe_age"-->
+        <!--android:layout_width="180dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/recipe_user_info_style"-->
+        <!--android:layout_marginLeft="@dimen/marght_16dp"-->
+        <!--android:layout_marginTop="@dimen/marght_10dp"-->
+        <!--android:layout_below="@id/recipe_name"-->
+        <!--android:text="年龄：18"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/recipe_gender"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/recipe_user_info_style"-->
+        <!--android:layout_marginLeft="@dimen/marght_16dp"-->
+        <!--android:layout_marginTop="@dimen/marght_10dp"-->
+        <!--android:layout_below="@id/recipe_name"-->
+        <!--android:layout_toRightOf="@id/recipe_age"-->
+        <!--android:text="性别：男"/>-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/recipe_area"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/recipe_user_info_style"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="@dimen/marght_16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="@dimen/marght_10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@id/recipe_age"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="地区：北京市复兴路18号"/>&ndash;&gt;-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/recipe_sick_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/recipe_user_info_style"-->
+        <!--android:textColor="@color/medicine_price_text"-->
+        <!--android:layout_marginLeft="@dimen/marght_16dp"-->
+        <!--android:layout_marginTop="@dimen/marght_10dp"-->
+        <!--android:layout_below="@id/recipe_age"-->
+        <!--android:text="诊断:"/>-->
+    <!---->
+    <!--<EditText-->
+        <!--android:id="@+id/recipe_sick"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_11sp"-->
+        <!--android:textColor="@color/medicine_price_text"-->
+        <!--android:textColorHint="@color/medicine_price_text"-->
+        <!--android:textColorLink="@color/medicine_price_text"-->
+        <!--android:lines="1"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:hint="          "-->
+        <!--android:theme="@style/MyEditText"-->
+        <!--android:layout_toRightOf="@id/recipe_sick_name"-->
+        <!--android:layout_below="@id/recipe_age"-->
+
+        <!--android:layout_marginBottom="@dimen/marght_16dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/recipe_time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/recipe_user_info_style"-->
+        <!--android:text="时间：2017/03／08"-->
+        <!--android:layout_above="@+id/recipe_gender"-->
+        <!--android:layout_alignLeft="@+id/recipe_gender"-->
+        <!--android:layout_alignStart="@+id/recipe_gender"/>-->
+
+
+</LinearLayout>

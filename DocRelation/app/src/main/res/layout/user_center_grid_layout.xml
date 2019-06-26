@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/fl_purse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/my_purse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/wallet"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="我的钱包"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/my_textcolor" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marght_16dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/dp25">
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="10dp"
+                android:gravity="center"
+                android:src="@drawable/new_icon" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/grid_divider_2"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_integration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/my_integration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/jifen"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="我的积分"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/my_textcolor" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/grid_divider_3"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/line_color" />
+    <LinearLayout
+        android:id="@+id/ll_room"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/ll_doctot_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/room"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="我的诊室"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/my_textcolor" />
+    </LinearLayout>
+
+</LinearLayout>

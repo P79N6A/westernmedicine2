@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@color/transparent"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <com.xywy.askforexpert.widget.PasteEditText
+            android:id="@+id/pet_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:background="@drawable/edit_frame_sytle"
+            android:cursorVisible="true"
+            android:hint="请输入您的评论"
+            android:maxEms="200"
+            android:maxLines="3"
+            android:minHeight="32dp"
+            android:textColorHint="@color/tab_color_nomal"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_frame_sytle"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/gray_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

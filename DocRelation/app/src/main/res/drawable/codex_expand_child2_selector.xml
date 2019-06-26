@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 焦点状态为绿色。 -->
+    <item android:drawable="@drawable/codex_item_1" android:state_focused="true"></item>
+    <item android:drawable="@drawable/codex_item_1" android:state_selected="true"></item>
+    <!-- 点击时为红色 -->
+    <item android:drawable="@drawable/codex_item_1" android:state_pressed="true"></item>
+    <!-- 默认下为white -->
+    <item android:drawable="@drawable/codex_item_2"></item>
+
+</selector>

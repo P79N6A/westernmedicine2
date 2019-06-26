@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/menu_tab_height"-->
+        <!--android:background="@drawable/toolbar_bg_no_alpha">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_msg_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="@string/message_set"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/xywy_top_title_size" />-->
+    <!--</RelativeLayout>-->
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:text="新消息通知"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_all_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_right"
+                    android:background="@drawable/radio_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lin_msg_voice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:text="消息声音"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_right"
+                    android:background="@drawable/radio_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lin_msg_shaken"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:text="消息振动"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg_shaken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_right"
+                    android:background="@drawable/radio_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/LinearLayout_height"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/item_bg_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:text="勿打扰模式"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_disturb_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_right"
+                    android:background="@drawable/radio_off" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="开启勿打扰模式后，晚23:00~早7：00将不能接收到推送消息"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

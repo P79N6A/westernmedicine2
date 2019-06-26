@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/root_view"
+    android:orientation="horizontal">
+    <!--android:background="@drawable/answer_select_circle_bg_normal"-->
+    <View
+        android:visibility="gone"
+        android:id="@+id/read_view"
+        android:background="@drawable/read_view_bg"
+        android:layout_gravity="center"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/color_eeeeee"/>
+
+
+    <com.xywy.askforexpert.widget.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/dp27"
+        android:layout_height="@dimen/dp27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp12"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/headicon_default"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/size12color333333"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp27"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_toRightOf="@+id/img"
+        android:gravity="center"
+        tools:text="一只小小鸟"/>
+
+    <TextView
+        android:id="@+id/sex"
+        style="@style/size12color999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_toRightOf="@+id/name"
+        tools:text="男"/>
+
+    <TextView
+        android:id="@+id/age"
+        style="@style/size12color999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_toRightOf="@+id/sex"
+        tools:text="28岁"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp16"
+        android:textColor="@color/color_ff9901"
+        android:textSize="@dimen/dp12"
+        tools:text="25.00元"/>
+
+    <LinearLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img"
+        android:layout_alignStart="@+id/img"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/onlineroom_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp12"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingRight="@dimen/dp12"
+        android:paddingTop="@dimen/dp16">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp14"
+            tools:text="感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?感冒了怎么办?"
+            />
+
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/dp12"
+            tools:text="发的范发的范德萨范德萨发的范德萨范德萨发的范德萨范德萨发的范德萨范德萨德萨范德萨"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp42"
+        android:layout_below="@+id/layout_comment"
+        android:layout_marginLeft="@dimen/dp16"
+        android:text="今日09:09"
+        android:gravity="center"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp11"/>
+
+    <LinearLayout
+        android:id="@+id/opt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp24"
+        android:gravity="center_vertical"
+        android:background="@drawable/round_bg_00c8aa_dp24"
+        android:paddingLeft="@dimen/dp12"
+        android:paddingRight="@dimen/dp12"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_comment"
+        android:layout_marginTop="@dimen/dp9"
+        android:layout_marginBottom="@dimen/dp9"
+        android:layout_marginRight="@dimen/dp16"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onlineroom_reply"/>
+
+        <TextView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp4"
+            android:text="回复"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp10"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_below="@+id/time"
+        android:background="@color/color_eeeeee"/>
+    </RelativeLayout>
+</LinearLayout>

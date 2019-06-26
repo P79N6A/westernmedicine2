@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xywy.livevideo.player.XYMediaPlayerView
+        android:id="@+id/xympv_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.xywy.livevideo.player.XYMediaPlayerView>
+
+    <com.xywy.livevideo.player.XYPlayerInfoView
+        android:id="@+id/xypiv_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.xywy.livevideo.player.XYPlayerInfoView>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fl_chat_container"
+        android:layout_width="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="120dp">
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/iv_info_send_msg"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/play_send_msg" />
+
+    <ImageView
+        android:id="@+id/iv_info_send_gift"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="75dp"
+        android:src="@drawable/gift_icon" />
+</RelativeLayout>

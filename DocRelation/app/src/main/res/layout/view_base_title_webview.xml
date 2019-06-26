@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/commonTitle_1"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/toolbar_bg_no_alpha_new">
+
+            <ImageButton
+                android:id="@+id/ibn_back_1"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:paddingLeft="16dp"
+                android:paddingRight="30dp"
+                android:src="@drawable/fanhui"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/title_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                style="@style/title_tv_style"
+                 />
+
+            <ImageButton
+                android:id="@+id/ibt_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marght_left"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/ibt_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my_titlename_margin_left"
+                android:layout_toLeftOf="@id/ibt_right1"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/c_eee"/>
+        <FrameLayout
+            android:id="@+id/base_web_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xywy.askforexpert.module.discovery.medicine.module.web.webview.BaseWebview
+                android:id="@+id/base_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.xywy.askforexpert.module.discovery.medicine.module.web.webview.CommonLoadingView
+                android:id="@+id/loading_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/commonTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fd4770"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/back_new"
+            android:clickable="true"
+            android:visibility="gone">
+
+        </ImageButton>
+
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/refresh"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/refresh_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:src="@drawable/refresh_btn" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:clickable="true"
+            android:visibility="gone">
+
+        </ImageView>
+    </RelativeLayout>
+</FrameLayout>

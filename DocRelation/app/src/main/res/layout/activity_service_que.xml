@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/question_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha_new">
+
+        <ImageView
+            android:id="@+id/btn_question_back"
+            style="@style/common_titlebar_imageview_left"
+            android:onClick="onQuestionListener"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/service_quetn_seque_txt"
+            android:textColor="@color/c333"
+            android:textSize="@dimen/xywy_top_title_size"/>
+
+        <ImageView
+            android:id="@+id/btn_question_rguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_left"
+            android:background="@drawable/service_topque_right_btn"/>
+
+        <ImageView
+            android:id="@+id/iv_img_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/img_red"
+            android:visibility="gone"
+            />
+
+        <View
+            style="@style/line_eeeeee"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <!--<com.xywy.askforexpert.widget.view.SlidingMenu-->
+    <!--android:id="@+id/slidingMenu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/question_top_bar" >-->
+    <!--</com.xywy.askforexpert.widget.view.SlidingMenu>-->
+
+    <FrameLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/question_top_bar"></FrameLayout>
+
+</RelativeLayout>

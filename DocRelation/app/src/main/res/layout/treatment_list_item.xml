@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/left"
+            android:layout_width="@dimen/marght_45dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/my_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marght_9dp"
+                android:background="@drawable/small_quan" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/enght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_left"
+            android:background="@drawable/enter_right" />
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/left"
+            android:layout_toLeftOf="@id/enght"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marght_9dp"
+                android:text="试试"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_10sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marght_9dp"
+                android:singleLine="true"
+                android:text="试试阿里斯顿就高考啦家里的髋关节阿里垃圾立刻给大家啦伤筋动骨"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marght_9dp"
+                android:text="[图片]"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/left"
+            android:layout_below="@id/lin"
+	        android:background="@color/my_line" />
+    </RelativeLayout>
+
+</LinearLayout>

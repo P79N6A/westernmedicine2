@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/meg_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_img_color"
+              android:clipToPadding="true"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha_new"
+        android:elevation="4dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/msg_card_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/msg_card_book"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="消息"/>
+
+        <ImageButton
+            android:id="@+id/message_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/marght_left"
+            android:background="@drawable/add_selector"/>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        style="@style/line_eeeeee"/>
+
+
+    <include layout="@layout/drawble_center"/>
+
+
+    <include
+        android:id="@+id/rl_error_item"
+        layout="@layout/chat_neterror_item"
+        android:visibility="gone"/>
+    <include
+        layout="@layout/online_message_item"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/no_data"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="#eeeeee"
+            android:dividerHeight="0.5dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

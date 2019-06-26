@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="375dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/blood_pressure_bg"
+    >
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="70dp"
+                      android:orientation="horizontal"
+                      android:paddingTop="24dp"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp">
+
+            <TextView android:textColor="@android:color/white"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="正常范围:"
+                      android:layout_weight="1"
+                      android:textSize="12sp"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+
+                <TextView android:textColor="@android:color/white"
+                          android:textSize="12sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:text="80~120mmHg"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="10dp">
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@color/color_8526c2"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="收缩压"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+
+                <TextView android:textColor="@android:color/white"
+                          android:textSize="12sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="60~80mmHg"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:gravity="center_vertical"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@color/color_19b48e"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="舒张压"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+
+                <TextView android:textColor="@android:color/white"
+                          android:textSize="12sp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="60~100次/分钟"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_vertical"
+                              android:layout_marginTop="10dp"
+                              android:orientation="horizontal">
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@color/color_4b60f4"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="心率"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="66dp"
+                      android:gravity="center_horizontal"
+        >
+            <TextView android:id="@+id/selectedValue"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="38dp"
+                      android:textSize="15sp"
+                      android:textColor="@android:color/white"
+                      android:text="mmHg 次/分钟"/>
+
+        </LinearLayout>
+
+        <FrameLayout android:layout_width="fill_parent"
+                     android:layout_height="240dp">
+
+            <com.xywy.askforexpert.widget.module.healthrecord.CustomScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none"
+            >
+
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="fill_parent"
+                              android:orientation="vertical"
+                              android:id="@+id/trendviewContainer"
+                />
+
+            </com.xywy.askforexpert.widget.module.healthrecord.CustomScrollView>
+
+            <com.xywy.askforexpert.widget.module.healthrecord.CalibrationView
+                    android:id="@+id/calibrationView"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+            />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="8dp"
+          android:background="@color/color_f2f2f2"/>
+
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+    >
+        <TextView android:id="@+id/noDataTv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="30dp"
+                  android:textColor="@color/c333"
+                  android:text="最近30天暂无血压数据"/>
+
+        <ListView android:id="@+id/blood_pressure_listview"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@color/white"
+                  android:divider="#00000000"
+                  android:scrollbars="none"
+                  android:listSelector="@android:color/transparent"
+                  android:fadingEdge="none"
+                  android:dividerHeight="0dp"
+                  android:visibility="visible">
+
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

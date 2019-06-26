@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/type_default"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="默认"
+            android:textSize="@dimen/text_14sp"
+            android:textColor="@color/sort_view_focuse_color"
+            android:gravity="center"/>
+
+        <View
+            style="@style/split_line_view_vertical"
+            android:layout_marginTop="@dimen/marght_12dp"
+            android:layout_marginBottom="@dimen/marght_12dp"
+            android:layout_weight="0"
+            />
+
+        <RelativeLayout
+            android:id="@+id/type_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/my_textcolor"
+                android:text="价格"/>
+            <ImageView
+                android:id="@+id/iv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/sort_up_down"
+                android:layout_toRightOf="@id/price"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/split_line_view_vertical"
+            android:layout_marginTop="@dimen/marght_12dp"
+            android:layout_marginBottom="@dimen/marght_12dp"
+            android:layout_weight="0"
+            />
+
+        <RelativeLayout
+            android:id="@+id/type_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量"/>
+            <ImageView
+                android:id="@+id/iv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/sort_up_down"
+                android:layout_toRightOf="@id/count"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/type_index"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指数"/>
+            <ImageView
+                android:id="@+id/iv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/sort_up_down"
+                android:layout_toRightOf="@id/index"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_devider"
+        style="@style/split_line_view_horizontal"
+        />
+
+
+</LinearLayout>

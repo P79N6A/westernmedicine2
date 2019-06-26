@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+    <TextView
+        android:id="@+id/pharmacy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="药房"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:paddingTop="@dimen/dp14"
+        android:paddingBottom="@dimen/dp14"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="@dimen/dp16"
+        android:paddingBottom="@dimen/dp16"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/medicine"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/size14color333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toRightOf="@+id/img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:layout_marginRight="@dimen/dp15"
+        tools:text="小儿止咳糖浆小儿止咳糖浆小儿止咳糖浆小儿止咳糖浆"/>
+
+    <TextView
+        android:id="@+id/spec"
+        style="@style/size12color666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_centerVertical="true"
+        tools:text="0.3g*20粒"/>
+
+    <TextView
+        android:id="@+id/company"
+        style="@style/size12color666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_toLeftOf="@+id/go"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="云南白药企业有限公司北京分公司"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/medicine_price_text"
+        android:textSize="@dimen/dp14"
+        tools:text="¥ 9"/>
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/blue_button_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:paddingTop="@dimen/dp5"
+        android:textColor="@color/blue_button_text_selector"
+        tools:text="加入处方笺"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

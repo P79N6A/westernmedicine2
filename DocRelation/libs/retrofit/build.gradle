@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+apply from: "${androidCommonDir}/buildsystem/commonModuleConfig.gradle"
+
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':util')
+    compile libraries.supportAppCompatV7
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:retrofit-converters:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.artemzin.rxjava:proguard-rules:1.1.5.0'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content_layout"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:id="@+id/ll_other_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:gravity="center">
+        <View
+            android:layout_width="121dp"
+            android:layout_height="0.5dp"
+            android:background="#fafafa" />
+
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_12sp"
+            android:textColor="@color/text_color_999"
+            android:text="@string/login_third_party" />
+
+        <View
+            android:layout_width="121dp"
+            android:layout_height="0.5dp"
+            android:background="#fafafa" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/login_weibo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_login_selector"
+            android:src="@drawable/xinlang"
+            android:layout_gravity="left"
+            />
+        <ImageButton
+            android:id="@+id/login_qq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/qq"
+            android:background="@drawable/icon_login_selector"
+            android:layout_gravity="center"
+
+           />
+        <ImageButton
+            android:id="@+id/login_weixin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/weixin"
+            android:background="@drawable/icon_login_selector"
+            android:layout_gravity="right|center_vertical"
+          />
+
+
+    </FrameLayout>
+</LinearLayout>

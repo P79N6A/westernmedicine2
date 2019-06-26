@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/bg_inffffff_out0dc3ce" android:state_pressed="true"/>-->
+    <item android:drawable="@drawable/bg_ffffff" android:state_focused="true"/>
+    <!--<item android:drawable="@drawable/bg_inffffff_out0dc3ce" android:state_selected="true"/>-->
+    <item android:drawable="@drawable/bg_00000000"/>
+
+</selector>

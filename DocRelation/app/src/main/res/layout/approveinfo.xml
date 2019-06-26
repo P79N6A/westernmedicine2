@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:layout_marginTop="16dp"
+                android:text="基础信息"
+                android:drawableLeft="@drawable/certify_edit_icon"
+                android:drawablePadding="@dimen/dp5"
+                android:gravity="center"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:layout_marginTop="6dp"
+                android:text="为方便审核人员进行审核，请填写真实信息！"
+                android:textColor="@color/color_b7b7b7"
+                android:textSize="@dimen/text_10sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_e6e6e6"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                style="@style/usercenter_layout_style"
+                android:layout_height="@dimen/dp70"
+                >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/usercenter_tv_style"
+                    android:text="头像"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    style="@style/usercenter_arrow_style"/>
+
+                <com.xywy.askforexpert.widget.view.RoundAngleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_toLeftOf="@id/iv1"
+                    android:src="@drawable/headicon_default"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                style="@style/usercenter_layout_style"
+                android:layout_marginTop="@dimen/marght_left"
+                >
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/usercenter_tv_style"
+                    android:text="姓名"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入真实姓名（2~4个汉字）"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:textColor="@color/color_999999"
+                    android:textColorHint="@color/color_b7b7b7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dp14"/>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                style="@style/usercenter_layout_style"
+                >
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/usercenter_tv_style"
+                    android:text="性别"/>
+
+                <TextView
+                    android:id="@+id/tv_girl"
+                    style="@style/size14color333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/selector_choose_sex"
+                    android:drawablePadding="@dimen/dp7"
+                    android:gravity="center"
+                    android:onClick="onClick_back"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp16"
+                    android:text="女"/>
+
+                <TextView
+                    android:id="@+id/tv_boy"
+                    style="@style/size14color333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp32"
+                    android:layout_toLeftOf="@+id/tv_girl"
+                    android:drawableLeft="@drawable/selector_choose_sex"
+                    android:drawablePadding="@dimen/dp7"
+                    android:gravity="center"
+                    android:onClick="onClick_back"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:text="男"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_area"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/usercenter_tv_style"
+                    android:text="医院地点"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv4"
+                    android:layout_toRightOf="@id/tv4"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_hospital"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    style="@style/usercenter_tv_style"
+                    android:text="在职医院"/>
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_hospital"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv5"
+                    android:layout_toRightOf="@id/tv5"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_department"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    style="@style/usercenter_tv_style"
+                    android:text="所属科室"/>
+
+                <ImageView
+                    android:id="@+id/iv6"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv6"
+                    android:layout_toRightOf="@id/tv6"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                style="@style/usercenter_layout_style"
+                >
+
+                <ScrollView
+                android:layout_width="@dimen/dp0"
+                android:layout_height="@dimen/dp0">
+            </ScrollView>
+
+                <TextView
+                    android:id="@+id/tv7"
+                    style="@style/usercenter_tv_style"
+                    android:text="科室电话（选填）"/>
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_toRightOf="@+id/tv7"
+                    android:layout_toLeftOf="@+id/v_divider"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:hint="区号"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="4"
+                    android:textColor="@color/color_999999"
+                    android:textColorHint="@color/color_b7b7b7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dp14"/>
+
+                <TextView
+                    android:id="@+id/v_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/dp16"
+                    android:text="-"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@+id/et_phone2"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp5"/>
+
+                <EditText
+                    android:id="@+id/et_phone2"
+                    android:minWidth="@dimen/dp80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical|left"
+                    android:hint="固定电话"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="8"
+                    android:textColor="@color/color_999999"
+                    android:textColorHint="@color/color_b7b7b7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dp14"/>
+
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_jobtitle"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv8"
+                    style="@style/usercenter_tv_style"
+                    android:text="临床职称"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv8"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_jobtitle"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv8"
+                    android:layout_toRightOf="@id/tv8"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_goodat"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv9"
+                    style="@style/usercenter_tv_style"
+                    android:text="擅长疾病"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv9"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_goodat"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv9"
+                    android:layout_toRightOf="@id/tv9"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_desc"
+                style="@style/usercenter_layout_style">
+
+                <TextView
+                    android:id="@+id/tv10"
+                    style="@style/usercenter_tv_style"
+                    android:text="个人简介"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv10"
+                    style="@style/usercenter_arrow_style"/>
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    style="@style/usercenter_tv_style2"
+                    android:layout_toLeftOf="@id/iv10"
+                    android:layout_toRightOf="@id/tv10"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line_e8e8e8"/>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/blue_btn_selector"
+                android:gravity="center"
+                android:onClick="onClick_back"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16"/>
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

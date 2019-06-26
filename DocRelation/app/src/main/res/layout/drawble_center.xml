@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/serch_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_tab_height"
+    android:background="@color/bg_img_color"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/serch_height"
+    android:layout_marginLeft="@dimen/marght_left"
+    android:layout_marginRight="@dimen/marght_left"
+    android:layout_marginTop="@dimen/my_title_img_top"
+    android:layout_marginBottom="@dimen/my_title_img_top"
+    android:background="@drawable/yuanjiao"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/ll_drawable_center">
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/search" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="搜索" />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        style="@style/line_e8e8e8"/>
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onlineroom_notice3"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

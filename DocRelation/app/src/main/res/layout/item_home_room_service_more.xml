@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_common_divider_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:layout_marginTop="@dimen/marght_8dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现更多"
+                android:textColor="@color/c333"
+                android:textSize="@dimen/text_14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp6"
+                android:text="诊室服务"
+                android:layout_toRightOf="@id/tv_more"
+                android:textColor="@color/c_00c8aa"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_more"
+                android:layout_marginTop="@dimen/marght_5dp"
+                android:text="免费、付费，电话问诊，预约加号"
+                android:textColor="@color/c999"
+                android:textSize="@dimen/text_11sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_more"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_11sp"
+                android:textColor="@color/c_00c8aa"
+                android:text="去查看"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp4"
+                android:src="@drawable/more"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marght_8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marght_16dp"
+        android:paddingTop="@dimen/marght_16dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/c_00c8aa" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="打赏动态"
+            android:textColor="@color/c333"
+            android:textSize="@dimen/text_14sp" />
+
+    </LinearLayout>
+</LinearLayout>

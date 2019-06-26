@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"   >
+
+<LinearLayout
+android:id="@+id/main_right_drawer_layout"
+android:layout_width="@dimen/dp130"
+android:layout_height="wrap_content"
+android:layout_gravity="end"
+android:background="@drawable/right_bg"
+android:clickable="true"
+android:gravity="center_horizontal"
+android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/tv_history"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+        android:gravity="center"
+        android:background="@drawable/service_enter_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="历史回复"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1" />
+
+    <LinearLayout
+        android:id="@+id/lin_add_new_ptient"
+        android:layout_width="@dimen/width_130dp"
+        android:layout_height="@dimen/height_64dp"
+        android:gravity="center"
+        android:background="@drawable/service_enter_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_7dp"
+            android:text="留言设置"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/my_line_1"/>
+
+</LinearLayout>
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="48dp"
+android:src="@drawable/msg_tutorial_0"/>
+</FrameLayout>

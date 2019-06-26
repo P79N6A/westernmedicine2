@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include
+        android:id="@+id/promotion_title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/promotion_title" >
+
+        <Gallery
+            android:id="@+id/gallery_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:spacing="30dp" />
+
+        <Button
+            android:id="@+id/button_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/pro_btn_selector"
+            android:paddingLeft="@dimen/marght_24dp"
+            android:paddingRight="@dimen/marght_24dp"
+            android:text="@string/pro_txt_click_forpro"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#9b9b9b"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_prorank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/textView_prorank" >
+
+            <LinearLayout
+                android:id="@+id/daysLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pro_txt_days"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.xywy.askforexpert.widget.view.RoundCornerProgressBar
+                    android:id="@+id/progress_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1" >
+                </com.xywy.askforexpert.widget.view.RoundCornerProgressBar>
+
+                <TextView
+                    android:id="@+id/textView_pro_dayper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/daysLayout"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pro_txt_active_days"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.xywy.askforexpert.widget.view.RoundCornerProgressBar
+                    android:id="@+id/progress_active_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1" >
+                </com.xywy.askforexpert.widget.view.RoundCornerProgressBar>
+
+                <TextView
+                    android:id="@+id/textView_activeday_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

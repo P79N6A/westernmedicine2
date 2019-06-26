@@ -1,0 +1,45 @@
+//任务耗时检测功能
+apply from: "${androidCommonDir}/code_quality_tools/timecheck.gradle"
+
+//在根项目gradle文件中引入全局变量，定义jar包版本等，子module的gradle文件也可直接使用
+//apply from: 'buildsystem/dependencies.gradle'
+
+
+afterEvaluate{
+    if(tasks.findByName("clean")==null){
+        task clean(type: Delete) {
+            delete rootProject.buildDir
+        }
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+//        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        flatDir {
+            dirs 'libs','aars' //this way we can find the .aar file in libs folder
+        }
+    }
+    tasks.withType(JavaCompile) { options.encoding = "UTF-8" }
+}
+
+//使用"project.android.dexOptions.preDexLibraries=true" 提高编译速度
+//使用代码检查失败时停止编译
+//在持续集成的时候，使用以下指令关闭此属性
+//clean assemble -PonJenkins
+
+project.ext.preDexLibs = !project.hasProperty('onJenkins')
+
+def isAppOrLib(Project pro) {
+    return pro.plugins.hasPlugin('com.android.application') || pro.plugins.hasPlugin('com.android.library')
+}
+
+subprojects {
+    project.plugins.whenPluginAdded { plugin ->
+        if ("com.android.build.gradle.AppPlugin".equals(plugin.class.name) || "com.android.build.gradle.LibraryPlugin".equals(plugin.class.name)) {
+            project.android.dexOptions.preDexLibraries = rootProject.ext.preDexLibs
+        }
+    }
+}
+

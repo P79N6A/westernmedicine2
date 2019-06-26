@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_8dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:text="@string/about_us_text1"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/font_14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:text="@string/about_us_text2"
+            android:lineSpacingExtra="@dimen/margin_10dp"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/font_14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:text="@string/about_us_text3"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/font_14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:text="@string/about_us_text4"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/font_14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:text="@string/about_us_text5"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/font_14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:text="@string/about_us_text6"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/font_14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:text="@string/about_us_text7"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/font_14sp" />
+
+    </LinearLayout>
+</LinearLayout>

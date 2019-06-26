@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="17dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/iv_live_show_close" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/qr_code" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="王医生"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_live_show_finished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="直播结束"
+        android:textColor="#ff9900"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/rl_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/tv_live_show_finished"
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_view_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="4000"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="人看过"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="67dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gift_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="128"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="份礼物"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/rl_middle"
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btn_back_to_home"
+            android:layout_width="120dp"
+            android:text="回首页"
+            android:background="#0dc3ce"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_view_gift"
+            android:layout_width="120dp"
+            android:text="查看礼物"
+            android:layout_marginLeft="10dp"
+            android:background="#ff9900"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>

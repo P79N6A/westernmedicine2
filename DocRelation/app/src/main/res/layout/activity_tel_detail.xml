@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_per_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/service_top_bar_bg" >
+
+        <ImageButton
+            android:id="@+id/btn_per_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_selector_old"
+            android:onClick="onPerClickListener" />
+
+        <TextView
+            android:id="@+id/tv_tel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/service_telphone_doctor_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xywy_top_title_size" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_per"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

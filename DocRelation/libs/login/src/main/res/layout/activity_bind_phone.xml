@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_titlebar" />
+
+    <EditText
+        android:id="@+id/et_phoneNo"
+        style="@style/edit_text"
+        android:drawableLeft="@drawable/login_phone"
+        android:drawablePadding="14dp"
+        android:hint="@string/input_phoneno"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/margin_20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/common_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/edit_text"
+            android:drawableLeft="@drawable/login_code"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:hint="@string/input_code"
+            android:maxLength="6"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_16dp" />
+
+        <TextView
+            android:id="@+id/get_code_btn"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/login_getcode_btn"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/common_line" />
+
+    <Button
+        android:id="@+id/btn_bind_phone"
+        style="@style/button_me"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/confirm_put" />
+
+</LinearLayout>

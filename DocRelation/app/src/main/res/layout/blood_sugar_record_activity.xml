@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="365dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/blood_sugar_bg"
+    >
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="40dp"
+                      android:orientation="vertical"
+                      android:gravity="center_vertical"
+                      android:paddingRight="15dp"
+        >
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="right"
+                      android:layout_gravity="bottom"
+                      android:textSize="12sp"
+                      android:textColor="@android:color/white"
+                      android:text="正常范围:                      空腹:     3.9-6.1mmol/L"/>
+
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="2dp"
+                      android:gravity="right"
+                      android:layout_gravity="bottom"
+                      android:textSize="12sp"
+                      android:textColor="@android:color/white"
+                      android:text="餐后两小时:     4.4-7.8mmol/L"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="85dp"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:padding="15dp">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <LinearLayout android:id="@+id/kongfu"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_fffb8c_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="空    腹"/>
+                </LinearLayout>
+
+                <View android:layout_width="20dp"
+                      android:layout_height="1dp"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:id="@+id/zaocanhou" android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_87f358_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="早餐后"/>
+                </LinearLayout>
+
+                <View android:layout_width="20dp"
+
+                      android:layout_height="1dp"/>
+
+                <LinearLayout android:id="@+id/wucanqian"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1" android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_26ea9e_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="午餐前"/>
+                </LinearLayout>
+
+                <View android:layout_width="20dp"
+                      android:layout_height="1dp"/>
+
+                <LinearLayout android:id="@+id/wucanhou"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_26d5ea_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="午餐后"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="8dp"
+                          android:orientation="horizontal">
+
+                <LinearLayout android:id="@+id/wancanqian"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                              android:layout_weight="1"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_2667ea_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="晚餐前"/>
+                </LinearLayout>
+
+                <View android:layout_width="20dp"
+                      android:layout_height="1dp"/>
+
+                <LinearLayout android:id="@+id/wancanhou"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_b026ea_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="晚餐后"/>
+                </LinearLayout>
+
+                <View android:layout_width="20dp"
+
+                      android:layout_height="1dp"/>
+
+                <LinearLayout android:id="@+id/shuiqian"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="2dp"
+                          android:background="@drawable/color_ea266b_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="睡     前"/>
+                </LinearLayout>
+
+                <View android:layout_width="20dp"
+                      android:layout_height="1dp"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:visibility="invisible"
+                              android:background="@drawable/white_border_bg"
+                              android:paddingTop="2dp"
+                              android:paddingBottom="2dp"
+                >
+
+                    <View android:layout_width="6dp"
+                          android:layout_height="6dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/color_26d5ea_circle_bg"/>
+
+                    <TextView android:textColor="@android:color/white"
+                              android:textSize="12sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="午餐后"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout android:layout_width="fill_parent"
+                     android:layout_height="240dp">
+
+            <com.xywy.askforexpert.widget.module.healthrecord.CustomScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none"
+            >
+
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="fill_parent"
+                              android:orientation="vertical"
+                              android:id="@+id/trendviewContainer"
+                />
+
+            </com.xywy.askforexpert.widget.module.healthrecord.CustomScrollView>
+
+            <com.xywy.askforexpert.widget.module.healthrecord.CalibrationView
+                    android:id="@+id/calibrationView"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+            />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="8dp"
+          android:background="@color/color_f2f2f2"/>
+
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+    >
+        <TextView android:id="@+id/noDataTv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="30dp"
+                  android:textColor="@color/c333"
+                  android:text="最近30天暂无血糖数据"/>
+
+        <ListView android:id="@+id/blood_pressure_listview"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@color/white"
+                  android:divider="#00000000"
+                  android:scrollbars="none"
+                  android:listSelector="@android:color/transparent"
+                  android:fadingEdge="none"
+                  android:dividerHeight="0dp"
+                  android:visibility="visible">
+
+        </ListView>
+    </FrameLayout>
+
+
+
+</LinearLayout>

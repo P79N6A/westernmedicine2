@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginRight="@dimen/marght_right" >
+
+            <TextView
+                android:id="@+id/commentlist_item_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/text_14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/commentlist_item_tv_name"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/commentlist_item_ratingbar"
+                    style="@style/RatingBar_Small_huise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="1"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/commentlist_item_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:textColor="@color/impor_number"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:layout_marginRight="@dimen/marght_right" >
+
+            <TextView
+                android:id="@+id/commentlist_item_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/commentlist_item_tv_commcontent"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="@dimen/text_12sp" />
+
+            <TextView
+                android:id="@+id/commentlist_item_tv_commcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/commentlist_item_tv_time"
+                android:textColor="@color/tab_color_nomal"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_line"/>
+
+</RelativeLayout>

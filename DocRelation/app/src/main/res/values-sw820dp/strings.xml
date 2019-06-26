@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="copy_success">复制成功</string>
+    <string name="loading_now">正在加载中...</string>
+    <string name="server_error">服务器错误</string>
+    <string name="loading_failed">加载失败</string>
+    <string name="invite_money_share_title">快来跟我一块使用医脉吧！</string>
+    <string name="invite_money_share_content">我正在使用医脉，它不仅可以让我在线坐诊，还可以与医届好友共同学习讨论。</string>
+    <string name="network_error">网络连接失败</string>
+    <string name="me">我</string>
+    <string name="invite_and_share">邀请好友给他分享邀请链接</string>
+    <string name="money_15_yuan">奖励15元</string>
+    <string name="invite_succeed">下载、并认\n证通过</string>
+    <string name="friend">好友</string>
+    <string name="helped">已帮助</string>
+    <string name="patient">名患者</string>
+    <string name="doc_search">文献检索</string>
+</resources>

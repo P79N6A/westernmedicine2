@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreListView
+            android:id="@+id/list_scores"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@null"></com.xywy.askforexpert.widget.view.MyLoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

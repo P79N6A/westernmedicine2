@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.xywy.askforexpert.module.main.service.MyServicesFirstFragment">
+
+    <RelativeLayout
+        android:id="@+id/questions"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_weight="1"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/docs_search"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/docs_search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="6dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/patient_control"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/patient_control_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/guide"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/guide_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/first_page_last_item"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/first_page_last_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/tv_group_name_label"
+            style="@style/group_tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="群名称" />
+
+        <EditText
+            android:id="@+id/et_group_name"
+            style="@style/et_group_style"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:minWidth="100dp"
+            android:text="清华会议群" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_group_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/rl_group_name"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_group_avatar_label"
+            style="@style/group_tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="群头像" />
+
+        <ImageView
+            android:id="@+id/iv_group_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/nomal_head" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_group_member_top"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@+id/rl_group_avatar"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_group_member_label"
+            style="@style/group_tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="群成员" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/tv_group_member_count"
+            style="@style/group_tv_style"
+            android:layout_width="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/iv_arrow"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/answer_tv_color3" />
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_group_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_group_member_top"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:horizontalSpacing="9dp"
+        android:numColumns="5"
+        android:padding="8dp"
+        android:verticalSpacing="9dp">
+
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/rl_group_disturb"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@+id/gv_group_member"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_group_disturb_label"
+            style="@style/group_tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="消息免打扰" />
+
+        <CheckBox
+            android:id="@+id/cb_group_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/icon_group_no_disturb_selector"
+            android:button="@null" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_exist"
+        style="@style/btn_full_style"
+        android:layout_width="328dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/rl_group_disturb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="退出本群" />
+
+
+</RelativeLayout>

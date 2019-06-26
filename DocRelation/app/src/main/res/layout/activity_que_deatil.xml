@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/que_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true">
+
+    <!--<include android:id="@+id/incude1" layout="@layout/title"/>-->
+
+        <ListView
+            android:id="@+id/lv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_edit_bottom"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:background="@color/color_f2f2f2"
+            android:listSelector="#00000000" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:id="@+id/rl_corrent_reply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_tab_height"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_corrent_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/c_00c8aa"
+                    android:gravity="center"
+                    android:text="修改"
+                    android:textSize="@dimen/text_14sp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_close_que"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_tab_height"
+                android:background="#50000000"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_close_que"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="问题已关闭\n用户对您的回答很满意，请保持住哈~"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qie_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="vertical" >
+
+                        <com.xywy.askforexpert.widget.PasteEditText
+                            android:id="@+id/et_enter_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/marght_8dp"
+                            android:layout_marginLeft="@dimen/marght_8dp"
+                            android:layout_marginTop="@dimen/marght_8dp"
+                            android:background="@drawable/edit_frame_sytle"
+                            android:hint="请尽可能给患者详细的解答"
+                            android:maxLength="500"
+                            android:maxLines="3"
+                            android:minHeight="32dp"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/tab_color_nomal"
+                            android:textSize="18sp" />
+
+                        <com.xywy.askforexpert.widget.PasteEditText
+                            android:id="@+id/et_enter_detail2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/marght_8dp"
+                            android:layout_marginLeft="@dimen/marght_8dp"
+                            android:background="@drawable/edit_frame_sytle"
+                            android:hint="意见建议(>20字)"
+                            android:maxLines="3"
+                            android:minHeight="32dp"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/tab_color_nomal"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/serch_height"
+                        android:layout_marginLeft="@dimen/marght_8dp"
+                        android:layout_marginTop="@dimen/marght_8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/edit_frame_sytle"
+                        android:text="@string/send"
+                        android:textColor="@color/gray_text" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marght_8dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/btn_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/add_item_selector"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_btn_list"
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:foregroundGravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal"
+                android:background="@color/bg_eee">
+                <LinearLayout
+                    android:id="@+id/ll_text1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/white">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zhuanzhen"/>
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/marght_5dp"
+                        tools:text="推荐用药"
+                        android:background="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_text2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="0.5dp"
+                    android:background="@color/white">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tgbtn"/>
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/marght_5dp"
+                        tools:text="跳过"
+                        android:background="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_reply"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="0.5dp"
+                    android:background="@color/color_00c8aa">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/huifu"/>
+                    <TextView
+                        android:id="@+id/tv_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marght_5dp"
+                        android:gravity="center"
+                        android:text="去回复"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/rl_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/body_text_disabled"
+            android:orientation="vertical"
+            android:paddingBottom="48dp">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                tools:background="@drawable/zhuanzhentishi"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+

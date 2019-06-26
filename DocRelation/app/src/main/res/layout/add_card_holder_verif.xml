@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/menu_tab_height"-->
+        <!--android:background="@drawable/toolbar_bg_no_alpha" >-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old"-->
+            <!--android:onClick="onClick_back"-->
+            <!--android:visibility="visible" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="验证消息"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/title_tv_size" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_send"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/marght_left"-->
+            <!--android:text="发送"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_16sp" />-->
+    <!--</RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/tv_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marght_left"
+        android:layout_marginRight="@dimen/marght_right"
+        android:layout_marginTop="@dimen/marght_left"
+        android:lineSpacingExtra="5dp"
+        android:text="你需要发送验证申请，等对方通过 \n(发送验证申请后，可以收听到他的医圈动态)"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/text_14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:paddingBottom="7dp"
+        android:paddingTop="15dp" >
+
+        <EditText
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yuanjiao_huis_2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="24dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:hint="我是谁谁"
+            android:textColorHint="#b3b3b3"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:src="@drawable/search_clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

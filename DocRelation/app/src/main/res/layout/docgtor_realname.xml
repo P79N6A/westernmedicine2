@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_unreadmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:background="#fff5ea"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/my_line" />
+
+        <TextView
+            android:id="@+id/tv_noread_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fa8700"
+            android:textSize="@dimen/text_12sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/my_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/no_data" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mPullToRefreshListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/lv_realname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="0.5dp"
+                android:divider="#e7e7e7"
+                android:listSelector="@color/transparent"
+                android:scrollingCache="false" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/nodata"
+            layout="@layout/no_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

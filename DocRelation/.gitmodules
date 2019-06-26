@@ -1,0 +1,3 @@
+[submodule "libs"]
+	path = libs
+    url = git@git.op.xywy.com:Component/android_common.git

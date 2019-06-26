@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        style="@style/tv_black_14_333"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="特色医疗" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marght_1dp"
+        android:background="@color/app_common_divider_color">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.xywy.askforexpert.widget.module.discover.DiscoverServiceItemView
+            android:id="@+id/dsiv_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:desc_text="患者管理，药品推荐"
+            app:icon_src="@drawable/ypzs"
+            app:name_text="药品助手"
+            app:number_text="20"
+            app:number_text_visibility="false"
+            app:open_text_visibility="true" />
+
+        <com.xywy.askforexpert.widget.module.discover.DiscoverServiceItemView
+            android:id="@+id/dsiv_item_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            app:desc_text="患者管理，药品推荐"
+            app:icon_src="@drawable/ypzs"
+            app:name_text="药品助手"
+            app:number_text="20"
+            app:number_text_visibility="false"
+            app:open_text_visibility="true" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marght_10dp"
+        android:background="@color/app_common_divider_color">
+
+    </View>
+</LinearLayout>

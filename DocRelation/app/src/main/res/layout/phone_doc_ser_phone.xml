@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/persinon_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marght_left"
+        android:text="接受服务的电话："
+        android:textSize="@dimen/text_14sp" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/yuanjiao_huis_2"
+        android:hint="请填写常用的电话号码"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/marght_left"
+        android:textSize="@dimen/text_14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marght_left"
+        android:text="备用电话1："
+        android:textSize="@dimen/text_14sp" />
+
+    <EditText
+        android:id="@+id/edit_phone_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/yuanjiao_huis_2"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/marght_left"
+        android:textSize="@dimen/text_14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marght_left"
+        android:text="备用电话2："
+        android:textSize="@dimen/text_14sp" />
+
+    <EditText
+        android:id="@+id/edit_phone_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/yuanjiao_huis_2"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/marght_left"
+        android:textSize="@dimen/text_14sp" />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_seciton"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/xywy_service_doctor_title_width"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/purse_blue"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="内科"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="外科"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="妇产科"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="儿科"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="其他"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+
+    <include layout="@layout/no_data" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreListView
+            android:id="@+id/list_news_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#eeeeee"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </com.xywy.askforexpert.widget.view.MyLoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--
+    <com.xywy.askforexpert.refresh.PullToRefreshListView
+        android:id="@+id/list_news_con"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </com.xywy.askforexpert.refresh.PullToRefreshListView>
+    -->
+
+</LinearLayout>

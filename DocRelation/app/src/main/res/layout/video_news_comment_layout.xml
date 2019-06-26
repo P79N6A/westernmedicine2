@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/video_news_comment_item_avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_photo_def" />
+
+        <TextView
+            android:id="@+id/video_news_comment_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/video_news_comment_item_avatar"
+            android:layout_toRightOf="@id/video_news_comment_item_avatar"
+            android:background="?attr/selectableItemBackground"
+            android:text="小马"
+            android:textColor="@color/c_00c8aa"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/video_news_comment_item_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/video_news_comment_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/video_news_comment_item_name"
+            android:layout_toRightOf="@id/video_news_comment_item_name"
+            android:text="北医三院"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/video_news_comment_item_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/video_news_comment_item_name"
+            android:layout_alignStart="@id/video_news_comment_item_name"
+            android:layout_below="@id/video_news_comment_item_name"
+            android:layout_marginTop="4dp"
+            android:text="消化内科"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/video_news_comment_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/video_news_comment_item_dept"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="23分钟"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/video_news_comment_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/video_news_comment_item_name"
+            android:layout_alignStart="@id/video_news_comment_item_name"
+            android:layout_below="@id/video_news_comment_item_dept"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:text="吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/half_dp_horizontal_line" />
+
+</LinearLayout>

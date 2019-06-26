@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:background="@color/gray_item_selector">
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:text="完成" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marght_9dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marght_8dp">
+
+        <com.xywy.d_platform_n.NumberPicker
+            android:id="@+id/np1"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="wrap_content" />
+
+        <!--   <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical|center_horizontal"
+              android:text="年"
+              android:textSize="20dp" /> -->
+
+        <com.xywy.d_platform_n.NumberPicker
+            android:id="@+id/np2"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="wrap_content" />
+
+        <!--   <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical|center_horizontal"
+              android:text="月"
+              android:textSize="20dp" /> -->
+
+        <com.xywy.d_platform_n.NumberPicker
+            android:id="@+id/np3"
+            android:layout_width="@dimen/height_80dp"
+            android:layout_height="wrap_content" />
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="日"
+            android:textSize="20dp" /> -->
+    </LinearLayout>
+
+
+</LinearLayout>

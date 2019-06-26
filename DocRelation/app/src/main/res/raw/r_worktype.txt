@@ -1,0 +1,18 @@
+[
+ {
+        "worktype": "",
+        "description": "不限"
+    },
+    {
+        "worktype": 11,
+        "description": "实习"
+    },
+    {
+        "worktype": 12,
+        "description": "兼职"
+    },
+    {
+        "worktype": 13,
+        "description": "全职"
+    }
+]

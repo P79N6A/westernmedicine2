@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f2f2f2"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp50"
+        >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bohui_icon"/>
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="center"
+            android:text="@string/checking"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/dp14"/>
+
+
+        <TextView
+            android:id="@+id/tv_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/round_bg_0dc4cd"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp25"
+            android:paddingRight="@dimen/dp25"
+            android:paddingTop="@dimen/dp10"
+            android:text="重新认证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp16"/>
+    </LinearLayout>
+
+</LinearLayout>

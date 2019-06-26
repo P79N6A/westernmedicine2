@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView android:id="@+id/tv_sheet_type"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/marght_12dp"
+              android:layout_marginTop="@dimen/marght_20dp"
+    />
+
+    <com.xywy.askforexpert.widget.view.MyGridView
+        android:id="@+id/gridview_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="35dp"
+        android:horizontalSpacing="7dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:verticalSpacing="3dp"
+    />
+</LinearLayout>

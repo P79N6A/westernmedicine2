@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:drawable="@color/purse_blue_press" android:state_focused="true"></item>
+    <item android:drawable="@color/purse_blue_press"  android:state_selected="true"></item>
+    <item android:drawable="@color/purse_blue_press"  android:state_pressed="true"></item>
+    <item android:drawable="@color/purse_blue" ></item>
+
+</selector>
+
+<!--  <?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:drawable="@drawable/blue_long_btn_press" android:state_focused="true"></item>
+    <item android:drawable="@drawable/blue_long_btn_press"  android:state_selected="true"></item>
+    <item android:drawable="@drawable/blue_long_btn_press"  android:state_pressed="true"></item>
+    <item android:drawable="@drawable/blue_long_btn" ></item>
+
+</selector>-->

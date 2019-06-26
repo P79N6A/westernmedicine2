@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#E5E5E5">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/yuanjiao"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="8dp"
+        android:hint="搜索"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="@dimen/text_12sp" />
+
+</RelativeLayout>
+
+

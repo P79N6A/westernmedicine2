@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/search_view"
+        layout="@layout/common_search_view" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_left"
+        android:layout_width="90dp"
+        android:layout_below="@id/search_view"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_right"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/search_view"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rv_left" />
+
+</RelativeLayout>

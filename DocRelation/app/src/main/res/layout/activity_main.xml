@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/toolbar_bg_no_alpha"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+        android:clipToPadding="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e7e7e7" />
+
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_tab_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/btn_tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawableTop="@drawable/main_tab_home"
+                    android:gravity="center"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="7dip"
+                    android:scaleType="matrix"
+                    android:text="首页"
+                    android:textColor="@drawable/main_botton_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/unread_address_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/unread_count_bg"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <!--<View
+                    android:layout_width="1dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/my_line" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableTop="@drawable/main_tab_doc_circle"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="7dip"
+                        android:scaleType="matrix"
+                        android:text="医圈"
+                        android:textColor="@drawable/main_botton_text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/unread_msg_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_count_bg"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_10sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="0dp" />
+
+                    <ImageView
+                        android:id="@+id/circle_remind_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/img_red"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/unread_circle_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_count_bg"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_10sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <!--<View
+                    android:layout_width="1dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/my_line" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_tab3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableTop="@drawable/main_tab_message"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="7dip"
+                        android:scaleType="matrix"
+
+                        android:text="资讯"
+                        android:textColor="@drawable/main_botton_text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_circle_pubish"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableTop="@drawable/main_tab_doc_circle"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="7dip"
+                        android:scaleType="matrix"
+                        android:text="发布"
+                        android:textColor="@drawable/main_botton_text_color"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+
+                <!--<View
+                    android:layout_width="1dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/my_line" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tab4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_tab4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableTop="@drawable/main_tab_discover"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="7dip"
+                        android:scaleType="matrix"
+                        android:text="发现"
+                        android:textColor="@drawable/main_botton_text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<View-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="0dp" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/tv_red"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:background="@drawable/img_red"-->
+                <!--android:gravity="center"-->
+                <!--android:text="2"-->
+                <!--android:textColor="#00ffffff"-->
+                <!--android:textSize="14sp"-->
+                <!--android:visibility="invisible" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@color/my_line" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_tab5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableTop="@drawable/main_tab_profile"
+                        android:gravity="center"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="7dip"
+                        android:scaleType="matrix"
+                        android:text="我的"
+                        android:textColor="@drawable/main_botton_text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0dp" />
+
+                    <ImageView
+                        android:id="@+id/tv_red_main4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/img_red"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#00ffffff"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.xywy.askforexpert.widget.view.arcmenu.ArcLayout
+        android:id="@+id/arc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        arc:childSize="70dp"
+        arc:fromDegrees="240"
+        arc:toDegrees="300" />
+</LinearLayout>

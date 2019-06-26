@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:background="@color/white"
+              android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        android:layout_marginLeft="-10dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_bg_no_alpha"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/base_back_btn_selector_new"
+                    android:id="@+id/back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/text_16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="我的患者"/>
+
+                <ImageView
+                    android:id="@+id/patient_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:visibility="gone"
+                    android:src="@drawable/patient_list_add"/>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:scrollbars="vertical"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/recycler_view">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <com.xywy.askforexpert.module.discovery.medicine.module.patient.view.IndexBar
+        android:id="@+id/indexBar"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="right"
+        app:indexBarPressBackground="@color/color_transparent"
+        app:indexBarTextSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvSideBarHint"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_side_bar_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:visibility="gone"
+        tools:text="A"
+        tools:visibility="visible"/>
+
+    <include
+        android:id="@+id/network_error"
+        android:visibility="gone"
+        layout="@layout/network_error"/>
+</FrameLayout>

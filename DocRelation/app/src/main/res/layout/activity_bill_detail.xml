@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_marginTop="@dimen/dp8"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/c333"
+            tools:text="6月"/>
+        <TextView
+            android:id="@+id/tv_total_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_ff9901"
+            tools:text="5500元"/>
+        <TextView
+            android:id="@+id/tv_total_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_toLeftOf="@id/tv_total_income"
+            android:textSize="@dimen/text_14sp"
+            android:textColor="@color/c333"
+            android:text="总收入："/>
+
+        <TextView
+            android:id="@+id/tv_heart_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_below="@+id/tv_total_income"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_ff9901"
+            tools:text="5500元"/>
+        <TextView
+            android:id="@+id/tv_heart_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_toLeftOf="@id/tv_heart_income"
+            android:layout_below="@+id/tv_total_income"
+            android:textSize="@dimen/text_14sp"
+            android:textColor="@color/c333"
+            android:text="送心意收入："/>
+
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl">
+
+        <com.xywy.askforexpert.widget.PinnedHeaderListView
+            android:id="@+id/pinnerHeaderListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#e8e8e8"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="@dimen/dp05"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/mingxi_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marght_left"
+            android:text="暂无明细"
+            android:textColor="@color/c666"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

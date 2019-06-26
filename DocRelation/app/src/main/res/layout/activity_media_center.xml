@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/media_center_barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha">
+
+        <ImageButton
+            android:id="@+id/media_center_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_selector_old" />
+
+        <TextView
+            android:id="@+id/media_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/xywy_top_title_size" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/search_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/serch_height"
+        android:layout_below="@+id/media_center_barlayout"
+        android:layout_marginBottom="@dimen/marght_8dp"
+        android:layout_marginLeft="@dimen/marght_8dp"
+        android:layout_marginRight="@dimen/marght_8dp"
+        android:layout_marginTop="@dimen/marght_8dp"
+        android:background="@drawable/yuanjiao"
+        android:drawableLeft="@drawable/search"
+        android:hint="搜索"
+        android:paddingLeft="@dimen/marght_left"
+        android:singleLine="true"
+        android:textColor="@color/my_textcolor1"
+        android:textSize="@dimen/text_12sp" />
+
+    <ListView
+        android:id="@+id/media_center_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar_view"
+        android:divider="@color/my_line"
+        android:dividerHeight="0.5dp"
+        android:listSelector="?attr/selectableItemBackground">
+
+    </ListView>
+
+    <com.xywy.askforexpert.widget.Sidebar2
+        android:id="@+id/sidebar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_bar_view"
+        android:background="@android:color/transparent"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/floating_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/no_healthy_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="22dp"
+        android:drawableTop="@drawable/no_healthy_user"
+        android:gravity="center"
+        android:text="患者健康，是咱们最大的幸福~"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.xywy.base.view.CircleProgressBar
+        android:id="@+id/healthy_user_loading_progress"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone"
+        app:mlpb_enable_circle_background="false"
+        app:mlpb_progress_color="@color/color_scheme_2_4"
+        app:mlpb_progress_stoke_width="3dp" />
+
+</RelativeLayout>

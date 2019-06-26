@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:paddingBottom="@dimen/marght_12dp"
+             android:paddingTop="@dimen/marght_12dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_bg_infff6e8_outfdd393"
+        android:padding="@dimen/dp16">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/size14color666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收到该患者"/>
+
+        <TextView
+            android:id="@+id/tv_reward_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@+id/tv1"
+            android:drawableLeft="@drawable/im_xinyi"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="center"
+            android:textColor="@color/color_f2ad29"
+            android:textSize="@dimen/dp14"
+            tools:text="2元"/>
+
+        <TextView
+            style="@style/size14color666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@+id/tv_reward_count"
+            android:text="感谢心意"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reward_count"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp8"
+            android:text="（平台将收取20%的手续费）"
+            android:textColor="@color/color_f2bb59"
+            android:textSize="@dimen/dp11"
+            />
+    </RelativeLayout>
+</FrameLayout>

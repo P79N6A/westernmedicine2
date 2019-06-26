@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f7">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp8"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="5月总收入"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_16sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_total_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="5500元"
+            android:gravity="center"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_16sp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_imwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="即时问答"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_imwd_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/marght_10dp"
+            android:drawableRight="@drawable/my_arrow"
+            android:gravity="center"
+            tools:text="5500元"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/c_eee"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_question_department"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="问题广场"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_14sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_question_department_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="5500元"
+            android:gravity="center"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_14sp"
+            android:drawableRight="@drawable/my_arrow"
+            android:drawablePadding="@dimen/marght_10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/c_eee"/>
+    <RelativeLayout
+        android:id="@+id/rl_home_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="家庭医生"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_14sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_home_doctor_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="5500元"
+            android:gravity="center"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_14sp"
+            android:drawableRight="@drawable/my_arrow"
+            android:drawablePadding="@dimen/marght_10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/c_eee"/>
+    <RelativeLayout
+        android:id="@+id/rl_call_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="电话医生"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_14sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_call_doctor_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="5500元"
+            android:gravity="center"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_14sp"
+            android:drawableRight="@drawable/my_arrow"
+            android:drawablePadding="@dimen/marght_10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <!--<View-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp05"-->
+        <!--android:background="@color/c_eee"/>-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_transferTreatment"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="@dimen/dp16"-->
+        <!--android:paddingRight="@dimen/dp16"-->
+        <!--android:background="@color/white">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="预约转诊"-->
+            <!--android:textColor="@color/color_333"-->
+            <!--android:textSize="@dimen/text_14sp"-->
+            <!--android:gravity="center" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_transferTreatment_income"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="5500元"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/color_ff9901"-->
+            <!--android:textSize="@dimen/text_14sp"-->
+            <!--android:drawableRight="@drawable/my_arrow"-->
+            <!--android:drawablePadding="@dimen/marght_10dp"-->
+            <!--android:layout_alignParentRight="true" />-->
+    <!--</RelativeLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/c_eee"/>
+
+    <RelativeLayout
+        android:id="@+id/online_other"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="问诊用药"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_online_other_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/marght_10dp"
+            android:drawableRight="@drawable/my_arrow"
+            android:gravity="center"
+            tools:text="5500元"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_other"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="其它"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_other_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/marght_10dp"
+            android:drawableRight="@drawable/my_arrow"
+            android:gravity="center"
+            tools:text="5500元"
+            android:textColor="@color/color_ff9901"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+</LinearLayout>

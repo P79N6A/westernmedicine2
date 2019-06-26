@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color" >
+
+    <include
+        android:id="@+id/checkpending_title"
+        layout="@layout/title" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/checkpending_bottom"       
+        android:layout_below="@+id/checkpending_title" >
+    </WebView>
+
+    <include
+        android:id="@+id/checkpending_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_checkpending_bottom" />
+
+    <!--
+    <ScrollView
+        android:id="@+id/scrollView_checkpending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkpending_bottom"
+        android:layout_below="@+id/checkpending_title"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/marght_9dp"
+                android:text="@string/make_app_txt_persondetail"
+                android:textColor="@color/tab_color"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/marght_9dp" >
+
+                <TextView
+                    android:id="@+id/textView_checkpend_basicinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/make_app_txt_basicinfos"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_basicinfo"
+                    android:layout_below="@+id/textView_checkpend_basicinfo"
+                    android:text="@string/make_app_txt_address"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_identify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_address"
+                    android:layout_below="@+id/textView_checkpend_address"
+                    android:text="@string/make_app_txt_identify"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_phonenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_identify"
+                    android:layout_below="@+id/textView_checkpend_identify"
+                    android:text="@string/make_app_txt_phonenum"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/marght_9dp"
+                android:text="@string/make_app_txt_personhealth"
+                android:textColor="@color/tab_color"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/marght_9dp" >
+
+                <TextView
+                    android:id="@+id/textView_checkpend_sickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/make_app_txt_sick"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_treathistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_sickname"
+                    android:layout_below="@+id/textView_checkpend_sickname"
+                    android:text="@string/make_app_txt_treathistory"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_purpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_treathistory"
+                    android:layout_below="@+id/textView_checkpend_treathistory"
+                    android:text="@string/make_app_txt_purpose"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_lasthospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_purpose"
+                    android:layout_below="@+id/textView_checkpend_purpose"
+                    android:text="@string/make_app_txt_lasthospital"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_purpose"
+                    android:layout_below="@+id/textView_checkpend_purpose"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/make_app_txt_job"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView_checkpend_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_checkpend_job"
+                    android:layout_below="@+id/textView_checkpend_job"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    -->
+
+</RelativeLayout>

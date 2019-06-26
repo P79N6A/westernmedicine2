@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="invite_money_margin_top">10dp</dimen>
+
+    <dimen name="invite_money_margin_top_1">66dp</dimen>
+
+    <dimen name="invite_money_margin_top_2">8dp</dimen>
+
+    <dimen name="invite_money_padding">15dp</dimen>
+
+    <dimen name="my_id_card_margins">25dp</dimen>
+
+    <dimen name="start_in_margins">33dp</dimen>
+
+    <dimen name="guide_point_margins">13dp</dimen>
+
+    <dimen name="follow_check_button_stroke">0.5dp</dimen>
+
+</resources>

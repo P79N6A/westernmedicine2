@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/more_topic_barlayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@drawable/toolbar_bg_no_alpha"-->
+        <!--android:elevation="5dp">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/more_back_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="热门话题"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/xywy_top_title_size" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/search_btn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="@drawable/more_search_icon" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+        <com.xywy.askforexpert.widget.TabPageIndicator
+            android:id="@+id/tab_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center" />
+
+        <com.xywy.askforexpert.widget.UnderlinePageIndicatorEx
+            android:id="@+id/slide_table_strip"
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+
+        </com.xywy.askforexpert.widget.UnderlinePageIndicatorEx>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/my_line">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/create_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_frame_sytle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_news" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="创建话题"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/my_line">
+
+        </View>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/topic_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

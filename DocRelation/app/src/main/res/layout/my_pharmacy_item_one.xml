@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_my_pharmacy_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@drawable/my_pharmacy_select_selector"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingRight="@dimen/dp5"
+        android:textColor="@drawable/my_pharmacy_text_color_one"
+        android:textSize="@dimen/dp12"
+        tool:text="血液系统"/>
+
+</RelativeLayout>

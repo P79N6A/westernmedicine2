@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<string-array name="live_video_show_type">
+    <item>名医直播</item>
+    <item>医学美容</item>
+    <item>肿瘤</item>
+    <item>健身瑜伽</item>
+    <item>心理科</item>
+    <item>妇儿</item>
+</string-array>
+
+</resources>

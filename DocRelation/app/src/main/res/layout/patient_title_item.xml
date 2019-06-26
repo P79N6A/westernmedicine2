@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/patient_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="47.5dp"
+        android:text="今天"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:textSize="14sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee"/>
+</LinearLayout>

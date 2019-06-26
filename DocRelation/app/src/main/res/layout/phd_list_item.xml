@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xywy_service_doctor_title_width"
+        android:layout_marginLeft="@dimen/marght_left"
+        android:gravity="center_vertical"
+        android:textColor="@color/c666"
+        android:textSize="@dimen/text_11sp" >
+    </TextView>
+
+</LinearLayout>

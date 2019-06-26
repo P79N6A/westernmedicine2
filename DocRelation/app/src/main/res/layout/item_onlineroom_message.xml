@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp15"
+    android:paddingRight="@dimen/dp15">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/dp18"
+        android:layout_marginTop="@dimen/dp18"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_title_bar"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/size14color333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp3"
+        android:layout_toRightOf="@+id/img"
+        android:text="患者名字"/>
+
+    <TextView
+        android:id="@+id/content"
+        style="@style/size12color666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginBottom="@dimen/dp3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="感冒了怎么办才好呢?"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/size12color999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignParentRight="true"
+        android:text="2018-08-08"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/point"
+        android:layout_width="@dimen/dp6"
+        android:layout_height="@dimen/dp6"
+        android:layout_marginLeft="@dimen/dp46"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img_red"/>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee"/>
+
+</RelativeLayout>

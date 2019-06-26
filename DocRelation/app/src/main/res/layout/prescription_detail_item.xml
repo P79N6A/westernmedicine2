@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/marght_16dp">
+
+    <TextView
+        android:id="@+id/tv_drug_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/marght_8dp"
+        android:paddingBottom="@dimen/marght_8dp"
+        style="@style/size12color333333"
+        tool:text="芬必得"
+        />
+
+    <TextView
+        android:id="@+id/tv_drug_small_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/marght_8dp"
+        android:paddingBottom="@dimen/marght_8dp"
+        style="@style/size12color333333"
+        tool:text="0.3g*20粒"
+        android:layout_marginLeft="@dimen/marght_16dp"
+        android:layout_toRightOf="@id/tv_drug_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_drug_big_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/size12color333333"
+        android:paddingTop="@dimen/marght_8dp"
+        android:paddingBottom="@dimen/marght_8dp"
+        tool:text="1盒"
+        android:layout_marginRight="32dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_drug_name"
+        android:layout_marginTop="@dimen/marght_7dp"
+        android:layout_marginBottom="@dimen/marght_16dp"
+        android:textSize="@dimen/text_12sp"
+        android:textColor="@color/c999"
+        tool:text="用法:1次/日，每次两片，饭后服用，口服"
+        android:layout_marginRight="32dp"
+        />
+</RelativeLayout>

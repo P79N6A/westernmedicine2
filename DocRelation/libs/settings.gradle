@@ -1,0 +1,1 @@
+include ':app', ':datarequest', ':xywy-datarequest-library', ':xywy-datarequest-library', 'baseadapter-recyclerview', ':uimodules', ':step', ':login', ':develop_settings', ':util', ':modifyjson', ':activityrouter', ':routerstub', 'xywy-ui-library', ':interactor'

@@ -1,0 +1,42 @@
+[
+ {
+        "salarymin": "",
+        "salarymax": "",
+        "description": "不限"
+    },
+    {
+        "salarymin": 1,
+        "salarymax": 2000,
+        "description": "2k以下"
+    },
+    {
+        "salarymin": 2000,
+        "salarymax": 5000,
+        "description": "2k-5k"
+    },
+    {
+        "salarymin": 5000,
+        "salarymax": 10000,
+        "description": "5k-10k"
+    },
+    {
+        "salarymin": 10000,
+        "salarymax": 15000,
+        "description": "10k-15k"
+    },
+    {
+        "salarymin": 15000,
+        "salarymax": 25000,
+        "description": "15k-25k"
+    },
+    {
+        "salarymin": 25000,
+        "salarymax": 50000,
+        "description": "25k-50k"
+    },
+    {
+        "salarymin": 50000,
+        "salarymax": 100000000,
+        "description": "50k以上"
+    }
+]

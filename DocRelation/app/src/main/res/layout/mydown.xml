@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/menu_tab_height"-->
+        <!--android:background="@drawable/toolbar_bg_no_alpha">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_back1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="我的下载"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_16sp" />-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_zhinan"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:text="临床指南"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/myhor_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_docments"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:background="@drawable/item_bg_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:text="医学文献"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_right"
+            android:background="@drawable/enter_right" />
+    </RelativeLayout>
+
+</LinearLayout>

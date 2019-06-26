@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp46"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:gravity="center"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/dp13" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:textColor="@color/color_00c8aa"
+            android:textSize="@dimen/dp13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dp16"
+            android:paddingLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="完成" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp05"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_eeeeee"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xywy_service_doctor_title_width"
+        android:layout_marginTop="@dimen/marght_9dp"
+        android:layout_marginRight="@dimen/marght_left"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marght_right"
+            android:gravity="center_vertical"
+            android:text="名额:"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/text_14sp" />
+
+        <EditText
+            android:id="@+id/edit_free_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/text"
+            android:background="@drawable/yuanjiao_huis_2"
+            android:gravity="center_vertical|right"
+            android:numeric="integer"
+            android:paddingRight="@dimen/marght_left"
+            android:text=""
+            android:textColor="@color/purse_blue"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marght_8dp" >
+
+        <com.xywy.d_platform_n.NumberPicker
+            android:id="@+id/time_np1"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="wrap_content"
+            app:selectionDivider="@color/color_00c8aa"
+            app:selectionDividerHeight="@dimen/dp1"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="时"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dp20"
+         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="至"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp15" />
+
+        <com.xywy.d_platform_n.NumberPicker
+            android:id="@+id/time_np2"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="wrap_content"
+            app:selectionDivider="@color/color_00c8aa"
+            app:selectionDividerHeight="@dimen/dp1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="时"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp20"/>
+    </LinearLayout>
+
+</LinearLayout>

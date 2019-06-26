@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xywy.livevideolib">
+    <!--定义充值权限-->
+    <permission
+        android:name="com.xywy.permission.Recharge"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.xywy.permission.Recharge" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.xywy.livevideo.player.XYPlayerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.xywy.livevideo.player.VideoBroadcastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xywy.livevideo.player.HostMainPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xywy.livevideo.player.LiveShowFinishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xywy.livevideo.publisher.LiveHostActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+
+        <!--选择充值页面-->
+        <activity android:name="com.xywy.livevideo.activity.RechargeActivity">
+            <!--android:permission="com.xywy.permission.Recharge">-->
+            <!--<intent-filter>-->
+            <!--<action android:name="com.xywy.action.Recharge" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="com.xywy.livevideo.debug.DebugEnterActivity" />
+        <activity
+            android:name="com.xywy.livevideo.activity.StartVideoBroadcastActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.xywy.livevideo.debug.NetworkTestActivity" />
+    </application>
+
+</manifest>

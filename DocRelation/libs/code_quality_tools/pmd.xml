@@ -1,0 +1,882 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w2.org/2001/XMLSchema-instance" name="Android Application Rules"
+    xmlns="http://pmd.sf.net/ruleset/1.0.0"
+    xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd"
+    xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd">
+
+    <description>Custom ruleset for Android application</description>
+
+    <exclude-pattern>.*/R.java</exclude-pattern>
+    <exclude-pattern>.*/gen/.*</exclude-pattern>
+
+    <rule ref="rulesets/java/android.xml/CallSuperFirst">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/android.xml/CallSuperLast">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/android.xml/DoNotHardCodeSDCard">
+        <priority>2</priority>
+    </rule>
+
+    <rule ref="rulesets/java/basic.xml/JumbledIncrementer">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/ForLoopShouldBeWhileLoop">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/OverrideBothEqualsAndHashcode">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/DoubleCheckedLocking">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/ReturnFromFinallyBlock">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/UnconditionalIfStatement">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/BooleanInstantiation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/CollapsibleIfStatements">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/ClassCastExceptionWithToArray">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/AvoidDecimalLiteralsInBigDecimalConstructor">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/MisplacedNullCheck">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/AvoidThreadGroup">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/BrokenNullCheck">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/BigIntegerInstantiation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/AvoidUsingOctalValues">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/releases/41.xml/AvoidUsingHardCodedIP">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/releases/41.xml/CheckResultSet">
+        <priority>2</priority>
+    </rule>
+    <!--<rule ref="rulesets/java/basic.xml/AvoidUsingHardCodedIP">-->
+    <!--<priority>2</priority>-->
+    <!--</rule>-->
+    <!--<rule ref="rulesets/java/basic.xml/CheckResultSet">-->
+    <!--<priority>2</priority>-->
+    <!--</rule>-->
+    <rule ref="rulesets/java/basic.xml/AvoidMultipleUnaryOperators">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/ExtendsObject">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/CheckSkipResult">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/AvoidBranchingStatementAsLastInLoop">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/DontCallThreadRun">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/DontUseFloatTypeForLoopIndices">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/basic.xml/SimplifiedTernary">
+        <priority>2</priority>
+    </rule>
+
+    <rule ref="rulesets/java/braces.xml/IfStmtsMustUseBraces">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/braces.xml/WhileLoopsMustUseBraces">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/braces.xml/IfElseStmtsMustUseBraces">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/braces.xml/ForLoopsMustUseBraces">
+        <priority>2</priority>
+    </rule>
+
+    <rule ref="rulesets/java/clone.xml/CloneMethodMustImplementCloneable">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/clone.xml/CloneThrowsCloneNotSupportedException">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/clone.xml/ProperCloneImplementation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/clone.xml/CloneMethodMustBePublic">
+        <priority>2</priority>
+    </rule>
+
+    <rule ref="rulesets/java/codesize.xml/NPathComplexity">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/ModifiedCyclomaticComplexity">
+        <properties>
+            <property name="showClassesComplexity" value="false"></property>
+            <priority>2</priority>
+        </properties>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/CyclomaticComplexity">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/StdCyclomaticComplexity">
+        <priority>3</priority>
+    </rule>
+    <!--use NcssTypeCount instead,ignore comment lines-->
+    <rule ref="rulesets/java/codesize.xml/ExcessiveClassLength">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/ExcessiveMethodLength">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/ExcessiveParameterList">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/ExcessivePublicCount">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/NcssConstructorCount">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/NcssMethodCount">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/NcssTypeCount">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/codesize.xml/TooManyFields">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/42.xml/TooManyMethods">
+        <priority>3</priority>
+    </rule>
+    <!--<rule ref="rulesets/java/codesize.xml/TooManyMethods">&ndash;&gt;-->
+    <!--<priority>3</priority>&ndash;&gt;-->
+    <!--</rule>-->
+
+    <rule ref="rulesets/java/controversial.xml/AssignmentInOperand">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AtLeastOneConstructor">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidAccessibilityAlteration">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidFinalLocalVariable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidLiteralsInIfCondition">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidPrefixingMethodParameters">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidUsingNativeCode">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidUsingShortType">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidUsingVolatile">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/CallSuperInConstructor">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/DataflowAnomalyAnalysis">
+        <priority>4</priority>
+    </rule>
+    <!--not compatible rule in studio plugin and gradle-->
+    <!--<rule ref="rulesets/java/controversial.xml/DefaultPackage">-->
+    <!--<priority>4</priority>-->
+    <!--</rule>-->
+    <rule ref="rulesets/java/controversial.xml/DoNotCallGarbageCollectionExplicitly">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/DontImportSun">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/NullAssignment">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/OneDeclarationPerLine">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/OnlyOneReturn">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/SuspiciousOctalEscape">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/UnnecessaryConstructor">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/UnnecessaryParentheses">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/UseConcurrentHashMap">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/UseObjectForClearerAPI">
+        <priority>4</priority>
+    </rule>
+
+
+    <rule ref="rulesets/java/coupling.xml/CouplingBetweenObjects">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/coupling.xml/ExcessiveImports">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/coupling.xml/LooseCoupling">
+        <priority>2</priority>
+    </rule>
+    <!--not support by plugin-->
+    <!--<rule ref="rulesets/java/coupling.xml/LoosePackageCoupling">-->
+    <!--<priority>3</priority>-->
+    <!--</rule>-->
+    <!--Strongly suggest rule for coupleing ,but don't include it in gradle,it's hard not break this rule-->
+    <rule ref="rulesets/java/coupling.xml/LawOfDemeter">
+        <priority>3</priority>
+    </rule>
+
+    <rule ref="rulesets/java/design.xml/AbstractClassWithoutAbstractMethod">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AbstractClassWithoutAnyMethod">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AccessorClassGeneration">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AssignmentToNonFinalStatic">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidConstantsInterface">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts">
+        <properties>
+            <property name="problemDepth" value="5"></property>
+            <priority>2</priority>
+        </properties>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidInstanceofChecksInCatchClause">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidProtectedFieldInFinalClass">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidReassigningParameters">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidSynchronizedAtMethodLevel">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/BadComparison">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/CloseResource">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/CompareObjectsWithEquals">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ConfusingTernary">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ConstructorCallsOverridableMethod">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/DefaultLabelNotLastInSwitchStmt">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/EmptyMethodInAbstractClassShouldBeAbstract">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/EqualsNull">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/FieldDeclarationsShouldBeAtStartOfClass">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidProtectedMethodInFinalClassNotExtending">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/FinalFieldCouldBeStatic">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/GodClass">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/IdempotentOperations">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ImmutableField">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/InstantiationToGetClass">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/LogicInversion">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/MissingBreakInSwitch">
+        <priority>2</priority>
+    </rule>
+    <!--in builder design patter like datarequestwrapper,
+    it can't handler static inner build class as factory method -->
+    <rule ref="rulesets/java/design.xml/MissingStaticMethodInNonInstantiatableClass">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/NonCaseLabelInSwitchStatement">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/NonStaticInitializer">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/NonThreadSafeSingleton">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/OptimizableToArrayCall">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/PositionLiteralsFirstInComparisons">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/PositionLiteralsFirstInCaseInsensitiveComparisons">
+        <!--pmd 5.1-->
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SingleMethodSingleton">
+        <!--pmd 5.4-->
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SingletonClassReturningNewInstance">
+        <!--pmd 5.4-->
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/PreserveStackTrace">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ReturnEmptyArrayRatherThanNull">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SimpleDateFormatNeedsLocale">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SimplifyBooleanExpressions">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SimplifyBooleanReturns">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SimplifyConditional">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SingularField">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SwitchDensity">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SwitchStmtsShouldHaveDefault">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/TooFewBranchesForASwitchStatement">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UncommentedEmptyConstructor">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UnnecessaryLocalBeforeReturn">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UnsynchronizedStaticDateFormatter">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseCollectionIsEmpty">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseLocaleWithCaseConversions">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseNotifyAllInsteadOfNotify">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseUtilityClass">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseVarargs">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyCatchBlock">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyFinallyBlock">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyIfStmt">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyInitializer">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyStatementBlock">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyStatementNotInLoop">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyStaticInitializer">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptySwitchStatements">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptySynchronizedBlock">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyTryBlock">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyWhileStmt">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/finalizers.xml/AvoidCallingFinalize">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/finalizers.xml/EmptyFinalizer">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/finalizers.xml/FinalizeDoesNotCallSuperFinalize">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/finalizers.xml/FinalizeOnlyCallsSuperFinalize">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/finalizers.xml/FinalizeOverloaded">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/finalizers.xml/FinalizeShouldBeProtected">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/imports.xml/DontImportJavaLang">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/imports.xml/DuplicateImports">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/imports.xml/ImportFromSamePackage">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/imports.xml/TooManyStaticImports">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/imports.xml/UnusedImports">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/imports.xml/UnnecessaryFullyQualifiedName">
+        <!--pmd 5.0-->
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/releases/41.xml/DoNotCallSystemExit">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/releases/41.xml/DoNotUseThreads">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/j2ee.xml/LocalHomeNamingConvention">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/j2ee.xml/LocalInterfaceSessionNamingConvention">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/j2ee.xml/MDBAndSessionBeanNamingConvention">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/j2ee.xml/RemoteInterfaceNamingConvention">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/j2ee.xml/RemoteSessionInterfaceNamingConvention">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/releases/41.xml/StaticEJBFieldShouldBeFinal">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/JUnitAssertionsShouldIncludeMessage">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/JUnitSpelling">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/JUnitStaticSuite">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/JUnitTestContainsTooManyAsserts">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/JUnitTestsShouldIncludeAssert">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/SimplifyBooleanAssertion">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/TestClassWithoutTestCases">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/UnnecessaryBooleanAssertion">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/UseAssertEqualsInsteadOfAssertTrue">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/UseAssertNullInsteadOfAssertTrue">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/UseAssertSameInsteadOfAssertTrue">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/junit.xml/UseAssertTrueInsteadOfAssertEquals">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-jakarta-commons.xml/GuardDebugLogging">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-jakarta-commons.xml/ProperLogger">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-jakarta-commons.xml/UseCorrectExceptionLogging">
+        <priority>3</priority>
+    </rule>
+    <!--the file defines bean class strangely,android has parceable interface-->
+    <rule ref="rulesets/java/javabeans.xml/BeanMembersShouldSerialize">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/javabeans.xml/MissingSerialVersionUID">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml/AvoidPrintStackTrace">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml/LoggerIsNotStaticFinal">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml/MoreThanOneLogger">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml/SystemPrintln">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/ByteInstantiation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/JUnit4SuitesShouldUseSuiteAnnotation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/JUnit4TestShouldUseAfterAnnotation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/JUnit4TestShouldUseBeforeAnnotation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/JUnit4TestShouldUseTestAnnotation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/JUnitUseExpected">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/LongInstantiation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/40rc1.xml/ShortInstantiation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/ReplaceVectorWithList">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/ReplaceHashtableWithMap">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/ReplaceEnumerationWithIterator">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/AvoidEnumAsIdentifier">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/AvoidAssertAsIdentifier">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/IntegerInstantiation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/ByteInstantiation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/ShortInstantiation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/LongInstantiation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/JUnit4TestShouldUseBeforeAnnotation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/JUnit4TestShouldUseTestAnnotation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/JUnit4SuitesShouldUseSuiteAnnotation">
+        <priority>2</priority>
+    </rule>
+    <rule ref="rulesets/java/migrating.xml/JUnitUseExpected">
+        <priority>2</priority>
+    </rule>
+
+
+    <rule ref="rulesets/java/naming.xml/AbstractNaming">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/AvoidDollarSigns">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingMethodName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingTypeName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/BooleanGetMethodName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/ClassNamingConventions">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/GenericsNaming">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/LongVariable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/MethodNamingConventions">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/MethodWithSameNameAsEnclosingClass">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/MisleadingVariableName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/NoPackage">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/PackageCase">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/ShortClassName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/ShortMethodName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/ShortVariable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/SuspiciousConstantFieldName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/SuspiciousEqualsMethodName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/SuspiciousHashcodeMethodName">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/naming.xml/VariableNamingConventions">
+        <properties />
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/AddEmptyString">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/AvoidArrayLoops">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/AvoidInstantiatingObjectsInLoops">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/LocalVariableCouldBeFinal">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/MethodArgumentCouldBeFinal">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/PrematureDeclaration">
+        <priority>3</priority>
+    </rule>
+    <!--set field to default value sames more clearer-->
+    <rule ref="rulesets/java/optimizations.xml/RedundantFieldInitializer">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/SimplifyStartsWith">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/UnnecessaryWrapperObjectCreation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/UseArrayListInsteadOfVector">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/UseArraysAsList">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/UseStringBufferForStringAppends">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/sunsecure.xml/ArrayIsStoredDirectly">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/sunsecure.xml/MethodReturnsInternalArray">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidCatchingGenericException">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidCatchingNPE">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidCatchingThrowable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidLosingExceptionInformation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidRethrowingException">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidThrowingNewInstanceOfSameException">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidThrowingNullPointerException">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidThrowingRawExceptionTypes">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/DoNotExtendJavaLangError">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/DoNotThrowExceptionInFinally">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/ExceptionAsFlowControl">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/SignatureDeclareThrowsException">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/AppendCharacterWithChar">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/AvoidDuplicateLiterals">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/releases/42.xml/AvoidStringBufferField">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/ConsecutiveLiteralAppends">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/InefficientEmptyStringCheck">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/InefficientStringBuffering">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/InsufficientStringBufferDeclaration">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/StringInstantiation">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/StringToString">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/UnnecessaryCaseChange">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/releases/41.xml/UseEqualsToCompareStrings">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/UseIndexOfChar">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/typeresolution.xml/CloneMethodMustImplementCloneable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/typeresolution.xml/LooseCoupling">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/typeresolution.xml/SignatureDeclareThrowsException">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/typeresolution.xml/UnusedImports">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryConversionTemporary">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryFinalModifier">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryReturn">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UnusedNullCheckInEquals">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UselessOperationOnImmutable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UselessOverridingMethod">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UselessParentheses">
+        <priority>4</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedFormalParameter">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedLocalVariable">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedModifier">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateField">
+        <priority>3</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateMethod">
+        <priority>3</priority>
+    </rule>
+
+</ruleset>

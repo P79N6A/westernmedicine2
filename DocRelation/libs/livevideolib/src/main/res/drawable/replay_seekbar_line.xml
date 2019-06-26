@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景项 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="@color/color_666666" />
+        </shape>
+    </item>
+    <!-- 进度图 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="2dp"
+                    android:color="@color/color_0dc3ce" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

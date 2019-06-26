@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/follow_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:src="@drawable/icon_photo_def" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/follow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="林殊"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/follow_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/follow_name"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/follow_name"
+            android:layout_toRightOf="@id/follow_name"
+            android:text="主治医师"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/follow_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/follow_name"
+            android:layout_alignStart="@id/follow_name"
+            android:layout_below="@id/follow_name"
+            android:layout_marginTop="6dp"
+            android:text="已有20人关注他"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/follow_state"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:background="@drawable/follow_button_bg_selector"
+        android:button="@null"
+        android:checked="true"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="已关注"
+        android:textColor="@color/follow_text_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

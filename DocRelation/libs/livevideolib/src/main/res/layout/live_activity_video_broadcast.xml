@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:padding="10dp"
+        android:src="@drawable/close_icon" />
+
+    <RelativeLayout
+        android:id="@+id/ll_upload_cover"
+        android:layout_width="250dp"
+        android:layout_height="141.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/upload_cover_bkg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_cover_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/upload_cover" />
+
+        <TextView
+            android:id="@+id/tv_upload_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_cover_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="上传封面照片"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/sp_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/upload_edittext_bkg"
+        android:hint="请输入直播标题"
+        android:paddingLeft="10dp"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp_type"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/upload_edittext_bkg"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_dropdown" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ff9900"
+        android:text="开始直播"
+        android:textColor="@color/color_white"
+        android:textSize="14sp" />
+
+</LinearLayout>

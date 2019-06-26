@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_avatar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_toRightOf="@id/iv_head_icon"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/doctor_tv_blue_style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:text="姓名" />
+
+            <View
+                android:id="@+id/v_divider"
+                android:layout_width="0.5dp"
+                android:layout_height="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/tv_name"
+                android:background="#E7E7E7" />
+
+
+            <TextView
+                android:id="@+id/tv_post"
+                style="@style/doctor_tv_black_style"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/v_divider"
+                android:text="职位" />
+
+            <TextView
+                android:id="@+id/tv_hospital"
+                style="@style/doctor_tv_black_style"
+
+                android:layout_alignParentBottom="true"
+                android:text="医院"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_down" />
+
+        <RelativeLayout
+            android:id="@+id/rl_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_delete">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="27dp"
+                android:drawableLeft="@drawable/selector_addfrends"
+                android:text="删除"
+                android:textColor="@color/tab_color_nomal"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title_tv_style"
+            android:layout_alignParentTop="true"
+            android:text="标题"
+
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/doctor_tv_black_style"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:singleLine="false"
+            android:text="内容"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <com.xywy.askforexpert.widget.view.MyGridView
+            android:id="@+id/gv_pictures"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:horizontalSpacing="4dp"
+            android:numColumns="2"
+            android:verticalSpacing="4dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_pictures"
+            android:background="@color/consult_title_bg"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/iv_share_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_share_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="7dp"
+                android:maxLines="2"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_content">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/doctor_tv_black_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:textSize="14sp"
+            android:text="时间" />
+
+
+        <TextView
+            android:id="@+id/tv_praise_number"
+            style="@style/doctor_tv_black_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_comment_number"
+            android:drawableLeft="@drawable/btn_praise_selector"
+            android:drawablePadding="6dp" />
+
+        <TextView
+            android:id="@+id/tv_comment_number"
+            style="@style/doctor_tv_black_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/tv_share"
+            android:drawableLeft="@drawable/icon_doctor_discuss"
+            android:drawablePadding="6dp" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            style="@style/doctor_tv_black_style"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/share"
+            android:drawablePadding="6dp"
+            android:text="分享" />
+
+
+        <ImageView
+            android:id="@+id/iv_line_right"
+            android:layout_width="76dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e8e8" />
+        <ImageView
+            android:id="@+id/iv_comment_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/iv_line_right"
+            android:src="@drawable/discuss_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_line_left"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/iv_comment_arrow"
+            android:background="#e8e8e8" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_praise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bottom"
+        android:paddingBottom="10dp"
+        android:paddingTop="6dp">
+
+
+        <com.xywy.askforexpert.widget.view.MyGridView
+            android:id="@+id/gv_praise_head"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:columnWidth="30dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="6"
+            android:layout_marginLeft="10dp"
+            android:stretchMode="none"
+            android:verticalSpacing="10dp" />
+
+        <TextView
+            android:id="@+id/tv_praise_person_number"
+            style="@style/tv_base_style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:text="10人点赞"
+            android:textColor="#666666" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/praise_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E7E7E7" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/diagnosis_search_icon"
+            android:textSize="12sp"
+            android:paddingLeft="16sp"
+            android:drawablePadding="4dp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"/>
+        <LinearLayout
+            android:id="@+id/diagnosis_cancel_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/diagnosis_cancel_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee"/>
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/diagnosis_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#eeeeee"
+        android:dividerHeight="0.5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"></ListView>
+
+</LinearLayout>

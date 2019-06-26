@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f2f2f2"
+                android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_toLeftOf="@+id/tv_count1"
+        android:background="@color/white"
+        android:gravity="center_vertical|left"
+        android:hint="请输入自定义价格"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp16"
+        android:textColor="@color/color_999999"
+        android:textColorHint="@color/color_bbbbbb"
+        android:textSize="@dimen/dp14"/>
+
+    <TextView
+        android:id="@+id/tv_count1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:text="元/次"
+        android:textColor="@color/color_bbbbbb"
+        android:textSize="@dimen/dp14"/>
+</RelativeLayout>
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建议设置为1-99元"
+        android:textColor="@color/color_bbbbbb"/>
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说明："
+            android:textColor="@color/color_bbbbbb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医事服务费，70%支付给医生，30%作为网站平台运营"
+            android:textColor="@color/color_bbbbbb"/>
+    </LinearLayout>
+
+</LinearLayout>

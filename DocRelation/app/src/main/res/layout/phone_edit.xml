@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/persinon_title" />
+
+    <EditText
+        android:id="@+id/edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:layout_marginTop="@dimen/marght_left"
+        android:background="@drawable/yuanjiao"
+        android:hint="请填写手机号码"
+        android:numeric="integer"
+        android:paddingLeft="@dimen/marght_9dp"
+        android:textColor="@color/my_textcolor"
+        android:textSize="@dimen/text_12sp" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <!--<include android:id="@+id/re_top" layout="@layout/title"/>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/menu_tab_height"-->
+        <!--android:background="@drawable/toolbar_bg_no_alpha">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/back_btn_selector_old"-->
+            <!--android:onClick="onClickBack" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/con_tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="资讯详情"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/xywy_top_title_size" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn2_add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/marght_left"-->
+            <!--android:background="@drawable/chat_right_menu_selector"-->
+            <!--android:onClick="onClickBack" />-->
+    <!--</RelativeLayout>-->
+
+    <FrameLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/re_top"></FrameLayout>
+
+    <!--<com.xywy.askforexpert.widget.view.SlidingMenu-->
+        <!--android:id="@+id/slidingMenu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/re_top"></com.xywy.askforexpert.widget.view.SlidingMenu>-->
+
+</RelativeLayout>

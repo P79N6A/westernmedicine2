@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xywy.askforexpert">
+
+    <application
+        android:name=".YMApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/dp_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:taskAffinity="com.xywy.medicine_super_market"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.account.LoginActivity"
+            android:allowTaskReparenting="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.MainActivity"
+            android:allowTaskReparenting="false"
+            android:label="MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 聊天图片展示大图 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.msgchat.ShowBigImage"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的收藏列表 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.collection.MyConlectListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.setting.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- &lt;!&ndash; 我的下载 &ndash;&gt; -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.download.MyDownActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的下载 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.download.DownloadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的积分 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.integral.MyScoresActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 即将过期的积分 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.integral.GoneScoresActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的钱包 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.pause.MyPurseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的钱包 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.pause.MyPurseNActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的消息 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.PersonInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 证件上传 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.IDCardUplodActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 认证信息完善页面 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.ApproveInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            />
+        <!--android:windowSoftInputMode="adjustPan"-->
+
+        <!-- 积分 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.document.IntegralRechargeactivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 学生认证 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.IDCardUpStuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 审核状态 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.CheckStateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 图片展示 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.photo.PhotoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 个人信息 输入框 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.InfoEditTextActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 服务窗加载更多 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.ServiceMoreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- &lt;!&ndash; 个人风踩界面 &ndash;&gt; -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.PersonalStyleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 毕业院校选择 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.SchoolListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 地区选择 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.AreaListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!--  -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.BaseJobListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的小站 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.smallstation.MySmallStationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 执业类型 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.MyJobTypeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 服务窗问题广场 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.ServiceQueActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 服务窗电话医生 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.ServiceTelDoctor"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 预约加号 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.ServiceMakeApp"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 家庭医生 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.ServiceHomeDoctorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 科室 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.SelectSectionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.media.newpart.MediaListActivityNew"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!-- 资讯 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.media.MedicalInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 药典 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.codex.CodexFragActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 资讯 详情 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.media.InfoDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"/>
+
+        <!-- 分享名片夹 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.share.ShareCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <!-- 分享web展示页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.share.ShareWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <!-- 我的回复 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.que.QueMyReplyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 发现 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.que.QueFoundActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 问题广场设置 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.que.QueSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 等待确认审核 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.MAppCheckPendingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 药典三级页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.codex.BookWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的诊所 预约加号 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.AppointActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 名片夹 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.CardHolderMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 临床指南 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.linchuang.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘中心 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.RecruitCenterMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘中心 详情页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.RecruitWebMianActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘中心 高级搜索页面 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.RecruitSerchEditAcitvity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的简历 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.MyResumeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 收藏 投递 简历 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.MyResumeSecondActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 预约加号时间设置 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.NumberTimeSetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 医圈用户中心 发消息 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.doctorcircle.DoctorCircleSendMessageActivty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+
+        <!-- 医圈动态消息页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.docotorcirclenew.activity.DoctorMessageNotify"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 答题绩效 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.que.QuePerActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 预约加号 预约方式 选择 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.AddNumberChoose"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 预约加号 文本狂 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.AddNumberEditAcitvity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 预约加号 停诊设置 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.NumberStopTimeActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:theme="@style/SampleTheme.Light"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 开通家庭医生 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.FamDoctorOpenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 电话医生 开通 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.PhoneDoctorOpenActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 电话医生服务费用 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.Phone_moneyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 电话医生接受服务电话 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.Pho_Doc_Ser_PhoneActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 电话医生服务时间 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.PhoneServerTimeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:theme="@style/SampleTheme.Light"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 账号与安全 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.IDAndSafeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 患者管理 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.patient.activity.PatientMainActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 服务过的患者 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.Patient_ServerGoneActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 分组管理 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.Patient_Group_ManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 新患者 列表页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.NewPatientActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 绑定手机号 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.BindPhoneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.account.ChangePwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 绑定成功 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.BindTelSusActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加患者 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.patient.activity.AddPatientEditActvity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.patient.activity.AddNewPatientActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- &lt;!&ndash; 添加诊断纪录 &ndash;&gt; -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.DiagnoseLogListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加诊断纪录 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.DiagnoselogAddEditActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 诊断纪录 列表可编辑详情页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.DiagnoseLogListInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 电话医生详情页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.service.TelDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.doctorcircle.SeePicActivty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 诊断纪录 详细信息 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.TreatmentInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 消息设置 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.setting.MsgManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 修改诊断 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.UpdatePatientInfoActvity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加新的诊断纪录 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.patient.activity.AddTreatmentListLogInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 选择医院 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.SelectHospitalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 家庭医生 价格 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.FamDoctorMoneyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 家庭医生 医生寄予 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.FamDoctorWordsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 家庭医生 接电话时间设置 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.FamServerTimeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:theme="@style/SampleTheme.Light"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 家庭医生 折扣设置 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.FamCategroyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 停诊服务 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.NumberStopTimeListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 好友认证通过 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.CardNewFriendActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 家庭医生时间展示 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.FamDoctorTimeShowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 荣誉 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.PersonalHonorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加新朋友 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.AddNewCardHolderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 搜索新朋友 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.SerchNewCardHolderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 认证信息填写 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.AddCardHoldVerifyActiviy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 聊体页面 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.message.msgchat.ChatMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+
+        <!-- 搜索 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.SerchCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:theme="@style/Theme.Translucent"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 药典 手册搜索 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.codex.BookSerchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <!-- 资讯搜索 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.media.CounsultSerchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <!-- 临床指南 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.linchuang.fragment.GuideMainFragment"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 邀请好友 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.InviteNewFriendActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 验证详细信息 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.NewCardInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.collection.MyConlectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 擅长疾病 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.userinfo.SpecialActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 邀请好友主页面 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.friend.InviteNewFriendMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘搜索 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.R_SerchBaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 我的诊所 问题广场 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.my.clinic.QueOpenActivity"
+            android:allowTaskReparenting="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘搜索 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.RecruitSerchMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 关于页 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.my.setting.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 投递过的职位 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.DeliverActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘搜索 职位类别 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.R_SerchBaseJobTypeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 招聘搜索职位 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.R_AreaListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.recruit.R_SerchBaseJobtype2Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 科室分类 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.main.service.linchuang.SectionTypeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 他的健康状态 -->
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.diagnose.HealthTypeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:taskAffinity="com.xywy.medicine_super_market">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID 1101752729 -->
+                <data android:scheme="tencent1101752729"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.media.MediaSettingActivity"
+            android:label="@string/title_activity_media_setting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.main.media.MediaDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.message.msgchat.WebUrlOpenActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.discovery.answer.activity.AnswerDetailActivity"
+            android:label="AnswerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.doctorcircle.topic.CreateEditTopicActivity"
+            android:label="@string/title_activity_create_edit_topic"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.doctorcircle.topic.MoreTopicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+            android:theme="@style/StyledIndicators"/>
+
+        <activity
+            android:name="com.xywy.askforexpert.module.doctorcircle.report.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"
+
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <!-- 视频通话 -->
+        <activity
+            android:name="com.xywy.askforexpert.module.message.msgchat.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.xywy.medicine_super_market"/>
+
+
+    </application>
+
+</manifest>

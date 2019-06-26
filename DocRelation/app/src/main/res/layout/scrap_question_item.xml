@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marght_12dp">
+
+
+        <com.xywy.askforexpert.widget.CircleImageView
+            android:id="@+id/iv_patient_head"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="16dp"
+            tool:src="@drawable/answer_score_icon_selector" />
+
+        <TextView
+            android:id="@+id/tv_patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_patient_head"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_14sp"
+            tool:text="患者名字" />
+
+        <TextView
+            android:id="@+id/tv_patient_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_patient_name"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/tv_patient_name"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp"
+            tool:text="男" />
+
+        <TextView
+            android:id="@+id/tv_patient_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_patient_name"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/tv_patient_sex"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp"
+            tool:text="12岁" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_patient_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:textColor="#fea116"
+            android:textSize="@dimen/text_12sp"
+            tool:text="悬￥3.0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_question_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_msg_tip"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:maxLines="2"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_13sp"
+            tool:text="内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域内容区域"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_scrap"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/scrap_button_shape"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="抢题"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

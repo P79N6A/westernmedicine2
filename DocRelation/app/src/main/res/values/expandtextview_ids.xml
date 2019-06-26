@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="expandable_text1"/>
+    <item type="id" name="expand_collapse1"/>
+    <item type="id" name="expand_bottom1"/>
+</resources>

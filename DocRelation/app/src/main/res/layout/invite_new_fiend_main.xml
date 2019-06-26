@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <!--<include layout="@layout/title" />-->
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/re_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marght_left"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onClick_back"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/from_contacts_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/from_contacts" />
+
+                <TextView
+                    android:id="@+id/from_contacts_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@id/from_contacts_icon"
+                    android:layout_toRightOf="@id/from_contacts_icon"
+                    android:text="手机联系人"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/from_contacts_title"
+                    android:layout_alignStart="@id/from_contacts_title"
+                    android:layout_below="@id/from_contacts_title"
+                    android:layout_marginTop="4dp"
+                    android:text="添加到通讯录好友"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/enter_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E7E7E7" />
+
+            <RelativeLayout
+                android:id="@+id/re_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onClick_back"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/from_wechat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/from_wechat" />
+
+                <TextView
+                    android:id="@+id/from_wechat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@id/from_wechat_icon"
+                    android:layout_toRightOf="@id/from_wechat_icon"
+                    android:text="微信好友"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/from_wechat_title"
+                    android:layout_alignStart="@id/from_wechat_title"
+                    android:layout_below="@id/from_wechat_title"
+                    android:layout_marginTop="4dp"
+                    android:text="邀请微信好友"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/enter_right" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E7E7E7" />
+
+            <RelativeLayout
+                android:id="@+id/re_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onClick_back"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/from_qq_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/from_qq" />
+
+                <TextView
+                    android:id="@+id/from_qq_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@id/from_qq_icon"
+                    android:layout_toRightOf="@id/from_qq_icon"
+                    android:text="QQ好友"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/from_qq_title"
+                    android:layout_alignStart="@id/from_qq_title"
+                    android:layout_below="@id/from_qq_title"
+                    android:layout_marginTop="4dp"
+                    android:text="邀请QQ好友"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/enter_right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/person_interested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_bg_selector"
+                android:onClick="onClick_back"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/from_interested_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/from_interested" />
+
+                <TextView
+                    android:id="@+id/from_interested_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@id/from_interested_icon"
+                    android:layout_toRightOf="@id/from_interested_icon"
+                    android:text="你可能感兴趣的人"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/from_interested_title"
+                    android:layout_alignStart="@id/from_interested_title"
+                    android:layout_below="@id/from_interested_title"
+                    android:layout_marginTop="4dp"
+                    android:text="您可能对这些医生感兴趣"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/enter_right" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

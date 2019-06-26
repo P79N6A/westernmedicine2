@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+    <!--<include layout="@layout/persinon_title" />-->
+
+    <EditText
+        android:id="@+id/edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:hint="请填写分组名"
+        android:maxLength="100"
+        android:padding="@dimen/marght_15dp"
+        android:textColor="@color/color_333333"
+        android:gravity="left"
+        android:textSize="@dimen/text_12sp" />
+
+</LinearLayout>

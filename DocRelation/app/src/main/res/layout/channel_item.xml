@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_subscribe"
+    android:layout_width="wrap_content"
+    android:layout_height="38dp"
+    android:minHeight="38dp">
+
+    <TextView
+        android:id="@+id/text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/subscribe_item_bg"
+        android:gravity="center"
+        android:minHeight="38dp"
+        android:minWidth="100dp"
+        android:textColor="@color/subscribe_item_text_color"
+        android:textSize="12.0sp" />
+
+    <!-- android:background="@drawable/subscribe_item_bg"-->
+
+    <!-- android:layout_margin="5dip" -->
+
+    <ImageView
+        android:id="@+id/icon_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- android:src="@drawable/channel_new"-->
+
+</RelativeLayout>

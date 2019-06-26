@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_f7f7f7"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg_no_alpha_new">
+
+        <ImageView
+            android:id="@+id/card_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fanhui"
+            android:padding="@dimen/dp16"
+            android:layout_centerVertical="true"
+            android:onClick="cardListener"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="好友列表"
+            android:textColor="@color/c333"
+            android:textSize="@dimen/text_16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/tv_loaing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="正在刷新好友" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/search_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/serch_height"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_marginTop="@dimen/marght_8dp"
+            android:layout_marginBottom="@dimen/dp8"
+            android:background="@drawable/activity_card_number_search_bg"
+            android:drawableLeft="@drawable/search"
+            android:hint="搜索"
+            android:paddingLeft="@dimen/marght_left"
+            android:singleLine="true"
+            android:textColor="@color/my_textcolor1"
+            android:textSize="@dimen/text_12sp" />
+
+        <RelativeLayout
+            android:id="@+id/re_new_frident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_bar_view"
+            android:background="@drawable/item_bg_selector"
+            android:duplicateParentState="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp">
+            <ImageView
+                android:id="@+id/healthy_user_list_item_avatar"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/newfr" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_toRightOf="@id/healthy_user_list_item_avatar"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp14"
+                android:text="新朋友"
+                android:textColor="@color/c333"
+                android:textSize="@dimen/text_14sp" />
+
+            <ImageView
+                android:id="@+id/enter_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marght_left"
+                android:background="@drawable/enter_right" />
+
+            <TextView
+                android:id="@+id/tv_newfriend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@id/enter_night"
+                android:gravity="center"
+                tools:text="3"
+                android:textSize="@dimen/text_12sp"
+                android:textColor="@color/c999" />
+
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/re_mypatient"
+            layout="@layout/no_data"
+            android:background="@android:color/transparent" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/re_new_frident"
+            android:layout_marginTop="@dimen/dp05"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#eeeeee"
+            android:dividerHeight="@dimen/dp05"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false" />
+
+        <com.xywy.askforexpert.widget.Sidebar2
+            android:id="@+id/sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/re_new_frident"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/floating_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:layout_toLeftOf="@+id/iv_arrow"
+            app:tabGravity="fill"
+            android:layout_centerVertical="true"
+            app:tabIndicatorColor="@color/app_common_tv_green"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/app_common_tv_green"
+            app:tabTextColor="#333333" />
+
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:layout_width="35dp"
+            android:background="@color/white"
+            android:src="@drawable/icon_arrow_down_gray"
+            android:layout_height="45dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/app_common_tv_green"
+        android:layout_height="0.5dp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.xywy.askforexpert.widget.liveshow.ChannelLayout
+            android:id="@+id/channel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

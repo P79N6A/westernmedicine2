@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_question_top"
+        android:layout_marginTop="10dp"
+        style="@style/answer_detail_bg_style"
+        android:shadowColor="@color/white"
+        android:visibility="gone"
+        android:text="这是题干(1分)" />
+
+    <com.xywy.askforexpert.widget.module.answer.ListViewForScrollView
+        android:id="@+id/lv_answers"
+        android:layout_width="match_parent"
+        android:listSelector="@null"
+        android:divider="@null"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_question_top"
+        android:visibility="visible">
+
+    </com.xywy.askforexpert.widget.module.answer.ListViewForScrollView>
+
+    <TextView
+        android:id="@+id/tv_question_bottom"
+        android:layout_marginTop="10dp"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/lv_answers"
+        style="@style/answer_detail_bg_style"
+        android:visibility="gone"
+        android:text="这是题干(1分)" />
+
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_marginTop="12dp"
+        style="@style/answer_detail_bg_style"
+        android:layout_below="@+id/tv_question_bottom"
+        android:text="答案" />
+
+
+    <TextView
+        android:id="@+id/tv_analysis"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        style="@style/answer_detail_bg_style_light_tv1"
+        android:layout_below="@+id/tv_answer"
+        android:visibility="gone"
+        android:text="答案解析" />
+
+
+</RelativeLayout>

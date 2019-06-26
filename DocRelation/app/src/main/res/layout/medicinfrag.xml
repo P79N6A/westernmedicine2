@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/no_data" />
+    <!--     <com.xywy.askforexpert.refresh.PullToRefreshExpandListView
+            android:id="@+id/expand_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+             >
+      </com.xywy.askforexpert.refresh.PullToRefreshExpandListView> -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xywy.askforexpert.widget.view.MyLoadMoreExpandListView
+            android:id="@+id/expand_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#eeeeee"
+            android:dividerHeight="1dp"
+            android:text="@string/hello_world"></com.xywy.askforexpert.widget.view.MyLoadMoreExpandListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="tab标题"
+        android:textColor="@drawable/consult_tab_text_selector" />
+
+    <TextView
+        android:id="@+id/tv_msg_number"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_title"
+        android:background="@drawable/no_read_num_bkg_oval"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/tv_msg_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_title"
+        android:background="@drawable/no_read_num_bkg_oval"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:src="@drawable/onlineroom_arrow_down"/>
+
+
+</RelativeLayout>

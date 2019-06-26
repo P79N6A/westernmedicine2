@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marght_left"
+        android:paddingRight="@dimen/marght_right" >
+
+        <RatingBar
+            android:id="@+id/commentlist_top_ratingbar"
+            style="@style/RatingBar_Small_huise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="1"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/comm_totalscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_left"
+            android:text="@string/home_doctor_txt_comment_score"
+            android:textColor="@color/impor_number"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/commentlist_top_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/home_doctor_txt_comment_percent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/my_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#ffff0000"
+                android:dividerHeight="10dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_80dp"
+                android:background="@drawable/service_more_none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_no_data"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marght_left"
+                android:text="@string/no_data_txt"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/text_14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

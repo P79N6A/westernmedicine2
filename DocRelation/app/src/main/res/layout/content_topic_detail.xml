@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topic_detail_page_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xywy.askforexpert.module.docotorcirclenew.activity.NewTopicDetailActivity"
+    tools:showIn="@layout/activity_new_topic_detail">
+
+    <RelativeLayout
+        android:id="@+id/layout_with_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/topic_detail_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/topic_detail_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:divider="#E7E7E7"
+                android:dividerHeight="0.5dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="?attr/selectableItemBackground" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/layout_deleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="16dp"
+        android:drawableTop="@drawable/topic_deleted"
+        android:gravity="center"
+        android:text="这个话题被删除了"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

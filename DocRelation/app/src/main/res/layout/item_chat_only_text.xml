@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/marght_12dp"
+    android:paddingTop="@dimen/marght_12dp">
+    <TextView
+        android:id="@+id/msg_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/rl_chat_recv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_chat_patient_head"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="@dimen/marght_12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_chat_head_male_18_40" />
+
+        <TextView
+            android:id="@+id/tv_chat_recv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marght_8dp"
+            android:layout_marginRight="48dp"
+            android:layout_toRightOf="@id/iv_chat_patient_head"
+            android:background="@drawable/chat_bg_left"
+            android:lineSpacingExtra="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="@dimen/marght_12dp"
+            android:paddingTop="6dp"
+            android:text="问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_chat_doctor_head"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marght_12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_chat_head_male_18_40" />
+
+        <TextView
+            android:id="@+id/tv_chat_send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_chat_doctor_head"
+            android:background="@drawable/chat_bg_right"
+            android:gravity="left"
+            android:lineSpacingExtra="6dp"
+            android:maxWidth="270dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="@dimen/marght_12dp"
+            android:paddingTop="6dp"
+            android:text="问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/tv_chat_send_tip_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_chat_send_text"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_chat_send_text"
+            android:drawableRight="@drawable/icon_chat_send_failed"
+            android:text="发送失败"
+            android:textColor="@color/tv_black_999"
+            android:textSize="@dimen/text_10sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_chat_send_tip_sending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_chat_send_text"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/tv_chat_send_text"
+            android:text="正在发送..."
+            android:textColor="@color/tv_black_999"
+            android:textSize="@dimen/text_10sp" />
+    </RelativeLayout>
+</LinearLayout>

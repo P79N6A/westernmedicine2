@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_tab_height"
+        android:background="@drawable/toolbar_bg"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true">
+
+        <ImageView
+            android:id="@+id/msg_card_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_card_book"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+
+        <ImageButton
+            android:id="@+id/message_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marght_left"
+            android:background="@drawable/add_selector" />
+    </RelativeLayout>
+
+    <com.xywy.askforexpert.widget.view.SlidingMenu
+        android:id="@+id/msg_slidingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.xywy.askforexpert.widget.view.SlidingMenu>
+
+</LinearLayout>

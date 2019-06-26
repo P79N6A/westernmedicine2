@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--stone 去掉  android:state_focused="true" 否则代码中设置enabled不起作用-->
+    <item android:drawable="@drawable/chat_bottom_item_sum_up_enable" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/chat_bottom_item_sum_up_disable" android:state_enabled="false"></item>
+
+</selector>

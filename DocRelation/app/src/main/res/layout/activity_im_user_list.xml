@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:poplar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#F0F0F0"
+    android:layout_height="match_parent">
+
+   <include
+       android:id="@+id/search_view"
+       layout="@layout/common_search_view"/>
+
+
+    <ExpandableListView
+        android:layout_below="@+id/search_view"
+        android:id="@+id/lv_e_list_view"
+        android:groupIndicator="@null"
+        android:divider="#F0F0F0"
+        android:childDivider="#F0F0F0"
+        android:dividerHeight="0.5dp"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ExpandableListView>
+
+    <com.xywy.askforexpert.widget.module.im.imgroup.PinyinIndexer
+        android:id="@+id/pinyin_bar"
+        android:layout_below="@+id/search_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        poplar:widthOffset="15dip"
+        poplar:minFontSize="32"
+        poplar:maxFontSize="60"
+        poplar:tipFontSize="72"
+        poplar:maxBezierHeight="150dip"
+        poplar:maxBezierWidth="180dip"
+        poplar:additionalTipOffset="40dip"
+        android:layout_above="@+id/rl_bottom"
+        poplar:fontColor="#ff333333" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#E6E6E6"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_confirm"
+            android:foregroundGravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical">
+
+                <GridView
+                    android:id="@+id/gv_selected_members"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:listSelector="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:stretchMode="spacingWidthUniform" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/btn_base_style"
+            android:layout_width="92dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

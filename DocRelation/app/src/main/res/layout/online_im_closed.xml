@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp">
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd"
+            android:layout_gravity="center"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#666666"
+            android:text="问诊结束"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_closed_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="12dp"
+            android:text="感谢您的付出，用户对您进行了评价"
+            android:textColor="#666666"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="11dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/score_img"
+                android:layout_width="60dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:src="@drawable/xing1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="满意"
+                android:textColor="#666666"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

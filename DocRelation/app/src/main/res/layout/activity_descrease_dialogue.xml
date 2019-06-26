@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="提示"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:text="您当前该药品数量为0，是否将药品移出处方?"
+                android:gravity="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#82858b"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textColor="#1979ca"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_white_bg"
+                android:text="取消"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-10dp"
+                android:background="#82858b"/>
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textColor="#1979ca"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_white_bg"
+                android:text="确定"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

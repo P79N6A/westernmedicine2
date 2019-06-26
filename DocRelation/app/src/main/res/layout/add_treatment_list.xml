@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+    <!--<include-->
+        <!--android:id="@+id/treat_titlebar"-->
+        <!--layout="@layout/persinon_title" />-->
+
+    <com.xywy.askforexpert.widget.ReboundScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/treatment_llayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="请填写治疗情况，检查结果，症状及体征等"
+                    android:lineSpacingExtra="4dp"
+                    android:maxLines="7"
+                    android:minLines="5"
+                    android:paddingLeft="@dimen/marght_left"
+                    android:paddingRight="@dimen/marght_right"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/treatment_rlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/iv_upload_pics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:background="@drawable/icon_upload"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.xywy.askforexpert.widget.view.MyGridView
+                    android:id="@+id/gv_shwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="66dp"
+                    android:horizontalSpacing="16dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="auto_fit"
+                    android:padding="@dimen/marght_left"
+                    android:cacheColorHint="@color/white"
+                    android:background="@color/white"
+                    android:verticalSpacing="16dp" >
+                </com.xywy.askforexpert.widget.view.MyGridView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.xywy.askforexpert.widget.ReboundScrollView>
+
+</LinearLayout>

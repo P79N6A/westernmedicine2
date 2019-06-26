@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/user_center_header"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/user_header_layout_top_bg"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:orientation="horizontal">
+        <com.xywy.askforexpert.widget.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_photo_def"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_img"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:paddingLeft="@dimen/dp6"
+            tools:text="王明伟"/>
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textColor="@color/color_ddf6f1"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_name"
+            tools:text="主任医师"/>
+        <RelativeLayout
+            android:id="@+id/rl_checkin"
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marght_16dp"
+            android:background="@drawable/bg_black_transparent_50">
+            <ImageView
+                android:id="@+id/iv_qd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/qd_ok"
+                android:gravity="center" />
+        </RelativeLayout>
+
+</RelativeLayout>
+<include layout="@layout/activity_my_purse_header_layout"/>
+</LinearLayout>

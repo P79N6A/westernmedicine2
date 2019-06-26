@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:gravity="center"
+        android:drawablePadding="15dp"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:drawableTop="@drawable/bg_liveshow_my_liveshow_no_show"
+        android:text="暂无直播"
+        android:visibility="visible" />
+
+</RelativeLayout>
+

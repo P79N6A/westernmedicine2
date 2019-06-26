@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--分享发钱啦 主页面-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.xywy.askforexpert.module.my.pause.InviteForMoney">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_bg_no_alpha"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/invite_to_gain_money"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- 邀请发钱啦 内容页面 -->
+    <include layout="@layout/content_invite_for_money" />
+
+    <!-- 悬浮分享按钮 -->
+    <ImageButton
+        android:id="@+id/float_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/share_button_big"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

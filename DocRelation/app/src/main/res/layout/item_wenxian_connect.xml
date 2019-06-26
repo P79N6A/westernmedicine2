@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp">
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/icon_wx" />
+
+    <TextView
+        android:id="@+id/tv_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="科学"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+</LinearLayout>

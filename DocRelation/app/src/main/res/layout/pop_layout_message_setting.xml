@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_messagesetting_xiala_bg"
+    android:orientation="vertical">
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="@dimen/dp10"-->
+        <!--android:src="@drawable/discuss_arrow"/>-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lay1"
+        android:layout_width="@dimen/dp140"
+        android:layout_height="@dimen/dp0"
+        android:background="?attr/selectableItemBackground"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--android:background="@drawable/round_bg_post2"-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messagesetting_lshf"
+            />
+
+        <TextView
+            android:id="@+id/tv_sort1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp14"
+            android:text="历史回复"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--style="@style/line_e8e8e8"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_sort1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:background="@drawable/selector_post_sortbtn4"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="gone"-->
+    <!--android:textColor="@color/post_sort_color_selector"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_sort2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:background="@drawable/selector_post_sortbtn4"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="gone"-->
+    <!--android:textColor="@color/post_sort_color_selector"-->
+    <!--android:textSize="14dp" />-->
+
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="@dimen/dp140"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--android:background="@drawable/round_bg_post3"-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messagesetting_lysz"
+            />
+
+        <TextView
+            android:id="@+id/tv_sort2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp14"
+            android:gravity="center_vertical"
+            android:text="留言设置"
+            android:textColor="@color/selector_333333_88333333"
+            android:textSize="@dimen/dp14"/>
+
+    </LinearLayout>
+
+</LinearLayout>

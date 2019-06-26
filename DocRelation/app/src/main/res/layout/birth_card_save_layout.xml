@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/birth_card_save_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/birth_save_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/happy_birth_divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="我的生日愿望"
+        android:textColor="#F8AE1E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/my_wishes_to_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="3"
+        android:minLines="3"
+        android:text="@string/birthday_wishes" />
+
+    <TextView
+        android:id="@+id/back_to_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="返回修改"
+        android:textColor="#F8AE1E"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/save_to_sdcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/happy_birth_button_yellow"
+        android:gravity="center"
+        android:text="保存到手机"
+        android:textColor="#7C450F"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/save_and_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/happy_birth_button_red"
+        android:gravity="center"
+        android:text="保存并分享到医圈"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

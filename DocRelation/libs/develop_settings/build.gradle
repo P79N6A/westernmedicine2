@@ -1,0 +1,31 @@
+import java.text.DateFormat
+
+apply plugin: 'com.android.library'
+apply from: "${androidCommonDir}/buildsystem/commonModuleConfig.gradle"
+def releaseTime() {
+    return DateFormat.getDateTimeInstance().format(new Date());
+//    return new Date().format("yyyy-MM-dd HH:mm")
+}
+android {
+    defaultConfig {
+        buildConfigField 'String', 'build_time', "\""+releaseTime()+"\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    compile libraries.stetho
+    compile libraries.tinyDancer
+    compile libraries.leakCanary
+    compile libraries.lynx
+    compile libraries.processPhoenix
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile libraries.junit
+    compile libraries.supportAppCompatV7
+    compile libraries.butterKnife
+    compile libraries.blockcanary
+}

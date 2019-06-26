@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16">
+
+        <ImageView
+            android:id="@+id/img_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_small"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_toLeftOf="@id/img_enter"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_tabtext"
+            android:textSize="@dimen/dp14"
+            />
+    </RelativeLayout>
+
+    <!--  <View
+         android:layout_height="1dp"
+         android:layout_width="match_parent"
+         android:background="@color/my_line"/> -->
+
+</LinearLayout>

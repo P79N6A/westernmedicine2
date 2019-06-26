@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_subscribe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/main_media_enter_btn_bg">
+
+        <TextView
+            android:id="@+id/tv_my_subscribe"
+            style="@style/deep_gray_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_main_my_subscribe"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="我的订阅" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_subscribe_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/main_media_enter_btn_bg">
+
+        <TextView
+            android:id="@+id/tv_subscribe_more"
+            style="@style/deep_gray_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_main_subscribe_more"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="订阅更多" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

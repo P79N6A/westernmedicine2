@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/LinearLayout_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marght_left"
+        android:text="停诊时间"
+        android:textColor="@color/purse_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marght_52dp"
+            android:background="@drawable/item_bg_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:gravity="center_vertical"
+                android:text="开始时间"
+                android:textSize="@dimen/text_14sp" />
+
+            <ImageView
+                android:id="@+id/img_enter_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marght_left"
+                android:background="@drawable/enght_3" />
+
+            <TextView
+                android:id="@+id/tv_date_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/marght_left"
+                android:layout_marginRight="@dimen/marght_left"
+                android:layout_toLeftOf="@id/img_enter_start"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/purse_blue"
+                android:textSize="@dimen/text_12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/marght_8dp" >
+
+                <com.xywy.d_platform_n.NumberPicker
+                    android:id="@+id/np1"
+                    android:layout_width="@dimen/height_80dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="年"
+                    android:textSize="20dp" />
+
+                <com.xywy.d_platform_n.NumberPicker
+                    android:id="@+id/np2"
+                    android:layout_width="@dimen/height_80dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="月"
+                    android:textSize="20dp" />
+
+                <com.xywy.d_platform_n.NumberPicker
+                    android:id="@+id/np3"
+                    android:layout_width="@dimen/height_80dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="日"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/my_line" />
+
+            <RelativeLayout
+                android:id="@+id/re_stop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marght_52dp"
+                android:background="@drawable/item_bg_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:gravity="center_vertical"
+                    android:text="结束时间"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageView
+                    android:id="@+id/img_enter_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/marght_left"
+                    android:background="@drawable/enght_3" />
+
+                <TextView
+                    android:id="@+id/tv_date_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/marght_left"
+                    android:layout_marginRight="@dimen/marght_left"
+                    android:layout_toLeftOf="@id/img_enter_top"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/purse_blue"
+                    android:textSize="@dimen/text_12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_stop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/dialog_content_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/marght_8dp" >
+
+                    <com.xywy.d_platform_n.NumberPicker
+                        android:id="@+id/np4"
+                        android:layout_width="@dimen/height_80dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:text="年"
+                        android:textSize="20dp" />
+
+                    <com.xywy.d_platform_n.NumberPicker
+                        android:id="@+id/np5"
+                        android:layout_width="@dimen/height_80dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:text="月"
+                        android:textSize="20dp" />
+
+                    <com.xywy.d_platform_n.NumberPicker
+                        android:id="@+id/np6"
+                        android:layout_width="@dimen/height_80dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:text="日"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/LinearLayout_height"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/marght_left"
+                    android:text="停诊原因"
+                    android:textColor="@color/purse_blue" />
+
+                <EditText
+                    android:id="@+id/edit_resason"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/marght_52dp"
+                    android:background="@drawable/zhijiao"
+                    android:hint="请在此注明您关闭服务的原因"
+                    android:paddingLeft="@dimen/marght_left"
+                    android:textSize="@dimen/text_14sp" />
+
+                <Button
+                    android:id="@+id/next_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_tab_height"
+                    android:layout_marginLeft="@dimen/marght_8dp"
+                    android:layout_marginRight="@dimen/marght_8dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/blue_btn_selector"
+                    android:onClick="onClick_back"
+                    android:text="发布"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

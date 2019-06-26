@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="16dp"
+        android:hint="请输入分组名称1-10字"
+        android:textSize="13sp"
+        android:textColor="#666666"/>
+</LinearLayout>

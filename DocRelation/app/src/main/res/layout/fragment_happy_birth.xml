@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.xywy.askforexpert.module.message.HappyBirthFragment">
+
+    <LinearLayout
+        android:id="@+id/birth_card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/birth_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/birth_bg_cake" />
+
+        <TextView
+            android:id="@+id/get_birth_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/happy_birth_button_yellow"
+            android:gravity="center"
+            android:text="领取300积分"
+            android:textColor="#7C450F"
+            android:textSize="18sp" />
+
+        <include layout="@layout/birth_wishes_write_layout" />
+
+        <include layout="@layout/birth_card_save_layout" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/happy_birth_close" />
+
+</FrameLayout>

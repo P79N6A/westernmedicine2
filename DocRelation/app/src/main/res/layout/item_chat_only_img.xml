@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:paddingBottom="@dimen/marght_12dp"
+             android:paddingTop="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_recv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_chat_patient_head"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="@dimen/marght_12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_chat_head_male_18_40" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_chat_recv_imgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@+id/iv_chat_patient_head">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_chat_doctor_head"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marght_12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_chat_head_male_18_40" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_chat_send_imgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toLeftOf="@+id/iv_chat_doctor_head">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</FrameLayout>

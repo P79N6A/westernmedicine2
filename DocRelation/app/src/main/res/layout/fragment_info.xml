@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/common_titlebar_height"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--app:layout_collapseMode="pin"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+        <!--&lt;!&ndash;标题&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title_center"-->
+            <!--style="@style/title_tv_style"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text="资讯" />-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <include layout="@layout/news_tab_layout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</LinearLayout>

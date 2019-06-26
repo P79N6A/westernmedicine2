@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>OAuth2.0协议&amp;第三方登录（微信，QQ，微博）</h1>
+<h2>引入module注意事项:</h2>
+<h3>1.在主项目application中添加以下初始化代码:</h3>
+<pre><code>    LoginManager.init(this);
+    LoginServiceProvider.setDevEnv(BuildConfig.DEBUG);
+    RequestManager.init(this);
+    //图片加载器
+    ImageLoaderUtils.getInstance().init(this);
+    //初始化个人信息(定位信息)
+    UserInfoCenter.getInstance();
+</code></pre>
+
+<h3>2.在主项目工程下添加wxapi包和布局文件,如demo所示</h3>
+<h2>OAuth 2.0协议</h2>
+<h3>1.应用场景</h3>
+<h3>OAuth 2.0是一个关于授权的开放标准。</h3>
+<h3>假如某个应用需要得到你的授权，如果不使用OAuth2.0协议，会要求输入账号密码。这样就带来了一些问题：</h3>
+<p>1.第三方应用会保存用户的账户和密码，这样很不安全。<br />
+2.用户没法限制第三方应用的授权范围和有效期。<br />
+3.用户只有修改密码才会取消授权，但这样的话会使其他的第三方授权也失效。<br />
+4.如果第三方应用被破解，那么就会导致用户密码泄露，和数据泄露。  </p>
+<h3>使用OAuth 2.0就不会出现上述问题了。</h3>
+<h3>2.OAuth思路</h3>
+<p>OAuth在&quot;客户端&quot;与&quot;服务提供商&quot;之间，设置了一个授权层（authorization layer）。<br />
+&quot;客户端&quot;不能直接登录&quot;服务提供商&quot;，只能登录授权层，以此将用户与客户端区分开来。&quot;客户端&quot;登录授权层所用的令牌（token），与用户的密码不同。用户可以在登录的时候，指定授权层令牌的权限范围和有效期。（一般是开发时指定scope，规定权限范围。）<br />
+&quot;客户端&quot;登录授权层以后，&quot;服务提供商&quot;根据令牌的权限范围和有效期，向&quot;客户端&quot;开放用户储存的资料。这个令牌授权“客户端”在特定时间内（assert_token具有有效期）访问特定资源。这样就恰如其分的控制了第三方应用所获取的权限。</p>
+<h3>3.运行流程</h3>
+<p>1.打开客户端后，客户端要求用户授权<br />
+2.用户同意授权<br />
+3.客户端使用授权，向认证服务器（第三方认证服务器）申请令牌<br />
+4.认证服务器进行认证后，同意发放令牌<br />
+5.用户使用令牌，向资源服务器申请资源(第三方资源服务器，可以是一个服务器，也可以是两个)<br />
+6.资源服务器确认令牌无误，同意向客户端开放资源 </p>
+<p><img src="./images/OAuth授权流程.jpg" alt="Alt text" /></p>
+<h2>微信登录</h2>
+<h3>0.个人感觉微信登录最大的难点在回调上，如果接收不到回调，请确认1，2两点。并仔细检查应用的签名和包名，和在微信开放平台申请时候的完全一致。</h3>
+<h3>1.在AndroidManifest.xml中配置，其中Theme.NoDisplay代表透明主题。</h3>
+<pre><code>&lt;activity
+        android:name=&quot;com.xywy.xytrain.wxapi.WXEntryActivity&quot;
+        android:exported=&quot;true&quot;
+        android:configChanges=&quot;keyboardHidden|orientation|screenSize&quot;
+        android:launchMode=&quot;singleTop&quot;
+        android:theme=&quot;@android:style/Theme.NoDisplay&quot;
+        android:screenOrientation=&quot;portrait&quot;/&gt;
+</code></pre>
+
+<h3>2.在主项目跟目录下（包名下的目录）,新建wxapi文件夹，并创建WXEntryActivity，继承activity。必须在跟目录下，不然无法回调。</h3>
+<h3>3.微信提供了两个回调类onReq和onResp，客户端将消息发送的微信会回调onReq，从微信接受到消息会回调onResp。在onResp回调方法里，可以得到ErrCode，code等参数，通过ErrCode可以判断用户行为，通过Code可以换取access_token，这个code只有在ErrCode为0时才有效。</h3>
+<h2>QQ登录</h2>
+<h3>1.QQ登录相比较微信登录要简单点，初始化QQ,和IUiListener回调</h3>
+<pre><code> if (mTencent == null) {
+        mTencent = Tencent.createInstance(MineConstants.QQAPP_ID, getContext());
+    }
+</code></pre>
+
+<h3>2.在进行登录的activity中重写OnActivityResult方法</h3>
+<pre><code>  @Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    //一定要在与fragment绑定的activity中重写此方法，不然无法回调
+    if (requestCode == Constants.REQUEST_API ||
+            requestCode == Constants.REQUEST_LOGIN) {
+        Tencent.handleResultData(data, ThirdLoginFragment.mTencentListener);
+    }
+}
+</code></pre>
+
+<h3>3.IUiListener中有三个回调方法，onComplete(Object response)授权成功调用,onError(UiError e)授权失败调用,onCancel()授权取消调用.onComplete中的response是一个JsonObject，里面含有OpenId， AccessToken等参数，通过参数就可以取得用户信息。</h3>
+<h3>4.注意一点，QQ文档中介绍，只需要在AndroidManifest.xml中配置</h3>
+<pre><code>&lt;activity
+        android:name=&quot;com.tencent.tauth.AuthActivity&quot;
+        android:launchMode=&quot;singleTask&quot;
+        android:noHistory=&quot;true&quot;&gt;
+        &lt;intent-filter&gt;
+            &lt;action android:name=&quot;android.intent.action.VIEW&quot; /&gt;
+
+            &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+            &lt;category android:name=&quot;android.intent.category.BROWSABLE&quot; /&gt;
+
+            &lt;data android:scheme=&quot;tencent+&quot;your appid&quot;&quot; /&gt;
+        &lt;/intent-filter&gt;
+    &lt;/activity&gt;
+</code></pre>
+
+<h3>但如果使用最新的sdk还需要配置以下内容，这点在文档中没有介绍，走了一点弯路。</h3>
+<pre><code> &lt;activity
+        android:name=&quot;com.tencent.connect.common.AssistActivity&quot;
+        android:screenOrientation=&quot;portrait&quot;
+        android:theme=&quot;@android:style/Theme.Translucent.NoTitleBar&quot; /&gt;
+</code></pre>
+
+<h2>微博登录</h2>
+<h3>1.微博登录文档写的比较详细，大家看文档就可以了。https://github.com/sinaweibosdk/weibo<em>android</em>sdk</h3>
+<h3>2.注意一点，如果把第三方登录放入子项目中，微博的jni文件需要放在main目录下，不然会找不到jni文件。</h3>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

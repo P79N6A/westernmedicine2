@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_img_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/persinon_title" />
+
+    <include layout="@layout/no_data" />
+
+    <ListView
+        android:id="@+id/list_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marght_left"
+        android:divider="#eeeeee"
+        android:dividerHeight="1dp"></ListView>
+
+</LinearLayout>

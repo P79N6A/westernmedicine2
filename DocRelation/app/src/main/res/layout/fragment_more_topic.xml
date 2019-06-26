@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_more_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/more_topic_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#dadada"
+            android:dividerHeight="0.5dp"
+            android:listSelector="?attr/selectableItemBackground"
+            android:scrollbars="none" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_my_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/more_mytopic_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#dadada"
+            android:dividerHeight="0.5dp"
+            android:listSelector="?attr/selectableItemBackground"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/empty_show_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/topic_empty_icon" />
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/empty_iv"
+            android:layout_marginTop="16dp"
+            android:text="@string/topic_empty_txt"
+            android:textColor="#999999"
+            android:textSize="@dimen/text_16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

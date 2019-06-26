@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/dp16"
+        android:gravity="center_vertical"
+        android:background="@color/c_f7"
+        android:text="近半年收入分析"
+        android:textColor="@color/c333"
+        android:textSize="@dimen/text_11sp" />
+    <TextView
+        android:id="@+id/tv_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="@dimen/dp18"
+        android:gravity="center"
+        android:text="各业务收入占比分析"
+        android:textColor="@color/c333"
+        android:textSize="@dimen/text_14sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/mPieChart"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginLeft="42dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="43dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_imwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_imwd_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/ovla_shape_717acb" />
+
+                <TextView
+                    android:id="@+id/tv_imwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    tools:text="即时问答 80%"
+                    android:textColor="@color/c333"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_question_departmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_question_department_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/ovla_shape_50ceff" />
+
+                <TextView
+                    android:id="@+id/tv_question_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    tools:text="问题广场 80%"
+                    android:textColor="@color/c333"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_home_doctor_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/ovla_shape_8dd06b" />
+
+                <TextView
+                    android:id="@+id/tv_home_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    tools:text="家庭医生 80%"
+                    android:textColor="@color/c333"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_call_doctor_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/ovla_shape_ffb760" />
+
+                <TextView
+                    android:id="@+id/tv_call_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    tools:text="电话医生 80%"
+                    android:textColor="@color/c333"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_other_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/ovla_shape_00c8aa" />
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    tools:text="其他 80%"
+                    android:textColor="@color/c333"
+                    android:textSize="@dimen/text_12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_atrend"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="@dimen/dp18"
+        android:gravity="center"
+        android:text="月收入趋势分析"
+        android:textColor="@color/c333"
+        android:textSize="@dimen/text_13sp" />
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/mLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"/>
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout="@layout/item_my_purse_recent_half_year_analysis_empty"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp16"
+        android:background="@color/c_f7"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/c999"
+            android:text="温馨提示"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/c999"
+            android:text="1.统计发放周期为每个自然月1号到31号；"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/c999"
+            android:text="2.绩效发放规则以实际发生业务结算为准；"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/c999"
+            android:text="3.以上金额为税前金额；"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/c999"
+            android:text="4.当月绑卡的用户，绩效在次月发放；"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/c999"
+            android:text="5.所有解释权归寻医问药网所有。"/>
+    </LinearLayout>
+</LinearLayout>

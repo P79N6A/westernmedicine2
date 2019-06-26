@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <!--android:background="@drawable/answer_select_circle_bg_normal"-->
+    <View
+        android:visibility="gone"
+        android:id="@+id/read_view"
+        android:background="@drawable/read_view_bg"
+        android:layout_gravity="center"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:background="@color/color_eeeeee"/>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp10"
+        tools:text="NO.666666"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp11"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/dp16"
+        android:text="2018年01月01日"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp11"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_below="@+id/num"
+        android:background="@color/color_eeeeee"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_alignLeft="@+id/num"
+        tools:text="小五"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dp12"/>
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_toRightOf="@+id/name"
+        tools:text="女"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp12"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_toRightOf="@+id/sex"
+        tools:text="22岁"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp12"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp16"
+        tools:text="审核中"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/dp10"/>
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/size12color333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        tools:text="初步诊断结果: 感冒"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp05"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/color_eeeeee"/>
+    </RelativeLayout>
+
+</LinearLayout>

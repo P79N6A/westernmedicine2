@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        
+        android:id="@+id/tv_all_filed"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="42dp"
+        android:textColor="@drawable/selector_send_mensage_tv"
+        android:textSize="14sp" />
+
+    <include layout="@layout/myhor_line"/>
+
+</LinearLayout>
